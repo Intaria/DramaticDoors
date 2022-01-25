@@ -39,6 +39,15 @@ public class DramaticDoorsBlocks {
     @ObjectHolder(TallDoorBlock.NAME_BOP_UMBRAN) public static final Block TALL_BOP_UMBRAN_DOOR = null;
     @ObjectHolder(TallDoorBlock.NAME_BOP_WILLOW) public static final Block TALL_BOP_WILLOW_DOOR = null;
     
+    //Prehistoric Fauna
+    @ObjectHolder(TallDoorBlock.NAME_ARAUCARIA) public static final Block TALL_ARAUCARIA_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_HEIDIPHYLLUM) public static final Block TALL_HEIDIPHYLLUM_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_LIRIODENDRITES) public static final Block TALL_LIRIODENDRITES_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_METASEQUOIA) public static final Block TALL_METASEQUOIA_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_PROTOJUNIPEROXYLON) public static final Block TALL_PROTOJUNIPEROXYLON_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_PROTOPICEOXYLON) public static final Block TALL_PROTOPICEOXYLON_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_ZAMITES) public static final Block TALL_ZAMITES_DOOR = null;
+    
     //Twilight Forest
     @ObjectHolder(TallDoorBlock.NAME_CANOPY) public static final Block TALL_CANOPY_DOOR = null;
     @ObjectHolder(TallDoorBlock.NAME_DARKWOOD) public static final Block TALL_DARKWOOD_DOOR = null;
@@ -125,6 +134,8 @@ public class DramaticDoorsBlocks {
         //Conditionally add doors based on whether mods are loaded.
         //Big mods
         addBlockSeries(registry, DoorSeries.BOP, "biomesoplenty");
+        //addBlockSeries(registry, DoorSeries.BYG, "byg");
+        addBlockSeries(registry, DoorSeries.PREHISTORIC_FAUNA, "prehistoricfauna");
         addBlockSeries(registry, DoorSeries.TWILIGHT_FOREST, "twilightforest");
         //Abnormals
         addBlockSeries(registry, DoorSeries.ATMOSPHERIC, "atmospheric");
@@ -194,6 +205,19 @@ public class DramaticDoorsBlocks {
             	return new Block[] { 
             			TALL_BOP_CHERRY_DOOR, TALL_BOP_DEAD_DOOR, TALL_BOP_FIR_DOOR, TALL_BOP_HELLBARK_DOOR, TALL_BOP_JACARANDA_DOOR, TALL_BOP_MAGIC_DOOR,
             			TALL_BOP_MAHOGANY_DOOR, TALL_BOP_PALM_DOOR, TALL_BOP_REDWOOD_DOOR, TALL_BOP_UMBRAN_DOOR, TALL_BOP_WILLOW_DOOR };
+            case PREHISTORIC_FAUNA:
+            	return new Block[] {
+            			Registry.BLOCK.get(new ResourceLocation("prehistoricfauna", "araucaria_door")),
+            			Registry.BLOCK.get(new ResourceLocation("prehistoricfauna", "heidiphyllum_door")),
+            			Registry.BLOCK.get(new ResourceLocation("prehistoricfauna", "liriodendrites_door")),
+            			Registry.BLOCK.get(new ResourceLocation("prehistoricfauna", "metasequoia_door")),
+            			Registry.BLOCK.get(new ResourceLocation("prehistoricfauna", "protojuniperoxylon_door")),
+            			Registry.BLOCK.get(new ResourceLocation("prehistoricfauna", "protopiceoxylon_door")),
+            			Registry.BLOCK.get(new ResourceLocation("prehistoricfauna", "zamites_door")) };
+            case PREHISTORIC_FAUNA_TALL:
+            	return new Block[] { 
+            			TALL_ARAUCARIA_DOOR, TALL_HEIDIPHYLLUM_DOOR, TALL_LIRIODENDRITES_DOOR, TALL_METASEQUOIA_DOOR,
+            			TALL_PROTOJUNIPEROXYLON_DOOR, TALL_PROTOPICEOXYLON_DOOR, TALL_ZAMITES_DOOR };
             case TWILIGHT_FOREST:
             	return new Block[] {
             			Registry.BLOCK.get(new ResourceLocation("twilightforest", "canopy_door")),
@@ -316,6 +340,10 @@ public class DramaticDoorsBlocks {
         VANILLA_TALL,
         BOP,
         BOP_TALL,
+        BYG,
+        BYG_TALL,
+        PREHISTORIC_FAUNA,
+        PREHISTORIC_FAUNA_TALL,
         TWILIGHT_FOREST,
         TWILIGHT_FOREST_TALL,
         ATMOSPHERIC,

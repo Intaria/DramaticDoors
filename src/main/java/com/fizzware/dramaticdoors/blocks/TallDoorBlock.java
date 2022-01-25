@@ -79,6 +79,15 @@ public class TallDoorBlock extends Block {
     public static final String NAME_BOP_UMBRAN = "tall_bop_umbran_door";
     public static final String NAME_BOP_WILLOW = "tall_bop_willow_door";
     
+    //Prehistoric Fauna
+    public static final String NAME_ARAUCARIA = "tall_araucaria_door";
+    public static final String NAME_HEIDIPHYLLUM = "tall_heidiphyllum_door";
+    public static final String NAME_LIRIODENDRITES = "tall_liriodendrites_door";
+    public static final String NAME_METASEQUOIA = "tall_metasequoia_door";
+    public static final String NAME_PROTOJUNIPEROXYLON = "tall_protojuniperoxylon_door";
+    public static final String NAME_PROTOPICEOXYLON = "tall_protopiceoxylon_door";
+    public static final String NAME_ZAMITES = "tall_zamites_door";
+    
     //Twilight Forest
     public static final String NAME_CANOPY = "tall_canopy_door";
     public static final String NAME_DARKWOOD = "tall_darkwood_door";
@@ -169,6 +178,12 @@ public class TallDoorBlock extends Block {
 		        return new String[] {
 		                NAME_BOP_CHERRY, NAME_BOP_DEAD, NAME_BOP_FIR, NAME_BOP_HELLBARK, NAME_BOP_JACARANDA, NAME_BOP_MAGIC,
 		                NAME_BOP_MAHOGANY, NAME_BOP_PALM, NAME_BOP_REDWOOD, NAME_BOP_UMBRAN, NAME_BOP_WILLOW };
+		    case BYG:
+		    	throw new NotImplementedException("Oh the Biomes You'll Go mod is not currently implemented.");
+			case PREHISTORIC_FAUNA:
+		        return new String[] {
+		                NAME_ARAUCARIA, NAME_HEIDIPHYLLUM, NAME_LIRIODENDRITES, NAME_METASEQUOIA,
+		                NAME_PROTOJUNIPEROXYLON, NAME_PROTOPICEOXYLON, NAME_ZAMITES };
 		    case TWILIGHT_FOREST:
 		        return new String[] {
 		                NAME_CANOPY, NAME_DARKWOOD, NAME_MANGROVE, NAME_MINEWOOD,

@@ -17,7 +17,8 @@
   },
   "conditions": [
     {
-      "type": "dramaticdoors:cavens_and_chasms_mod_installed"
+      "type": "forge:mod_loaded",
+      "modid": "caverns_and_chasms"
     }
   ]
 }

@@ -46,6 +46,14 @@ public class DramaticDoorsItems {
             new BlockItem(DramaticDoorsBlocks.TALL_BOP_UMBRAN_DOOR, conditionalTabProperties("biomesoplenty")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_BOP_UMBRAN)),
             new BlockItem(DramaticDoorsBlocks.TALL_BOP_WILLOW_DOOR, conditionalTabProperties("biomesoplenty")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_BOP_WILLOW)),
 
+        	new BlockItem(DramaticDoorsBlocks.TALL_ARAUCARIA_DOOR, conditionalTabProperties("prehistoricfauna")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_ARAUCARIA)),
+        	new BlockItem(DramaticDoorsBlocks.TALL_HEIDIPHYLLUM_DOOR, conditionalTabProperties("prehistoricfauna")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_HEIDIPHYLLUM)),
+        	new BlockItem(DramaticDoorsBlocks.TALL_LIRIODENDRITES_DOOR, conditionalTabProperties("prehistoricfauna")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_LIRIODENDRITES)),
+        	new BlockItem(DramaticDoorsBlocks.TALL_METASEQUOIA_DOOR, conditionalTabProperties("prehistoricfauna")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_METASEQUOIA)),
+        	new BlockItem(DramaticDoorsBlocks.TALL_PROTOJUNIPEROXYLON_DOOR, conditionalTabProperties("prehistoricfauna")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_PROTOJUNIPEROXYLON)),
+        	new BlockItem(DramaticDoorsBlocks.TALL_PROTOPICEOXYLON_DOOR, conditionalTabProperties("prehistoricfauna")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_PROTOPICEOXYLON)),
+        	new BlockItem(DramaticDoorsBlocks.TALL_ZAMITES_DOOR, conditionalTabProperties("prehistoricfauna")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_ZAMITES)),
+            
         	new BlockItem(DramaticDoorsBlocks.TALL_CANOPY_DOOR, conditionalTabProperties("twilightforest")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_CANOPY)),
         	new BlockItem(DramaticDoorsBlocks.TALL_DARKWOOD_DOOR, conditionalTabProperties("twilightforest")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_DARKWOOD)),
         	new BlockItem(DramaticDoorsBlocks.TALL_MANGROVE_DOOR, conditionalTabProperties("twilightforest")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_MANGROVE)),

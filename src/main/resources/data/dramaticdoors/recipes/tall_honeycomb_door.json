@@ -17,7 +17,8 @@
   },
   "conditions": [
     {
-      "type": "dramaticdoors:buzzier_bees_mod_installed"
+      "type": "forge:mod_loaded",
+      "modid": "buzzier_bees"
     }
   ]
 }

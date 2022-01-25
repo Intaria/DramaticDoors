@@ -31,7 +31,8 @@
   ],
   "conditions": [
     {
-      "type": "dramaticdoors:bamboo_blocks_mod_installed"
+      "type": "forge:mod_loaded",
+      "modid": "bamboo_blocks"
     }
   ]
 }

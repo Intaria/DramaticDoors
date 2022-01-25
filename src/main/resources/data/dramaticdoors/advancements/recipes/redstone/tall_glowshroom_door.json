@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "item": "enhanced_mushrooms:glowshroom_door"
+            "items": [ "enhanced_mushrooms:glowshroom_door" ]
           }
         ]
       }
@@ -31,7 +31,8 @@
   ],
   "conditions": [
     {
-      "type": "dramaticdoors:enhanced_mushrooms_mod_installed"
+      "type": "forge:mod_loaded",
+      "modid": "enhanced_mushrooms"
     }
   ]
 }

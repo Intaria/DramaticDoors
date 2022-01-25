@@ -17,7 +17,8 @@
   },
   "conditions": [
     {
-      "type": "dramaticdoors:bayou_blues_mod_installed"
+      "type": "forge:mod_loaded",
+      "modid": "bayou_blues"
     }
   ]
 }
