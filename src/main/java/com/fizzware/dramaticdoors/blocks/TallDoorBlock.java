@@ -143,6 +143,13 @@ public class TallDoorBlock extends Block {
     public static final String NAME_BROWN_MUSHROOM = "tall_brown_mushroom_door";
     public static final String NAME_RED_MUSHROOM = "tall_red_mushroom_door";
     public static final String NAME_GLOWSHROOM = "tall_glowshroom_door";
+
+    //Architects Palette
+    public static final String NAME_TWISTED = "tall_twisted_door";
+    
+    //Better Azalea
+    public static final String NAME_BA_AZALEA = "tall_ba_azalea_door";
+    public static final String NAME_BA_FLOWERING_AZALEA = "tall_ba_flowering_azalea_door";
     
     //Darker Depths
     public static final String NAME_PETRIFIED = "tall_petrified_door";
@@ -156,6 +163,9 @@ public class TallDoorBlock extends Block {
     public static final String NAME_RUSTY_IRON = "tall_rusty_iron_door";
     public static final String NAME_RUSTY_SHEET_METAL = "tall_rusty_sheet_metal_door";
     public static final String NAME_SHEET_METAL = "tall_sheet_metal_door";
+
+    //Ecologics
+    public static final String NAME_COCONUT = "tall_coconut_door";
     
     //Habitat
     public static final String NAME_FAIRY_RING_MUSHROOM = "tall_fairy_ring_mushroom_door";
@@ -163,8 +173,14 @@ public class TallDoorBlock extends Block {
     //Outer End
     public static final String NAME_AZURE = "tall_azure_door";
     
+    //Quark
+    public static final String NAME_QUARK_AZALEA = "tall_quark_azalea_door";
+    public static final String NAME_QUARK_BLOSSOM = "tall_quark_blossom_door";
+    
     //Supplementaries
     public static final String NAME_GOLD = "tall_gold_door";
+    public static final String NAME_SILVER = "tall_silver_door";
+    public static final String NAME_LEAD = "tall_lead_door";
     public static final String NAME_NETHERITE = "tall_netherite_door";
     
     public static String[] getNames(DoorSeries series) {
@@ -210,20 +226,28 @@ public class TallDoorBlock extends Block {
     	        return new String[] { NAME_CYPRESS };
     		case ENH_MUSHROOMS:
     	        return new String[] { NAME_BROWN_MUSHROOM, NAME_RED_MUSHROOM, NAME_GLOWSHROOM };
+    		case ARCHITECTS_PALETTE:
+    	        return new String[] { NAME_TWISTED };
+    		case BETTER_AZALEA:
+    	        return new String[] { NAME_BA_AZALEA, NAME_BA_FLOWERING_AZALEA };
 			case DARKER_DEPTHS:
 		        return new String[] { NAME_PETRIFIED };
 			case DUSTRIAL_DECOR:
 		        return new String[] { 
 		        		NAME_CARDBOARD, NAME_CHAIN, NAME_INDUSTRIAL_IRON, NAME_IRON_BAR,
 		        		NAME_PADDED, NAME_RUSTY_IRON, NAME_RUSTY_SHEET_METAL, NAME_SHEET_METAL };
+    		case ECOLOGICS:
+    	        return new String[] { NAME_COCONUT };
 			case HABITAT:
 		        return new String[] { NAME_FAIRY_RING_MUSHROOM };
 			case OUTER_END:
 		        return new String[] { NAME_AZURE };
+			case QUARK:
+		        return new String[] { NAME_QUARK_AZALEA, NAME_QUARK_BLOSSOM };
 			case SUPPLEMENTARIES:
-		        return new String[] { NAME_GOLD, NAME_NETHERITE };
+		        return new String[] { NAME_GOLD, NAME_SILVER, NAME_LEAD, NAME_NETHERITE };
     		default:
-    	        throw new NotImplementedException("Don't use the tall version of DoorSeries.");
+    	        throw new NotImplementedException("Please don't use the tall version of DoorSeries.");
     	}
     }
 
@@ -358,13 +382,19 @@ public class TallDoorBlock extends Block {
 
     @Override
     public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL && this != DramaticDoorsBlocks.TALL_GOLD_DOOR && this != DramaticDoorsBlocks.TALL_NETHERITE_DOOR) {
+    	if (this.material == Material.METAL && this != DramaticDoorsBlocks.TALL_SILVER_DOOR && this != DramaticDoorsBlocks.TALL_GOLD_DOOR && this != DramaticDoorsBlocks.TALL_NETHERITE_DOOR) {
             return InteractionResult.PASS;
         } 
     	else {
         	if (this == DramaticDoorsBlocks.TALL_GOLD_DOOR && state.getValue(POWERED)) {
         		return InteractionResult.PASS;
         	}
+        	if (this == DramaticDoorsBlocks.TALL_SILVER_DOOR && !state.getValue(POWERED)) {
+        		return InteractionResult.PASS;
+        	}
+        	/*if (this == DramaticDoorsBlocks.TALL_NETHERITE_DOOR) { 
+        		// Not yet implemented.
+        	}*/
         	tryOpenDoubleDoor(worldIn, state, pos);
             state = state.cycle(OPEN);
             worldIn.setBlock(pos, state, 10);
@@ -421,7 +451,7 @@ public class TallDoorBlock extends Block {
             }
         }
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	if (this == DramaticDoorsBlocks.TALL_GOLD_DOOR) {
+        	if (this == DramaticDoorsBlocks.TALL_GOLD_DOOR || this == DramaticDoorsBlocks.TALL_SILVER_DOOR || this == DramaticDoorsBlocks.TALL_LEAD_DOOR) {
         		worldIn.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {

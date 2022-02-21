@@ -4,6 +4,7 @@ import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks;
 
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -98,6 +99,11 @@ public class DramaticDoorsItems {
             new BlockItem(DramaticDoorsBlocks.TALL_RED_MUSHROOM_DOOR, conditionalTabProperties("enhanced_mushrooms")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_RED_MUSHROOM)),
             new BlockItem(DramaticDoorsBlocks.TALL_GLOWSHROOM_DOOR, conditionalTabProperties("enhanced_mushrooms")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_GLOWSHROOM)),
             
+            new BlockItem(DramaticDoorsBlocks.TALL_TWISTED_DOOR, conditionalTabProperties("architects_palette")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_TWISTED)),
+
+            new BlockItem(DramaticDoorsBlocks.TALL_BA_AZALEA_DOOR, conditionalTabProperties("azalea")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_BA_AZALEA)),
+            new BlockItem(DramaticDoorsBlocks.TALL_BA_FLOWERING_AZALEA_DOOR, conditionalTabProperties("azalea")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_BA_FLOWERING_AZALEA)),
+            
             new BlockItem(DramaticDoorsBlocks.TALL_PETRIFIED_DOOR, conditionalTabProperties("darkerdepths")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_PETRIFIED)),
             
             new BlockItem(DramaticDoorsBlocks.TALL_CARDBOARD_DOOR, conditionalTabProperties("dustrial_decor")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_CARDBOARD)),
@@ -109,11 +115,18 @@ public class DramaticDoorsItems {
             new BlockItem(DramaticDoorsBlocks.TALL_RUSTY_SHEET_METAL_DOOR, conditionalTabProperties("dustrial_decor")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_RUSTY_SHEET_METAL)),
             new BlockItem(DramaticDoorsBlocks.TALL_SHEET_METAL_DOOR, conditionalTabProperties("dustrial_decor")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_SHEET_METAL)),
             
+            new BlockItem(DramaticDoorsBlocks.TALL_COCONUT_DOOR, conditionalTabProperties("ecologics")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_COCONUT)),
+            
             new BlockItem(DramaticDoorsBlocks.TALL_FAIRY_RING_MUSHROOM_DOOR, conditionalTabProperties("habitat")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_FAIRY_RING_MUSHROOM)),
 
             new BlockItem(DramaticDoorsBlocks.TALL_AZURE_DOOR, conditionalTabProperties("outer_end")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_AZURE)),
+
+            new BlockItem(DramaticDoorsBlocks.TALL_QUARK_AZALEA_DOOR, conditionalTabProperties("quark")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_QUARK_AZALEA)),
+            new BlockItem(DramaticDoorsBlocks.TALL_QUARK_BLOSSOM_DOOR, conditionalTabProperties("quark")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_QUARK_BLOSSOM)),
             
             new BlockItem(DramaticDoorsBlocks.TALL_GOLD_DOOR, conditionalTabProperties("supplementaries")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_GOLD)),
+            new BlockItem(DramaticDoorsBlocks.TALL_SILVER_DOOR, addIfItemIsAvailable(new ResourceLocation("supplementaries", "silver_door"), conditionalTabProperties("supplementaries"))).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_SILVER)),
+            new BlockItem(DramaticDoorsBlocks.TALL_LEAD_DOOR, addIfItemIsAvailable(new ResourceLocation("supplementaries", "lead_door"), conditionalTabProperties("supplementaries"))).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_LEAD)),
             new BlockItem(DramaticDoorsBlocks.TALL_NETHERITE_DOOR, conditionalTabProperties("supplementaries")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_NETHERITE))
         );
     }
@@ -122,4 +135,20 @@ public class DramaticDoorsItems {
     	return ModList.get().isLoaded(modid) ? PROPERTIES.tab(DramaticDoors.TAB) : PROPERTIES.tab(null);
     }
     
+    // If a mod conditionally adds doors, only make doors available if the corresponding normal-sized doors are available.
+    @SuppressWarnings("deprecation")
+	private static Item.Properties addIfItemIsAvailable(ResourceLocation loc, Item.Properties tabProperties) {
+    	Item item = Registry.ITEM.get(loc);
+    	if (item != null) {
+    		if (item.getItemCategory() != null) {
+    			return tabProperties;
+    		}
+    		else {
+    			return PROPERTIES.tab(null);
+    		}
+    	}
+    	else {
+    		return PROPERTIES.tab(null);
+    	}
+    }
 }

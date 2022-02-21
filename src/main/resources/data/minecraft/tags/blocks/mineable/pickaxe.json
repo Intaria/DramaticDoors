@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:tall_iron_door",
+    "dramaticdoors:tall_gold_door",
+    "dramaticdoors:tall_netherite_door",
+    "dramaticdoors:tall_silver_door",
+    "dramaticdoors:tall_lead_door",
+    "dramaticdoors:tall_glass_door",
+    "dramaticdoors:tall_tooth_door",
+    "dramaticdoors:tall_petrified_door",
+    "dramaticdoors:tall_chain_door",
+    "dramaticdoors:tall_industrial_iron_door",
+    "dramaticdoors:tall_iron_bar_door",
+    "dramaticdoors:tall_padded_door",
+    "dramaticdoors:tall_rusty_iron_door",
+    "dramaticdoors:tall_rusty_sheet_metal_door",
+    "dramaticdoors:tall_sheet_metal_door"
+  ]
+}

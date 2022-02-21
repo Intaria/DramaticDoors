@@ -104,6 +104,13 @@ public class DramaticDoorsBlocks {
     @ObjectHolder(TallDoorBlock.NAME_RED_MUSHROOM) public static final Block TALL_RED_MUSHROOM_DOOR = null;
     @ObjectHolder(TallDoorBlock.NAME_GLOWSHROOM) public static final Block TALL_GLOWSHROOM_DOOR = null;
     
+    //Architects Palette
+    @ObjectHolder(TallDoorBlock.NAME_TWISTED) public static final Block TALL_TWISTED_DOOR = null;
+    
+    //Better Azalea
+    @ObjectHolder(TallDoorBlock.NAME_BA_AZALEA) public static final Block TALL_BA_AZALEA_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_BA_FLOWERING_AZALEA) public static final Block TALL_BA_FLOWERING_AZALEA_DOOR = null;
+    
     //Darker Depths
     @ObjectHolder(TallDoorBlock.NAME_PETRIFIED) public static final Block TALL_PETRIFIED_DOOR = null;
     
@@ -117,14 +124,23 @@ public class DramaticDoorsBlocks {
     @ObjectHolder(TallDoorBlock.NAME_RUSTY_SHEET_METAL) public static final Block TALL_RUSTY_SHEET_METAL_DOOR = null;
     @ObjectHolder(TallDoorBlock.NAME_SHEET_METAL) public static final Block TALL_SHEET_METAL_DOOR = null;
 
+    //Ecologics
+    @ObjectHolder(TallDoorBlock.NAME_COCONUT) public static final Block TALL_COCONUT_DOOR = null;
+    
     //Habitat
     @ObjectHolder(TallDoorBlock.NAME_FAIRY_RING_MUSHROOM) public static final Block TALL_FAIRY_RING_MUSHROOM_DOOR = null;
     
     //Outer End
     @ObjectHolder(TallDoorBlock.NAME_AZURE) public static final Block TALL_AZURE_DOOR = null;
     
+    //Quark
+    @ObjectHolder(TallDoorBlock.NAME_QUARK_AZALEA) public static final Block TALL_QUARK_AZALEA_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_QUARK_BLOSSOM) public static final Block TALL_QUARK_BLOSSOM_DOOR = null;
+
     //Supplementaries
     @ObjectHolder(TallDoorBlock.NAME_GOLD) public static final Block TALL_GOLD_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_SILVER) public static final Block TALL_SILVER_DOOR = null;
+    @ObjectHolder(TallDoorBlock.NAME_LEAD) public static final Block TALL_LEAD_DOOR = null;
     @ObjectHolder(TallDoorBlock.NAME_NETHERITE) public static final Block TALL_NETHERITE_DOOR = null;
 
     @SubscribeEvent
@@ -151,10 +167,14 @@ public class DramaticDoorsBlocks {
         addBlockSeries(registry, DoorSeries.BAYOU_BLUES, "bayou_blues");
         addBlockSeries(registry, DoorSeries.ENH_MUSHROOMS, "enhanced_mushrooms");
         //Miscellaneous
+        addBlockSeries(registry, DoorSeries.ARCHITECTS_PALETTE, "architects_palette");
+        addBlockSeries(registry, DoorSeries.BETTER_AZALEA, "azalea");
         addBlockSeries(registry, DoorSeries.DARKER_DEPTHS, "darkerdepths");
         addBlockSeries(registry, DoorSeries.DUSTRIAL_DECOR, "dustrial_decor");
+        addBlockSeries(registry, DoorSeries.ECOLOGICS, "ecologics");
         addBlockSeries(registry, DoorSeries.HABITAT, "habitat");
         addBlockSeries(registry, DoorSeries.OUTER_END, "outer_end");
+        addBlockSeries(registry, DoorSeries.QUARK, "quark");
         addBlockSeries(registry, DoorSeries.SUPPLEMENTARIES, "supplementaries");
     }
     
@@ -163,7 +183,12 @@ public class DramaticDoorsBlocks {
         if (ModList.get().isLoaded(modid)) {
 	        Block[] baseDoors = getBlockList(series);
 	        for (int i = 0; i < baseDoors.length; i++) {
-	            registry.register(new TallDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
+	        	if (baseDoors[i].getRegistryName().getPath().equalsIgnoreCase("lead_door")) {
+	        		registry.register(new TallLeadDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
+	        	}
+	        	else {
+	        		registry.register(new TallDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
+	        	}
 	        }
         }
         else { //Add fallback blocks that shall retain data.
@@ -223,10 +248,10 @@ public class DramaticDoorsBlocks {
             			Registry.BLOCK.get(new ResourceLocation("twilightforest", "canopy_door")),
             			Registry.BLOCK.get(new ResourceLocation("twilightforest", "dark_door")),
             			Registry.BLOCK.get(new ResourceLocation("twilightforest", "mangrove_door")),
-            			Registry.BLOCK.get(new ResourceLocation("twilightforest", "mine_door")),
+            			Registry.BLOCK.get(new ResourceLocation("twilightforest", "mining_door")),
             			Registry.BLOCK.get(new ResourceLocation("twilightforest", "sorting_door")),
             			Registry.BLOCK.get(new ResourceLocation("twilightforest", "time_door")),
-            			Registry.BLOCK.get(new ResourceLocation("twilightforest", "trans_door")),
+            			Registry.BLOCK.get(new ResourceLocation("twilightforest", "transformation_door")),
             			Registry.BLOCK.get(new ResourceLocation("twilightforest", "twilight_oak_door")) };
             case TWILIGHT_FOREST_TALL:
             	return new Block[] { 
@@ -297,6 +322,16 @@ public class DramaticDoorsBlocks {
             case ENH_MUSHROOMS_TALL:
             	return new Block[] { TALL_BROWN_MUSHROOM_DOOR, TALL_RED_MUSHROOM_DOOR, TALL_GLOWSHROOM_DOOR };
             //Miscellaneous
+            case ARCHITECTS_PALETTE:
+            	return new Block[] { Registry.BLOCK.get(new ResourceLocation("architects_palette", "twisted_door")) };
+            case ARCHITECTS_PALETTE_TALL:
+            	return new Block[] { TALL_TWISTED_DOOR };
+            case BETTER_AZALEA:
+            	return new Block[] { 
+            			Registry.BLOCK.get(new ResourceLocation("azalea", "azalea_door")),
+            			Registry.BLOCK.get(new ResourceLocation("azalea", "flowering_azalea_door")) };
+            case BETTER_AZALEA_TALL:
+            	return new Block[] { TALL_BA_AZALEA_DOOR, TALL_BA_FLOWERING_AZALEA_DOOR };
             case DARKER_DEPTHS:
             	return new Block[] { Registry.BLOCK.get(new ResourceLocation("darkerdepths", "petrified_door")) };
             case DARKER_DEPTHS_TALL:
@@ -315,6 +350,10 @@ public class DramaticDoorsBlocks {
             	return new Block[] { 
             			TALL_CARDBOARD_DOOR, TALL_CHAIN_DOOR, TALL_INDUSTRIAL_IRON_DOOR, TALL_IRON_BAR_DOOR,
             			TALL_PADDED_DOOR, TALL_RUSTY_IRON_DOOR, TALL_RUSTY_SHEET_METAL_DOOR, TALL_SHEET_METAL_DOOR };
+            case ECOLOGICS:
+            	return new Block[] { Registry.BLOCK.get(new ResourceLocation("ecologics", "coconut_door")) };
+            case ECOLOGICS_TALL:
+            	return new Block[] { TALL_COCONUT_DOOR };
             case HABITAT:
             	return new Block[] { Registry.BLOCK.get(new ResourceLocation("habitat", "fairy_ring_mushroom_door")) };
             case HABITAT_TALL:
@@ -323,12 +362,20 @@ public class DramaticDoorsBlocks {
             	return new Block[] { Registry.BLOCK.get(new ResourceLocation("outer_end", "azure_door")) };
             case OUTER_END_TALL:
             	return new Block[] { TALL_AZURE_DOOR };
+            case QUARK:
+            	return new Block[] { 
+            			Registry.BLOCK.get(new ResourceLocation("quark", "azalea_door")),
+            			Registry.BLOCK.get(new ResourceLocation("quark", "blossom_door")) };
+            case QUARK_TALL:
+            	return new Block[] { TALL_QUARK_AZALEA_DOOR, TALL_QUARK_BLOSSOM_DOOR };
             case SUPPLEMENTARIES:
             	return new Block[] { 
             			Registry.BLOCK.get(new ResourceLocation("supplementaries", "gold_door")),
+            			Registry.BLOCK.get(new ResourceLocation("supplementaries", "silver_door")),
+            			Registry.BLOCK.get(new ResourceLocation("supplementaries", "lead_door")),
             			Registry.BLOCK.get(new ResourceLocation("supplementaries", "netherite_door"))};
             case SUPPLEMENTARIES_TALL:
-            	return new Block[] { TALL_GOLD_DOOR, TALL_NETHERITE_DOOR };
+            	return new Block[] { TALL_GOLD_DOOR, TALL_SILVER_DOOR, TALL_LEAD_DOOR, TALL_NETHERITE_DOOR };
             //Failsafe
             default:
                 return new Block[] {};
@@ -338,6 +385,7 @@ public class DramaticDoorsBlocks {
     public enum DoorSeries {
         VANILLA,
         VANILLA_TALL,
+        //Large mods
         BOP,
         BOP_TALL,
         BYG,
@@ -346,6 +394,7 @@ public class DramaticDoorsBlocks {
         PREHISTORIC_FAUNA_TALL,
         TWILIGHT_FOREST,
         TWILIGHT_FOREST_TALL,
+        //Abnormals
         ATMOSPHERIC,
         ATMOSPHERIC_TALL,
         AUTUMNITY,
@@ -362,20 +411,30 @@ public class DramaticDoorsBlocks {
         ENVIRONMENTAL_TALL,
         UPGRADE_AQUATIC,
         UPGRADE_AQUATIC_TALL,
+        //Team Aurora
         ABUNDANCE,
         ABUNDANCE_TALL,
         BAYOU_BLUES,
         BAYOU_BLUES_TALL,
         ENH_MUSHROOMS,
         ENH_MUSHROOMS_TALL,
+        //Miscellaneous
+        ARCHITECTS_PALETTE,
+        ARCHITECTS_PALETTE_TALL,
+        BETTER_AZALEA,
+        BETTER_AZALEA_TALL,
         DARKER_DEPTHS,
         DARKER_DEPTHS_TALL,
         DUSTRIAL_DECOR,
         DUSTRIAL_DECOR_TALL,
+        ECOLOGICS,
+        ECOLOGICS_TALL,
         HABITAT,
         HABITAT_TALL,
         OUTER_END,
         OUTER_END_TALL,
+        QUARK,
+        QUARK_TALL,
         SUPPLEMENTARIES,
         SUPPLEMENTARIES_TALL
     }

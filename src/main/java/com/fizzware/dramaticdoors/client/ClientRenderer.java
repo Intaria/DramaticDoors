@@ -55,12 +55,18 @@ public class ClientRenderer
             ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
         }
         for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ENH_MUSHROOMS_TALL)) {
-        	if (doorBlock.getRegistryName().getPath() == TallDoorBlock.NAME_GLOWSHROOM) {
+        	if (doorBlock.getRegistryName().getPath().equalsIgnoreCase(TallDoorBlock.NAME_GLOWSHROOM)) {
         		ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.translucent());
         	}
         	else {
         		ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
         	}
+        }
+        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ARCHITECTS_PALETTE_TALL)) {
+            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
+        }
+        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.BETTER_AZALEA_TALL)) {
+            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
         }
         for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.DARKER_DEPTHS_TALL)) {
             ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
@@ -68,10 +74,16 @@ public class ClientRenderer
         for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.DUSTRIAL_DECOR_TALL)) {
             ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
         }
+        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ECOLOGICS_TALL)) {
+            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
+        }
         for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.HABITAT_TALL)) {
             ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
         }
         for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.OUTER_END_TALL)) {
+            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
+        }
+        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.QUARK_TALL)) {
             ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
         }
         for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.SUPPLEMENTARIES_TALL)) {

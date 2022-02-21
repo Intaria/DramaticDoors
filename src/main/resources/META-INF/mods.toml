@@ -4,12 +4,12 @@ license="MIT"
 
 [[mods]]
     modId="dramaticdoors"
-    version="1.18.1-1.5.0"
+    version="${file.jarVersion}"
     displayName="Dramatic Doors"
     displayURL="https://www.curseforge.com/minecraft/mc-mods/dramatic-doors"
     issueTrackerURL="https://github.com/TheFizzWare/DramaticDoors/issues"
     authors="FizzWare"
-    credits="Thanks to the creators of Minecraft and Forge."
+    credits="Thanks to the creators of Minecraft and Forge.\nKitteh6660 for maintaining and updating this mod."
     description='''
     Doors that are barely tall enough to fit your player ... ?
     Doors that suffocate you when you ride ol' Blackjack the horse through? Enderman discrimination? Seriously?
@@ -144,6 +144,13 @@ license="MIT"
     modId="outer_end"
     mandatory=false
     versionRange="[0.2,)"
+    ordering="AFTER"
+    side="BOTH"
+    
+[[dependencies.dramaticdoors]]
+    modId="quark"
+    mandatory=false
+    versionRange="[3.1,)"
     ordering="AFTER"
     side="BOTH"
     

@@ -73,6 +73,11 @@
   "block.dramaticdoors.tall_red_mushroom_door": "Tall Red Mushroom Door",
   "block.dramaticdoors.tall_glowshroom_door": "Tall Glowshroom Door",
   
+  "block.dramaticdoors.tall_twisted_door": "Tall Twisted Door",
+
+  "block.dramaticdoors.tall_ba_azalea_door": "Tall Azalea Door",
+  "block.dramaticdoors.tall_ba_flowering_azalea_door": "Tall Flowering Azalea Door",
+
   "block.dramaticdoors.tall_petrified_door": "Tall Petrified Door",
   
   "block.dramaticdoors.tall_cardboard_door": "Tall Cardboard Door",
@@ -84,12 +89,19 @@
   "block.dramaticdoors.tall_rusty_sheet_metal_door": "Tall Rusty Sheet Metal Door",
   "block.dramaticdoors.tall_sheet_metal_door": "Tall Sheet Metal Door",
 
+  "block.dramaticdoors.tall_coconut_door": "Tall Coconut Door",
+
   "block.dramaticdoors.tall_fairy_ring_mushroom_door": "Tall Fairy Ring Mushroom Door",
   
   "block.dramaticdoors.tall_azure_door": "Tall Azure Door",
+
+  "block.dramaticdoors.tall_quark_azalea_door": "Tall Azalea Door",
+  "block.dramaticdoors.tall_quark_blossom_door": "Tall Blossom Door",
   
   "block.dramaticdoors.tall_gold_door": "Tall Gold Door",
   "block.dramaticdoors.tall_netherite_door": "Tall Netherite Door",
+  "block.dramaticdoors.tall_silver_door": "Tall Silver Door",
+  "block.dramaticdoors.tall_lead_door": "Tall Lead Door",
   
   "itemGroup.dramaticdoors": "Dramatic Doors"
 }
