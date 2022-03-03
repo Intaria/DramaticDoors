@@ -9,7 +9,7 @@ license="MIT"
     displayURL="https://www.curseforge.com/minecraft/mc-mods/dramatic-doors"
     issueTrackerURL="https://github.com/TheFizzWare/DramaticDoors/issues"
     authors="FizzWare"
-    credits="Thanks to the creators of Minecraft and Forge.\nKitteh6660 for maintaining and updating this mod."
+    credits="Thanks to the creators of Minecraft and Forge.\n     Kitteh6660 for maintaining and updating this mod."
     description='''
     Doors that are barely tall enough to fit your player ... ?
     Doors that suffocate you when you ride ol' Blackjack the horse through? Enderman discrimination? Seriously?
@@ -31,14 +31,14 @@ license="MIT"
 [[dependencies.dramaticdoors]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.1,)"
+    versionRange="[1.18.2,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.dramaticdoors]]
     modId="forge"
     mandatory=true
-    versionRange="[39,)"
+    versionRange="[40.0.2,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -120,6 +120,20 @@ license="MIT"
     side="BOTH"
     
 [[dependencies.dramaticdoors]]
+    modId="architects_palette"
+    mandatory=false
+    versionRange="[1.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+    
+[[dependencies.dramaticdoors]]
+    modId="azalea"
+    mandatory=false
+    versionRange="[3.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
+    
+[[dependencies.dramaticdoors]]
     modId="darkerdepths"
     mandatory=false
     versionRange="[1.1.0,)"
@@ -130,6 +144,13 @@ license="MIT"
     modId="dustrial_decor"
     mandatory=false
     versionRange="[1.2.8,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.dramaticdoors]]
+    modId="ecologics"
+    mandatory=false
+    versionRange="[1.1.0,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -157,6 +178,6 @@ license="MIT"
 [[dependencies.dramaticdoors]]
     modId="supplementaries"
     mandatory=false
-    versionRange="[1.0,)"
+    versionRange="[1.1,)"
     ordering="AFTER"
     side="BOTH"

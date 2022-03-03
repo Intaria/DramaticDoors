@@ -183,11 +183,16 @@ public class DramaticDoorsBlocks {
         if (ModList.get().isLoaded(modid)) {
 	        Block[] baseDoors = getBlockList(series);
 	        for (int i = 0; i < baseDoors.length; i++) {
-	        	if (baseDoors[i].getRegistryName().getPath().equalsIgnoreCase("lead_door")) {
-	        		registry.register(new TallLeadDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
+	        	if (baseDoors[i] != null) {
+		        	if (baseDoors[i].getRegistryName().getPath().equalsIgnoreCase("lead_door")) {
+		        		registry.register(new TallLeadDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
+		        	}
+		        	else {
+		        		registry.register(new TallDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
+		        	}
 	        	}
-	        	else {
-	        		registry.register(new TallDoorBlock(baseDoors[i]).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
+	        	else { //Add fallback blocks that shall retain data.
+	        		registry.register(new TallDoorBlock(Blocks.OAK_DOOR).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, tallDoorNames[i])));
 	        	}
 	        }
         }

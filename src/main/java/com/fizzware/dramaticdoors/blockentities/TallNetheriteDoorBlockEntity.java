@@ -14,12 +14,12 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
 	}
 
 	@Override
-	public CompoundTag save(CompoundTag tag) {
-		return super.save(tag);
+	public void saveAdditional(CompoundTag tag) {
+		super.saveAdditional(tag);
 	}
 	
 	@Override
 	public void load(CompoundTag tag) {
-		
+		super.load(tag);
 	}
 }

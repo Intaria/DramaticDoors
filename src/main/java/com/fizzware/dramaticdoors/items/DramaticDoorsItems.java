@@ -117,7 +117,7 @@ public class DramaticDoorsItems {
             
             new BlockItem(DramaticDoorsBlocks.TALL_COCONUT_DOOR, conditionalTabProperties("ecologics")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_COCONUT)),
             
-            new BlockItem(DramaticDoorsBlocks.TALL_FAIRY_RING_MUSHROOM_DOOR, conditionalTabProperties("habitat")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_FAIRY_RING_MUSHROOM)),
+            new BlockItem(DramaticDoorsBlocks.TALL_FAIRY_RING_MUSHROOM_DOOR, addIfItemIsAvailable(new ResourceLocation("habitat", "fairy_ring_mushroom_door"), conditionalTabProperties("habitat"))).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_FAIRY_RING_MUSHROOM)),
 
             new BlockItem(DramaticDoorsBlocks.TALL_AZURE_DOOR, conditionalTabProperties("outer_end")).setRegistryName(new ResourceLocation(DramaticDoors.MOD_ID, TallDoorBlock.NAME_AZURE)),
 
