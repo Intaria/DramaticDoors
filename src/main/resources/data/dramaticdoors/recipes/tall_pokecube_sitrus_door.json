@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_pokecube_wooden_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "pokecube:sitrus_door"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_pokecube_sitrus_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pokecube"
+    }
+  ]
+}

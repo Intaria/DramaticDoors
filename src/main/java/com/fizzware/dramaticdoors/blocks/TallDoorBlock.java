@@ -7,6 +7,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.apache.commons.lang3.NotImplementedException;
 
+import com.fizzware.dramaticdoors.DramaticDoorsTags;
 import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks.DoorSeries;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.state.properties.DoorBlockStateProperties;
@@ -18,6 +19,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.*;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -65,6 +67,7 @@ public class TallDoorBlock extends Block {
     public static final String NAME_IRON = "tall_iron_door";
     public static final String NAME_CRIMSON = "tall_crimson_door";
     public static final String NAME_WARPED = "tall_warped_door";
+    //public static final String NAME_MANGROVE = "tall_mangrove_door"; To be added in 1.19+
 
     //Biomes o' Plenty (Given name prefix to avoid conflicts)
     public static final String NAME_BOP_CHERRY = "tall_bop_cherry_door";
@@ -79,6 +82,40 @@ public class TallDoorBlock extends Block {
     public static final String NAME_BOP_UMBRAN = "tall_bop_umbran_door";
     public static final String NAME_BOP_WILLOW = "tall_bop_willow_door";
     
+    //Oh the Biomes You'll Go (Also given name prefix to avoid conflicts too)
+    public static final String NAME_BYG_ASPEN = "tall_byg_aspen_door";
+    public static final String NAME_BYG_BAOBAB = "tall_byg_baobab_door";
+    public static final String NAME_BYG_BULBIS = "tall_byg_bulbis_door";
+    public static final String NAME_BYG_CHERRY = "tall_byg_cherry_door";
+    public static final String NAME_BYG_CIKA = "tall_byg_cika_door";
+    public static final String NAME_BYG_CYPRESS = "tall_byg_cypress_door";
+    public static final String NAME_BYG_EBONY = "tall_byg_ebony_door";
+    public static final String NAME_BYG_EMBUR = "tall_byg_embur_door";
+    public static final String NAME_BYG_ETHER = "tall_byg_ether_door";
+    public static final String NAME_BYG_FIR = "tall_byg_fir_door";
+    public static final String NAME_BYG_FLORUS = "tall_byg_florus_door";
+    public static final String NAME_BYG_HOLLY = "tall_byg_holly_door";
+    public static final String NAME_BYG_IMPARIUS = "tall_byg_imparius_door";
+    public static final String NAME_BYG_IRONWOOD = "tall_byg_ironwood_door";
+    public static final String NAME_BYG_JACARANDA = "tall_byg_jacaranda_door";
+    public static final String NAME_BYG_LAMENT = "tall_byg_lament_door";
+    public static final String NAME_BYG_MAHOGANY = "tall_byg_mahogany_door";
+    public static final String NAME_BYG_MANGROVE = "tall_byg_mangrove_door";
+    public static final String NAME_BYG_MAPLE = "tall_byg_maple_door";
+    public static final String NAME_BYG_NIGHTSHADE = "tall_byg_nightshade_door";
+    public static final String NAME_BYG_PALM = "tall_byg_palm_door";
+    public static final String NAME_BYG_PINE = "tall_byg_pine_door";
+    public static final String NAME_BYG_RAINBOW_EUCALYPTUS = "tall_byg_rainbow_eucalyptus_door";
+    public static final String NAME_BYG_REDWOOD = "tall_byg_redwood_door";
+    public static final String NAME_BYG_SKYRIS = "tall_byg_skyris_door";
+    public static final String NAME_BYG_SOUL_SHROOM = "tall_byg_soul_shroom_door";
+    public static final String NAME_BYG_SYTHIAN = "tall_byg_sythian_door";
+    public static final String NAME_BYG_WILLOW = "tall_byg_willow_door";
+    public static final String NAME_BYG_WITCH_HAZEL = "tall_byg_witch_hazel_door";
+    public static final String NAME_BYG_ZELKOVA = "tall_byg_zelkova_door";
+    public static final String NAME_BYG_BLUE_ENCHANTED = "tall_byg_blue_enchanted_door";
+    public static final String NAME_BYG_GREEN_ENCHANTED = "tall_byg_green_enchanted_door";
+    
     //Prehistoric Fauna
     public static final String NAME_ARAUCARIA = "tall_araucaria_door";
     public static final String NAME_HEIDIPHYLLUM = "tall_heidiphyllum_door";
@@ -91,7 +128,7 @@ public class TallDoorBlock extends Block {
     //Twilight Forest
     public static final String NAME_CANOPY = "tall_canopy_door";
     public static final String NAME_DARKWOOD = "tall_darkwood_door";
-    public static final String NAME_MANGROVE = "tall_mangrove_door";
+    public static final String NAME_TWILIGHT_MANGROVE = "tall_twilight_mangrove_door";
     public static final String NAME_MINEWOOD = "tall_minewood_door";
     public static final String NAME_SORTINGWOOD = "tall_sortingwood_door";
     public static final String NAME_TIMEWOOD = "tall_timewood_door";
@@ -147,9 +184,19 @@ public class TallDoorBlock extends Block {
     //Architects Palette
     public static final String NAME_TWISTED = "tall_twisted_door";
     
-    //Better Azalea
-    public static final String NAME_BA_AZALEA = "tall_ba_azalea_door";
-    public static final String NAME_BA_FLOWERING_AZALEA = "tall_ba_flowering_azalea_door";
+    //Create: Alloyed
+    public static final String NAME_STEEL = "tall_steel_door";
+    public static final String NAME_LOCKED_STEEL = "tall_locked_steel_door";
+    
+    //Create: Deco
+    public static final String NAME_ANDESITE = "tall_andesite_door";
+    public static final String NAME_BRASS = "tall_brass_door";
+    public static final String NAME_COPPER = "tall_copper_door";
+    public static final String NAME_ZINC = "tall_zinc_door";
+    public static final String NAME_LOCKED_ANDESITE = "tall_locked_andesite_door";
+    public static final String NAME_LOCKED_BRASS = "tall_locked_brass_door";
+    public static final String NAME_LOCKED_COPPER = "tall_locked_copper_door";
+    public static final String NAME_LOCKED_ZINC = "tall_locked_zinc_door";
     
     //Darker Depths
     public static final String NAME_PETRIFIED = "tall_petrified_door";
@@ -165,13 +212,39 @@ public class TallDoorBlock extends Block {
     public static final String NAME_SHEET_METAL = "tall_sheet_metal_door";
 
     //Ecologics
-    public static final String NAME_COCONUT = "tall_coconut_door";
+    public static final String NAME_ECO_AZALEA = "tall_eco_azalea_door";
+    public static final String NAME_ECO_FLOWERING_AZALEA = "tall_eco_flowering_azalea_door";
+    public static final String NAME_ECO_COCONUT = "tall_eco_coconut_door";
+    public static final String NAME_ECO_WALNUT = "tall_eco_walnut_door";
     
     //Habitat
     public static final String NAME_FAIRY_RING_MUSHROOM = "tall_fairy_ring_mushroom_door";
     
     //Outer End
     public static final String NAME_AZURE = "tall_azure_door";
+    
+    //Pokecube
+    public static final String NAME_POKECUBE_ENIGMA = "tall_pokecube_enigma_door";
+    public static final String NAME_POKECUBE_LEPPA = "tall_pokecube_leppa_door";
+    public static final String NAME_POKECUBE_NANAB = "tall_pokecube_nanab_door";
+    public static final String NAME_POKECUBE_ORAN = "tall_pokecube_oran_door";
+    public static final String NAME_POKECUBE_PECHA = "tall_pokecube_pecha_door";
+    public static final String NAME_POKECUBE_SITRUS = "tall_pokecube_sitrus_door";
+    public static final String NAME_POKECUBE_AGED = "tall_pokecube_aged_door";
+    public static final String NAME_POKECUBE_CONCRETE = "tall_pokecube_concrete_door";
+    public static final String NAME_POKECUBE_CORRUPTED = "tall_pokecube_corrupted_door";
+    public static final String NAME_POKECUBE_DISTORTIC = "tall_pokecube_distortic_door";
+    public static final String NAME_POKECUBE_INVERTED = "tall_pokecube_inverted_door";
+    public static final String NAME_POKECUBE_MIRAGE = "tall_pokecube_mirage_door";
+    public static final String NAME_POKECUBE_TEMPORAL = "tall_pokecube_temporal_door";
+    
+    //Premium Wood
+    public static final String NAME_PW_MAGIC = "tall_pw_magic_door";
+    public static final String NAME_PW_MAPLE = "tall_pw_maple_door";
+    public static final String NAME_PW_PURPLE_HEART = "tall_pw_purple_heart_door";
+    public static final String NAME_PW_SILVERBELL = "tall_pw_silverbell_door";
+    public static final String NAME_PW_TIGER = "tall_pw_tiger_door";
+    public static final String NAME_PW_WILLOW = "tall_pw_willow_door";
     
     //Quark
     public static final String NAME_QUARK_AZALEA = "tall_quark_azalea_door";
@@ -187,22 +260,26 @@ public class TallDoorBlock extends Block {
     	switch(series) {
     		case VANILLA:
     	        return new String[] {
-    	                NAME_OAK, NAME_SPRUCE, NAME_BIRCH,
-    	                NAME_JUNGLE, NAME_ACACIA, NAME_DARK_OAK,
-    	                NAME_IRON, NAME_CRIMSON, NAME_WARPED };
+    	                NAME_OAK, NAME_SPRUCE, NAME_BIRCH, NAME_JUNGLE, NAME_ACACIA, NAME_DARK_OAK,
+    	                NAME_IRON, NAME_CRIMSON, NAME_WARPED/*, NAME_MANGROVE*/ };
 		    case BOP:
 		        return new String[] {
 		                NAME_BOP_CHERRY, NAME_BOP_DEAD, NAME_BOP_FIR, NAME_BOP_HELLBARK, NAME_BOP_JACARANDA, NAME_BOP_MAGIC,
 		                NAME_BOP_MAHOGANY, NAME_BOP_PALM, NAME_BOP_REDWOOD, NAME_BOP_UMBRAN, NAME_BOP_WILLOW };
 		    case BYG:
-		    	throw new NotImplementedException("Oh the Biomes You'll Go mod is not currently implemented.");
+		        return new String[] {
+		                NAME_BYG_ASPEN, NAME_BYG_BAOBAB, NAME_BYG_BULBIS, NAME_BYG_CHERRY, NAME_BYG_CIKA, NAME_BYG_CYPRESS, NAME_BYG_EBONY, 
+		                NAME_BYG_EMBUR, NAME_BYG_ETHER,  NAME_BYG_FIR, NAME_BYG_FLORUS, NAME_BYG_HOLLY, NAME_BYG_IMPARIUS, NAME_BYG_IRONWOOD, 
+		                NAME_BYG_JACARANDA, NAME_BYG_LAMENT, NAME_BYG_MAHOGANY, NAME_BYG_MANGROVE, NAME_BYG_MAPLE, NAME_BYG_NIGHTSHADE, NAME_BYG_PALM, 
+		                NAME_BYG_PINE, NAME_BYG_RAINBOW_EUCALYPTUS, NAME_BYG_REDWOOD, NAME_BYG_SKYRIS, NAME_BYG_SOUL_SHROOM, NAME_BYG_SYTHIAN, NAME_BYG_WILLOW, 
+		                NAME_BYG_WITCH_HAZEL, NAME_BYG_ZELKOVA, NAME_BYG_BLUE_ENCHANTED, NAME_BYG_GREEN_ENCHANTED };
 			case PREHISTORIC_FAUNA:
 		        return new String[] {
 		                NAME_ARAUCARIA, NAME_HEIDIPHYLLUM, NAME_LIRIODENDRITES, NAME_METASEQUOIA,
 		                NAME_PROTOJUNIPEROXYLON, NAME_PROTOPICEOXYLON, NAME_ZAMITES };
 		    case TWILIGHT_FOREST:
 		        return new String[] {
-		                NAME_CANOPY, NAME_DARKWOOD, NAME_MANGROVE, NAME_MINEWOOD,
+		                NAME_CANOPY, NAME_DARKWOOD, NAME_TWILIGHT_MANGROVE, NAME_MINEWOOD,
 		                NAME_SORTINGWOOD, NAME_TIMEWOOD, NAME_TRANSWOOD, NAME_TWILIGHT_OAK };
     		case ATMOSPHERIC:
     	        return new String[] { NAME_ASPEN, NAME_GRIMWOOD, NAME_KOUSA, NAME_MORADO, NAME_ROSEWOOD, NAME_YUCCA };
@@ -228,8 +305,10 @@ public class TallDoorBlock extends Block {
     	        return new String[] { NAME_BROWN_MUSHROOM, NAME_RED_MUSHROOM, NAME_GLOWSHROOM };
     		case ARCHITECTS_PALETTE:
     	        return new String[] { NAME_TWISTED };
-    		case BETTER_AZALEA:
-    	        return new String[] { NAME_BA_AZALEA, NAME_BA_FLOWERING_AZALEA };
+			case CREATE_ALLOYED:
+		        return new String[] { NAME_STEEL, NAME_LOCKED_STEEL };
+			case CREATE_DECO:
+		        return new String[] { NAME_ANDESITE, NAME_BRASS, NAME_COPPER, NAME_ZINC, NAME_LOCKED_ANDESITE, NAME_LOCKED_BRASS, NAME_LOCKED_COPPER, NAME_LOCKED_ZINC };
 			case DARKER_DEPTHS:
 		        return new String[] { NAME_PETRIFIED };
 			case DUSTRIAL_DECOR:
@@ -237,11 +316,17 @@ public class TallDoorBlock extends Block {
 		        		NAME_CARDBOARD, NAME_CHAIN, NAME_INDUSTRIAL_IRON, NAME_IRON_BAR,
 		        		NAME_PADDED, NAME_RUSTY_IRON, NAME_RUSTY_SHEET_METAL, NAME_SHEET_METAL };
     		case ECOLOGICS:
-    	        return new String[] { NAME_COCONUT };
+    	        return new String[] { NAME_ECO_AZALEA, NAME_ECO_FLOWERING_AZALEA, NAME_ECO_COCONUT, NAME_ECO_WALNUT };
 			case HABITAT:
 		        return new String[] { NAME_FAIRY_RING_MUSHROOM };
 			case OUTER_END:
 		        return new String[] { NAME_AZURE };
+			case POKECUBE:
+		        return new String[] { 
+		        		NAME_POKECUBE_ENIGMA, NAME_POKECUBE_LEPPA, NAME_POKECUBE_NANAB, NAME_POKECUBE_ORAN, NAME_POKECUBE_PECHA, NAME_POKECUBE_SITRUS,
+		        		NAME_POKECUBE_AGED, NAME_POKECUBE_CONCRETE, NAME_POKECUBE_CORRUPTED, NAME_POKECUBE_DISTORTIC, NAME_POKECUBE_INVERTED, NAME_POKECUBE_MIRAGE, NAME_POKECUBE_TEMPORAL };
+			case PREMIUM_WOOD:
+		        return new String[] { NAME_PW_MAGIC, NAME_PW_MAPLE, NAME_PW_PURPLE_HEART, NAME_PW_SILVERBELL, NAME_PW_TIGER, NAME_PW_WILLOW };
 			case QUARK:
 		        return new String[] { NAME_QUARK_AZALEA, NAME_QUARK_BLOSSOM };
 			case SUPPLEMENTARIES:
@@ -268,7 +353,7 @@ public class TallDoorBlock extends Block {
     }
 
     @Override
-    public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor worldIn, BlockPos currentPos, BlockPos facingPos) {
+    public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
         TripleBlockPart tripleblockpart = stateIn.getValue(THIRD);
         if (facing.getAxis() == Direction.Axis.Y && ((tripleblockpart == TripleBlockPart.LOWER == (facing == Direction.UP)) || tripleblockpart == TripleBlockPart.MIDDLE)) {
             if (facingState.getBlock() == this && facingState.getValue(THIRD) != tripleblockpart) {
@@ -277,17 +362,17 @@ public class TallDoorBlock extends Block {
                 return Blocks.AIR.defaultBlockState();
             }
         } else {
-            if (tripleblockpart == TripleBlockPart.LOWER && facing == Direction.DOWN && !stateIn.canSurvive(worldIn, currentPos)) {
+            if (tripleblockpart == TripleBlockPart.LOWER && facing == Direction.DOWN && !stateIn.canSurvive(level, currentPos)) {
                 return Blocks.AIR.defaultBlockState();
             } else {
-                return super.updateShape(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+                return super.updateShape(stateIn, facing, facingState, level, currentPos, facingPos);
             }
         }
     }
 
     @Override
-    public void playerWillDestroy(Level worldIn, BlockPos pos, BlockState state, Player player) {
-        if (!worldIn.isClientSide && player.isCreative()) {
+    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+        if (!level.isClientSide && player.isCreative()) {
             BlockPos otherPos1 = pos;
             BlockPos otherPos2 = pos;
             TripleBlockPart tripleblockpart = state.getValue(THIRD);
@@ -305,18 +390,18 @@ public class TallDoorBlock extends Block {
                     otherPos2 = pos.below();
                     break;
             }
-            BlockState blockstate1 = worldIn.getBlockState(otherPos1);
-            BlockState blockstate2 = worldIn.getBlockState(otherPos2);
+            BlockState blockstate1 = level.getBlockState(otherPos1);
+            BlockState blockstate2 = level.getBlockState(otherPos2);
             if (blockstate1.getBlock() == state.getBlock() && blockstate1.getValue(THIRD) == TripleBlockPart.LOWER) {
-                worldIn.setBlock(otherPos1, Blocks.AIR.defaultBlockState(), 35);
-                worldIn.levelEvent(player, 2001, otherPos1, Block.getId(blockstate1));
+                level.setBlock(otherPos1, Blocks.AIR.defaultBlockState(), 35);
+                level.levelEvent(player, 2001, otherPos1, Block.getId(blockstate1));
             }
             if (blockstate2.getBlock() == state.getBlock() && blockstate2.getValue(THIRD) == TripleBlockPart.LOWER) {
-                worldIn.setBlock(otherPos2, Blocks.AIR.defaultBlockState(), 35);
-                worldIn.levelEvent(player, 2001, otherPos1, Block.getId(blockstate1));
+                level.setBlock(otherPos2, Blocks.AIR.defaultBlockState(), 35);
+                level.levelEvent(player, 2001, otherPos1, Block.getId(blockstate1));
             }
         }
-        super.playerWillDestroy(worldIn, pos, state, player);
+        super.playerWillDestroy(level, pos, state, player);
     }
 
     private int getCloseSound() {
@@ -341,9 +426,9 @@ public class TallDoorBlock extends Block {
     }
 
     @Override
-    public void setPlacedBy(Level worldIn, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
-        worldIn.setBlock(pos.above(), state.setValue(THIRD, TripleBlockPart.MIDDLE), 3);
-        worldIn.setBlock(pos.above().above(), state.setValue(THIRD, TripleBlockPart.UPPER), 3);
+    public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+        level.setBlock(pos.above(), state.setValue(THIRD, TripleBlockPart.MIDDLE), 3);
+        level.setBlock(pos.above().above(), state.setValue(THIRD, TripleBlockPart.UPPER), 3);
     }
 
     private DoorHingeSide getHinge(BlockPlaceContext context) {
@@ -381,8 +466,8 @@ public class TallDoorBlock extends Block {
     }
 
     @Override
-    public InteractionResult use(BlockState state, Level worldIn, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
-    	if (this.material == Material.METAL && this != DramaticDoorsBlocks.TALL_SILVER_DOOR && this != DramaticDoorsBlocks.TALL_GOLD_DOOR && this != DramaticDoorsBlocks.TALL_NETHERITE_DOOR) {
+    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
+    	if (this.material == Material.METAL && !state.is(DramaticDoorsTags.HAND_OPENABLE_TALL_METAL_DOORS)) {
             return InteractionResult.PASS;
         } 
     	else {
@@ -392,87 +477,96 @@ public class TallDoorBlock extends Block {
         	if (this == DramaticDoorsBlocks.TALL_SILVER_DOOR && !state.getValue(POWERED)) {
         		return InteractionResult.PASS;
         	}
-        	/*if (this == DramaticDoorsBlocks.TALL_NETHERITE_DOOR) { 
-        		// Not yet implemented.
-        	}*/
-        	tryOpenDoubleDoor(worldIn, state, pos);
+        	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
-            worldIn.setBlock(pos, state, 10);
-            worldIn.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
-            worldIn.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+            level.setBlock(pos, state, 10);
+            level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+            level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
             if (DramaticDoorsBlocks.TALL_TOOTH_DOOR != null && this == DramaticDoorsBlocks.TALL_TOOTH_DOOR) {
-            	worldIn.scheduleTick(pos, this, 20);
+            	level.scheduleTick(pos, this, 20);
             }
-            return InteractionResult.sidedSuccess(worldIn.isClientSide);
+            return InteractionResult.sidedSuccess(level.isClientSide);
         }
     }
     
 	@Override
-	public void tick(BlockState state, ServerLevel worldIn, BlockPos pos, Random random) {
-		if (!worldIn.isClientSide) {
+	public void tick(BlockState state, ServerLevel level, BlockPos pos, Random random) {
+		if (!level.isClientSide) {
 			state = state.cycle(OPEN);
-			worldIn.setBlock(pos, state, 10);
-			worldIn.levelEvent(null, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+			level.setBlock(pos, state, 10);
+			level.levelEvent(null, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
 		}
 	}
 
-    public void toggleDoor(Level worldIn, BlockPos pos, boolean open) {
-        BlockState blockstate = worldIn.getBlockState(pos);
+    public void toggleDoor(Level level, BlockPos pos, boolean open) {
+        BlockState blockstate = level.getBlockState(pos);
         if (blockstate.getBlock() == this && blockstate.getValue(OPEN) != open) {
-            worldIn.setBlock(pos, blockstate.setValue(OPEN, open), 10);
+            level.setBlock(pos, blockstate.setValue(OPEN, open), 10);
             if (blockstate.getValue(THIRD) == TripleBlockPart.UPPER) {
-                BlockState middle = worldIn.getBlockState(pos.below());
-                BlockState bottom = worldIn.getBlockState(pos.below(2));
+                BlockState middle = level.getBlockState(pos.below());
+                BlockState bottom = level.getBlockState(pos.below(2));
                 if (middle.getBlock() == this) {
-                    worldIn.setBlock(pos.below(), middle.setValue(OPEN, open), 10);
+                    level.setBlock(pos.below(), middle.setValue(OPEN, open), 10);
                 }
                 if (bottom.getBlock() == this) {
-                    worldIn.setBlock(pos.below(2), middle.setValue(OPEN, open), 10);
+                    level.setBlock(pos.below(2), middle.setValue(OPEN, open), 10);
                 }
             }
-            this.playSound(worldIn, pos, open);
+            this.playSound(level, pos, open);
         }
     }
 
+	public boolean isOpen(BlockState state) {
+		return state.getValue(OPEN);
+	}
+
+	public void setOpen(@Nullable Entity entity, Level level, BlockState state, BlockPos pos, boolean open) {
+		if (state.is(this) && state.getValue(OPEN) != open) {
+			level.setBlock(pos, state.setValue(OPEN, Boolean.valueOf(open)), 10);
+			this.playSound(level, pos, open);
+			level.gameEvent(entity, open ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+		}
+ 	}
+    
     @Override
-    public void neighborChanged(BlockState state, Level worldIn, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
-        boolean flag = worldIn.hasNeighborSignal(pos);
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
+        boolean flag = level.hasNeighborSignal(pos);
         if (!flag) {
             switch(state.getValue(THIRD)) {
                 case LOWER:
-                    flag = worldIn.hasNeighborSignal(pos.relative(Direction.UP)) || worldIn.hasNeighborSignal(pos.relative(Direction.UP, 2));
+                    flag = level.hasNeighborSignal(pos.relative(Direction.UP)) || level.hasNeighborSignal(pos.relative(Direction.UP, 2));
                     break;
                 case MIDDLE:
-                    flag = worldIn.hasNeighborSignal(pos.relative(Direction.DOWN)) || worldIn.hasNeighborSignal(pos.relative(Direction.UP));
+                    flag = level.hasNeighborSignal(pos.relative(Direction.DOWN)) || level.hasNeighborSignal(pos.relative(Direction.UP));
                     break;
                 case UPPER:
-                    flag = worldIn.hasNeighborSignal(pos.relative(Direction.DOWN)) || worldIn.hasNeighborSignal(pos.relative(Direction.DOWN, 2));
+                    flag = level.hasNeighborSignal(pos.relative(Direction.DOWN)) || level.hasNeighborSignal(pos.relative(Direction.DOWN, 2));
                     break;
             }
         }
         if (blockIn != this && flag != state.getValue(POWERED)) {
         	if (this == DramaticDoorsBlocks.TALL_GOLD_DOOR || this == DramaticDoorsBlocks.TALL_SILVER_DOOR || this == DramaticDoorsBlocks.TALL_LEAD_DOOR) {
-        		worldIn.setBlock(pos, state.setValue(POWERED, flag), 2);
+        		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {
 	            if (flag != state.getValue(OPEN)) {
-	                this.playSound(worldIn, pos, flag);
+	                this.playSound(level, pos, flag);
 	            }
-	            tryOpenDoubleDoor(worldIn, state, pos);
-	            worldIn.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), 2);
+	            tryOpenDoubleDoor(level, state, pos);
+	            level.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), 2);
         	}
         }
     }
 
     @Override
-    public boolean canSurvive(BlockState state, LevelReader worldIn, BlockPos pos) {
+    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
         boolean result;
         BlockPos below = pos.below();
         BlockPos below2 = below.below();
-        BlockState belowState = worldIn.getBlockState(below);
-        BlockState below2State = worldIn.getBlockState(below2);
+        BlockState belowState = level.getBlockState(below);
+        BlockState below2State = level.getBlockState(below2);
         if (state.getValue(THIRD) == TripleBlockPart.LOWER) {
-            result = belowState.isFaceSturdy(worldIn, below, Direction.UP);
+            result = belowState.isFaceSturdy(level, below, Direction.UP);
             return result;
         } else if (state.getValue(THIRD) == TripleBlockPart.MIDDLE) {
             result = belowState.getBlock() == this;
@@ -498,7 +592,7 @@ public class TallDoorBlock extends Block {
         builder.add(THIRD, FACING, OPEN, HINGE, POWERED);
     }
 
-    public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         Direction direction = state.getValue(FACING);
         boolean flag = !state.getValue(OPEN);
         boolean flag1 = state.getValue(HINGE) == DoorHingeSide.RIGHT;
@@ -515,7 +609,7 @@ public class TallDoorBlock extends Block {
         }
     }
 
-    public boolean allowsMovement(BlockState state, BlockGetter worldIn, BlockPos pos, BlockPathTypes type) {
+    public boolean allowsMovement(BlockState state, BlockGetter level, BlockPos pos, BlockPathTypes type) {
         switch(type) {
             case WALKABLE:
                 return state.getValue(OPEN);
@@ -546,12 +640,12 @@ public class TallDoorBlock extends Block {
     }
 
 	public static boolean isWoodenDoor(BlockState state) {
-		return state.getBlock() instanceof TallDoorBlock && (state.getMaterial() == Material.WOOD || state.getMaterial() == Material.NETHER_WOOD);
+		return state.getBlock() instanceof TallDoorBlock && (state.is(DramaticDoorsTags.TALL_WOODEN_DOORS));
 	}
     
     //Double Doors Compatibility
 	public static void tryOpenDoubleDoor(Level world, BlockState state, BlockPos pos) {
-        if (Compats.DOUBLE_DOORS_INSTALLED) {
+        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.hasQuarkDoubleDoorsModule()) {
             Direction direction = state.getValue(TallDoorBlock.FACING);
             boolean isOpen = state.getValue(TallDoorBlock.OPEN);
             DoorHingeSide isMirrored = state.getValue(TallDoorBlock.HINGE);

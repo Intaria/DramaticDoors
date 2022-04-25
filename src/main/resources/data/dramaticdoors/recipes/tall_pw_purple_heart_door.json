@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_pw_wooden_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "premium_wood:purple_heart_door"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_pw_purple_heart_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "premium_wood"
+    }
+  ]
+}

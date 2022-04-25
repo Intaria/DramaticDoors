@@ -1,8 +1,7 @@
 package com.fizzware.dramaticdoors.client;
 
 import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks;
-import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
-
+import com.fizzware.dramaticdoors.blocks.DramaticDoorsBlocks.DoorSeries;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -14,80 +13,43 @@ public class ClientRenderer
 {
 	public static void setRenderers() {
         // Setup Render Types (mainly for transparent doors like Acacia and Jungle)
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.VANILLA_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.VANILLA_TALL);
         //Conditionally add rendering on where mods are loaded.
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.BOP_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.PREHISTORIC_FAUNA_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.TWILIGHT_FOREST_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ATMOSPHERIC_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.AUTUMNITY_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.BAMBOO_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.BUZZIER_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ENDERGETIC_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ENVIRONMENTAL_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.UPGRADE_AQUATIC_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ABUNDANCE_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.BAYOU_BLUES_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ENH_MUSHROOMS_TALL)) {
-        	if (doorBlock.getRegistryName().getPath().equalsIgnoreCase(TallDoorBlock.NAME_GLOWSHROOM)) {
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BOP_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BYG_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.POKECUBE_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.PREHISTORIC_FAUNA_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.TWILIGHT_FOREST_TALL);
+
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ATMOSPHERIC_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.AUTUMNITY_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BAMBOO_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BUZZIER_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ENDERGETIC_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ENVIRONMENTAL_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.UPGRADE_AQUATIC_TALL);
+
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ABUNDANCE_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.BAYOU_BLUES_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ENH_MUSHROOMS_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ARCHITECTS_PALETTE_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.CREATE_ALLOYED_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.CREATE_DECO_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.DARKER_DEPTHS_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.DUSTRIAL_DECOR_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.ECOLOGICS_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.HABITAT_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.OUTER_END_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.PREMIUM_WOOD_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.QUARK_TALL);
+        setRenderersForDoorSeries(DramaticDoorsBlocks.DoorSeries.SUPPLEMENTARIES_TALL);
+	}
+	
+	private static void setRenderersForDoorSeries(DoorSeries series) {
+        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(series)) {
+        	if (doorBlock != null) {
         		ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.translucent());
         	}
-        	else {
-        		ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        	}
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ARCHITECTS_PALETTE_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.BETTER_AZALEA_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.DARKER_DEPTHS_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.DUSTRIAL_DECOR_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.ECOLOGICS_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.HABITAT_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.OUTER_END_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.QUARK_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
-        }
-        for (Block doorBlock : DramaticDoorsBlocks.getBlockList(DramaticDoorsBlocks.DoorSeries.SUPPLEMENTARIES_TALL)) {
-            ItemBlockRenderTypes.setRenderLayer(doorBlock, RenderType.cutout());
         }
 	}
 
