@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "byg:willow_door"
+      "item": "byg:palm_door"
     }
   },
   "result": {
-    "item": "dramaticdoors:tall_byg_willow_door",
+    "item": "dramaticdoors:tall_byg_palm_door",
     "count": 2
   },
   "conditions": [

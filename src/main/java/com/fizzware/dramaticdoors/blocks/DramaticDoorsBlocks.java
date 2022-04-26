@@ -342,12 +342,12 @@ public class DramaticDoorsBlocks {
             			Registry.BLOCK.get(new ResourceLocation("byg", "soul_shroom_door")),
             			Registry.BLOCK.get(new ResourceLocation("byg", "sythian_door")),
             			Registry.BLOCK.get(new ResourceLocation("byg", "willow_door")),
-            			Registry.BLOCK.get(new ResourceLocation("byg", "witch_hazel")),
-            			Registry.BLOCK.get(new ResourceLocation("byg", "zelkova")) };
+            			Registry.BLOCK.get(new ResourceLocation("byg", "witch_hazel_door")),
+            			Registry.BLOCK.get(new ResourceLocation("byg", "zelkova_door")) };
             case BYG_TALL:
             	return new Block[] { 
 		                TALL_BYG_ASPEN_DOOR, TALL_BYG_BAOBAB_DOOR, TALL_BYG_BLUE_ENCHANTED_DOOR, TALL_BYG_BULBIS_DOOR, TALL_BYG_CHERRY_DOOR, TALL_BYG_CIKA_DOOR, TALL_BYG_CYPRESS_DOOR, TALL_BYG_EBONY_DOOR, 
-		                TALL_BYG_EMBUR_DOOR, TALL_BYG_ETHER_DOOR,  TALL_BYG_FIR_DOOR, TALL_BYG_FLORUS_DOOR, TALL_BYG_GREEN_ENCHANTED_DOOR, TALL_BYG_HOLLY_DOOR, TALL_BYG_IMPARIUS_DOOR, TALL_BYG_IRONWOOD_DOOR, 
+		                TALL_BYG_EMBUR_DOOR, TALL_BYG_ETHER_DOOR, TALL_BYG_FIR_DOOR, TALL_BYG_FLORUS_DOOR, TALL_BYG_GREEN_ENCHANTED_DOOR, TALL_BYG_HOLLY_DOOR, TALL_BYG_IMPARIUS_DOOR, TALL_BYG_IRONWOOD_DOOR, 
 		                TALL_BYG_JACARANDA_DOOR, TALL_BYG_LAMENT_DOOR, TALL_BYG_MAHOGANY_DOOR, TALL_BYG_MANGROVE_DOOR, TALL_BYG_MAPLE_DOOR, TALL_BYG_NIGHTSHADE_DOOR, TALL_BYG_PALM_DOOR, 
 		                TALL_BYG_PINE_DOOR, TALL_BYG_RAINBOW_EUCALYPTUS_DOOR, TALL_BYG_REDWOOD_DOOR, TALL_BYG_SKYRIS_DOOR, TALL_BYG_SOUL_SHROOM_DOOR, TALL_BYG_SYTHIAN_DOOR, TALL_BYG_WILLOW_DOOR, 
 		                TALL_BYG_WITCH_HAZEL_DOOR, TALL_BYG_ZELKOVA_DOOR };

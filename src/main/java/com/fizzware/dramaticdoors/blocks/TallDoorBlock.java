@@ -85,6 +85,7 @@ public class TallDoorBlock extends Block {
     //Oh the Biomes You'll Go (Also given name prefix to avoid conflicts too)
     public static final String NAME_BYG_ASPEN = "tall_byg_aspen_door";
     public static final String NAME_BYG_BAOBAB = "tall_byg_baobab_door";
+    public static final String NAME_BYG_BLUE_ENCHANTED = "tall_byg_blue_enchanted_door";
     public static final String NAME_BYG_BULBIS = "tall_byg_bulbis_door";
     public static final String NAME_BYG_CHERRY = "tall_byg_cherry_door";
     public static final String NAME_BYG_CIKA = "tall_byg_cika_door";
@@ -94,6 +95,7 @@ public class TallDoorBlock extends Block {
     public static final String NAME_BYG_ETHER = "tall_byg_ether_door";
     public static final String NAME_BYG_FIR = "tall_byg_fir_door";
     public static final String NAME_BYG_FLORUS = "tall_byg_florus_door";
+    public static final String NAME_BYG_GREEN_ENCHANTED = "tall_byg_green_enchanted_door";
     public static final String NAME_BYG_HOLLY = "tall_byg_holly_door";
     public static final String NAME_BYG_IMPARIUS = "tall_byg_imparius_door";
     public static final String NAME_BYG_IRONWOOD = "tall_byg_ironwood_door";
@@ -113,8 +115,6 @@ public class TallDoorBlock extends Block {
     public static final String NAME_BYG_WILLOW = "tall_byg_willow_door";
     public static final String NAME_BYG_WITCH_HAZEL = "tall_byg_witch_hazel_door";
     public static final String NAME_BYG_ZELKOVA = "tall_byg_zelkova_door";
-    public static final String NAME_BYG_BLUE_ENCHANTED = "tall_byg_blue_enchanted_door";
-    public static final String NAME_BYG_GREEN_ENCHANTED = "tall_byg_green_enchanted_door";
     
     //Prehistoric Fauna
     public static final String NAME_ARAUCARIA = "tall_araucaria_door";
@@ -268,11 +268,11 @@ public class TallDoorBlock extends Block {
 		                NAME_BOP_MAHOGANY, NAME_BOP_PALM, NAME_BOP_REDWOOD, NAME_BOP_UMBRAN, NAME_BOP_WILLOW };
 		    case BYG:
 		        return new String[] {
-		                NAME_BYG_ASPEN, NAME_BYG_BAOBAB, NAME_BYG_BULBIS, NAME_BYG_CHERRY, NAME_BYG_CIKA, NAME_BYG_CYPRESS, NAME_BYG_EBONY, 
-		                NAME_BYG_EMBUR, NAME_BYG_ETHER,  NAME_BYG_FIR, NAME_BYG_FLORUS, NAME_BYG_HOLLY, NAME_BYG_IMPARIUS, NAME_BYG_IRONWOOD, 
+		                NAME_BYG_ASPEN, NAME_BYG_BAOBAB, NAME_BYG_BLUE_ENCHANTED, NAME_BYG_BULBIS, NAME_BYG_CHERRY, NAME_BYG_CIKA, NAME_BYG_CYPRESS, NAME_BYG_EBONY, 
+		                NAME_BYG_EMBUR, NAME_BYG_ETHER, NAME_BYG_FIR, NAME_BYG_FLORUS, NAME_BYG_GREEN_ENCHANTED, NAME_BYG_HOLLY, NAME_BYG_IMPARIUS, NAME_BYG_IRONWOOD, 
 		                NAME_BYG_JACARANDA, NAME_BYG_LAMENT, NAME_BYG_MAHOGANY, NAME_BYG_MANGROVE, NAME_BYG_MAPLE, NAME_BYG_NIGHTSHADE, NAME_BYG_PALM, 
 		                NAME_BYG_PINE, NAME_BYG_RAINBOW_EUCALYPTUS, NAME_BYG_REDWOOD, NAME_BYG_SKYRIS, NAME_BYG_SOUL_SHROOM, NAME_BYG_SYTHIAN, NAME_BYG_WILLOW, 
-		                NAME_BYG_WITCH_HAZEL, NAME_BYG_ZELKOVA, NAME_BYG_BLUE_ENCHANTED, NAME_BYG_GREEN_ENCHANTED };
+		                NAME_BYG_WITCH_HAZEL, NAME_BYG_ZELKOVA };
 			case PREHISTORIC_FAUNA:
 		        return new String[] {
 		                NAME_ARAUCARIA, NAME_HEIDIPHYLLUM, NAME_LIRIODENDRITES, NAME_METASEQUOIA,

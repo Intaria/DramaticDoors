@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.18.2-1.6.0'
+version = '1.18.2-1.6.1'
 group = 'com.fizzware.dramaticdoors' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'DramaticDoors'
 
@@ -169,7 +169,7 @@ jar {
         attributes([
                 "Specification-Title"     : "dramaticdoors",
                 "Specification-Vendor"    : "fizzware",
-                "Specification-Version"   : "1.6.0", // We are not version 1 of ourselves
+                "Specification-Version"   : "1.6.1", // We are not version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "fizzware",
