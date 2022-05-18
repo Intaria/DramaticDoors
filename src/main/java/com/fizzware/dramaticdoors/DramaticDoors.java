@@ -35,6 +35,7 @@ public class DramaticDoors
     }
 
     private void setupCommon(final FMLCommonSetupEvent event) {
+        MinecraftForge.EVENT_BUS.register(new DramaticDoorsUpdateHandler());
         MinecraftForge.EVENT_BUS.register(new DramaticDoorsEvents());
     }
     
