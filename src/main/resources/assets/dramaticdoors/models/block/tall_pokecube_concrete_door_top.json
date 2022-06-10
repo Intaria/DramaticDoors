@@ -1,8 +1,0 @@
-{
-    "parent": "block/door_top",
-    "textures": {
-        "bottom": "dramaticdoors:blocks/tall_pokecube_legends_concrete_door_bottom",
-        "middle": "dramaticdoors:blocks/tall_pokecube_legends_concrete_door_middle",
-        "top": "dramaticdoors:blocks/tall_pokecube_legends_concrete_door_top"
-    }
-}

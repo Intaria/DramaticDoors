@@ -27,6 +27,11 @@
     "dramaticdoors:tall_padded_door",
     "dramaticdoors:tall_rusty_iron_door",
     "dramaticdoors:tall_rusty_sheet_metal_door",
-    "dramaticdoors:tall_sheet_metal_door"
+    "dramaticdoors:tall_sheet_metal_door",
+    "dramaticdoors:tall_bp_copper_door",
+    "dramaticdoors:tall_bp_golden_door",
+    "dramaticdoors:tall_bp_emerald_door",
+    "dramaticdoors:tall_bp_diamond_door",
+    "dramaticdoors:tall_bp_netherite_door"
   ]
 }

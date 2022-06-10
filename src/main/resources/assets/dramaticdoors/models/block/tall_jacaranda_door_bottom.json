@@ -1,8 +1,0 @@
-{
-    "parent": "block/door_bottom",
-    "textures": {
-        "bottom": "dramaticdoors:blocks/tall_jacaranda_door_bottom",
-        "middle": "dramaticdoors:blocks/tall_jacaranda_door_middle",
-        "top": "dramaticdoors:blocks/tall_jacaranda_door_top"
-    }
-}

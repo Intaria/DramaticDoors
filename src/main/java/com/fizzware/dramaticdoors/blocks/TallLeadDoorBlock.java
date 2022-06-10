@@ -1,8 +1,6 @@
 package com.fizzware.dramaticdoors.blocks;
 
-import java.util.Random;
-
-import com.fizzware.dramaticdoors.state.properties.DoorBlockStateProperties;
+import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 
 import net.minecraft.core.BlockPos;
@@ -10,6 +8,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -23,7 +22,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class TallLeadDoorBlock extends TallDoorBlock
 {
-	public static final IntegerProperty OPENING_PROGRESS = DoorBlockStateProperties.OPENING_PROGRESS;
+	public static final IntegerProperty OPENING_PROGRESS = DDBlockStateProperties.OPENING_PROGRESS;
 	
 	public TallLeadDoorBlock(Block from) {
 		super(from);
@@ -69,7 +68,7 @@ public class TallLeadDoorBlock extends TallDoorBlock
     }
     
     @Override
-    public void tick(BlockState state, ServerLevel level, BlockPos pos, Random pRandom) {
+    public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource pRandom) {
         level.setBlock(pos, state.setValue(OPENING_PROGRESS, 0), Block.UPDATE_KNOWN_SHAPE | Block.UPDATE_CLIENTS);
         if (state.getValue(THIRD) == TripleBlockPart.UPPER) {
             level.setBlock(pos.below(1), level.getBlockState(pos.below(1)).setValue(OPENING_PROGRESS, 0), Block.UPDATE_KNOWN_SHAPE | Block.UPDATE_CLIENTS);

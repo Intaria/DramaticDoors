@@ -1,8 +1,0 @@
-{
-    "parent": "dramaticdoors:block/door_middle_rh",
-    "textures": {
-        "bottom": "dramaticdoors:blocks/tall_acacia_door_middle",
-        "middle": "dramaticdoors:blocks/tall_acacia_door_middle",
-        "top": "dramaticdoors:blocks/tall_acacia_door_middle"
-    }
-}

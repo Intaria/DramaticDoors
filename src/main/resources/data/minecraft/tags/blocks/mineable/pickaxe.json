@@ -25,6 +25,11 @@
     "dramaticdoors:tall_locked_brass_door",
     "dramaticdoors:tall_locked_copper_door",
     "dramaticdoors:tall_locked_zinc_door",
-    "dramaticdoors:tall_locked_steel_door"
+    "dramaticdoors:tall_locked_steel_door",
+    "dramaticdoors:tall_bp_copper_door",
+    "dramaticdoors:tall_bp_golden_door",
+    "dramaticdoors:tall_bp_emerald_door",
+    "dramaticdoors:tall_bp_diamond_door",
+    "dramaticdoors:tall_bp_netherite_door"
   ]
 }

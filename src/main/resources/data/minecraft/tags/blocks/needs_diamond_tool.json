@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_netherite_door"
+    "dramaticdoors:tall_netherite_door",
+    "dramaticdoors:tall_bp_netherite_door"
   ]
 }
