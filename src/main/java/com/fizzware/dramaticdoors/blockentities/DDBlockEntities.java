@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class DDBlockEntities
 {
-	public static DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, DramaticDoors.MOD_ID);
+	public static DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, DramaticDoors.MOD_ID);
 	
 	public static final RegistryObject<BlockEntityType<TallNetheriteDoorBlockEntity>> TALL_NETHERITE_DOOR = BLOCK_ENTITIES.register("tall_netherite_door", () -> BlockEntityType.Builder.of(TallNetheriteDoorBlockEntity::new, DDBlocks.TALL_NETHERITE_DOOR.get()).build(null));
 }

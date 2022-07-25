@@ -32,6 +32,12 @@
     "dramaticdoors:tall_bp_golden_door",
     "dramaticdoors:tall_bp_emerald_door",
     "dramaticdoors:tall_bp_diamond_door",
-    "dramaticdoors:tall_bp_netherite_door"
+    "dramaticdoors:tall_bp_netherite_door",
+    "dramaticdoors:tall_macaw_jail_door",
+    "dramaticdoors:tall_macaw_metal_door",
+    "dramaticdoors:tall_macaw_metal_hospital_door",
+    "dramaticdoors:tall_macaw_metal_reinforced_door",
+    "dramaticdoors:tall_macaw_metal_warning_door",
+    "dramaticdoors:tall_macaw_metal_windowed_door"
   ]
 }

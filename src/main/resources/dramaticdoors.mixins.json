@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.fizzware.dramaticdoors.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"refmap": "mixins.dramaticdoors.refmap.json",
+	"plugin": "com.fizzware.dramaticdoors.mixin.DDMixinConfig",
+	"mixins": [
+        "DoorBlockMixin",
+        "FenceGateBlockMixin"
+	],
+	"minVersion": "0.8"
+}

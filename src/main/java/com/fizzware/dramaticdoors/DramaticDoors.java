@@ -3,6 +3,8 @@ package com.fizzware.dramaticdoors;
 import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.client.ClientRenderer;
+import com.fizzware.dramaticdoors.compat.AutomaticDoorCompat;
+import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.items.DDItems;
 
 import net.minecraft.world.item.CreativeModeTab;
@@ -11,7 +13,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -26,7 +30,7 @@ public class DramaticDoors
     	DDBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     	DDItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     	DDBlockEntities.BLOCK_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
-    	
+    	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DDConfig.CONFIG);
     	
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupCommon);
         if (FMLEnvironment.dist == Dist.CLIENT) {
@@ -37,6 +41,9 @@ public class DramaticDoors
     }
 
     private void setupCommon(final FMLCommonSetupEvent event) {
+    	if (Compats.AUTOMATIC_DOORS_INSTALLED) {
+    		MinecraftForge.EVENT_BUS.register(new AutomaticDoorCompat());
+    	}
         MinecraftForge.EVENT_BUS.register(new DDEvents());
     }
     
@@ -44,12 +51,19 @@ public class DramaticDoors
     	ClientRenderer.setRenderers();
     }
 
-    public static final CreativeModeTab TAB = new CreativeModeTab("dramaticdoors") {
+    public static final CreativeModeTab MAIN_TAB = new CreativeModeTab("dramaticdoors") {
 		@Override
 		public ItemStack makeIcon() {
 			return new ItemStack(DDItems.TALL_OAK_DOOR.get());
 		}
     };
+    
+    public static final CreativeModeTab MACAW_TAB = Compats.MACAWS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_macaw") {
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR.get());
+		}
+    } : null;
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {}

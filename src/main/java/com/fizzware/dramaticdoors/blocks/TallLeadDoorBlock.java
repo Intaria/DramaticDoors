@@ -26,7 +26,7 @@ public class TallLeadDoorBlock extends TallDoorBlock
 	
 	public TallLeadDoorBlock(Block from) {
 		super(from);
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER).setValue(OPENING_PROGRESS, 0));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER).setValue(WATERLOGGED, false).setValue(OPENING_PROGRESS, 0));
 	}
 
     public boolean canBeOpened(BlockState state) {
@@ -35,7 +35,7 @@ public class TallLeadDoorBlock extends TallDoorBlock
 	
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(THIRD, FACING, OPEN, HINGE, POWERED, OPENING_PROGRESS);
+        builder.add(THIRD, FACING, OPEN, HINGE, POWERED, WATERLOGGED, OPENING_PROGRESS);
     }
     
     @Override

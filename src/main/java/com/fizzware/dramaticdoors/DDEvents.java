@@ -8,14 +8,14 @@ import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
 import net.minecraft.world.entity.monster.Witch;
 import net.minecraft.world.entity.monster.piglin.AbstractPiglin;
 import net.minecraft.world.entity.npc.AbstractVillager;
-import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class DDEvents
 {
 
 	@SubscribeEvent
-	public void entityAdded(EntityJoinWorldEvent event) {
+	public void entityAdded(EntityJoinLevelEvent event) {
 		if (event.getEntity() instanceof AbstractVillager || event.getEntity() instanceof AbstractPiglin || event.getEntity() instanceof Witch) {
 			Mob mob = (Mob) event.getEntity();
 			if (mob.getNavigation() instanceof GroundPathNavigation) {

@@ -27,6 +27,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -35,6 +36,8 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
@@ -50,13 +53,14 @@ import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
 @SuppressWarnings("deprecation")
-public class TallDoorBlock extends Block {
+public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 
     public static final EnumProperty<TripleBlockPart> THIRD = DDBlockStateProperties.TRIPLE_BLOCK_THIRD;
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
     public static final EnumProperty<DoorHingeSide> HINGE = BlockStateProperties.DOOR_HINGE;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
+    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     protected static final VoxelShape SOUTH_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D);
     protected static final VoxelShape NORTH_AABB = Block.box(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
     protected static final VoxelShape WEST_AABB = Block.box(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
@@ -65,7 +69,7 @@ public class TallDoorBlock extends Block {
 
     public TallDoorBlock(Block from) {
         super(Properties.copy(from));
-        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(WATERLOGGED, Boolean.FALSE).setValue(THIRD, TripleBlockPart.LOWER));
     }
 
     @Override
@@ -75,11 +79,11 @@ public class TallDoorBlock extends Block {
             if (facingState.getBlock() == this && facingState.getValue(THIRD) != tripleblockpart) {
                 return stateIn.setValue(FACING, facingState.getValue(FACING)).setValue(OPEN, facingState.getValue(OPEN)).setValue(HINGE, facingState.getValue(HINGE)).setValue(POWERED, facingState.getValue(POWERED));
             } else {
-                return Blocks.AIR.defaultBlockState();
+                return level.getFluidState(currentPos).getType() == Fluids.WATER ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState();
             }
         } else {
             if (tripleblockpart == TripleBlockPart.LOWER && facing == Direction.DOWN && !stateIn.canSurvive(level, currentPos)) {
-                return Blocks.AIR.defaultBlockState();
+                return level.getFluidState(currentPos).getType() == Fluids.WATER ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState();
             } else {
                 return super.updateShape(stateIn, facing, facingState, level, currentPos, facingPos);
             }
@@ -109,11 +113,11 @@ public class TallDoorBlock extends Block {
             BlockState blockstate1 = level.getBlockState(otherPos1);
             BlockState blockstate2 = level.getBlockState(otherPos2);
             if (blockstate1.getBlock() == state.getBlock() && blockstate1.getValue(THIRD) == TripleBlockPart.LOWER) {
-                level.setBlock(otherPos1, Blocks.AIR.defaultBlockState(), 35);
+                level.setBlock(otherPos1, blockstate1.getValue(WATERLOGGED) ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState(), 35);
                 level.levelEvent(player, 2001, otherPos1, Block.getId(blockstate1));
             }
             if (blockstate2.getBlock() == state.getBlock() && blockstate2.getValue(THIRD) == TripleBlockPart.LOWER) {
-                level.setBlock(otherPos2, Blocks.AIR.defaultBlockState(), 35);
+                level.setBlock(otherPos2, blockstate2.getValue(WATERLOGGED) ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState(), 35);
                 level.levelEvent(player, 2001, otherPos1, Block.getId(blockstate1));
             }
         }
@@ -135,7 +139,8 @@ public class TallDoorBlock extends Block {
         if (blockpos.getY() < context.getLevel().getMaxBuildHeight() - 2 && context.getLevel().getBlockState(blockpos.above()).canBeReplaced(context) && context.getLevel().getBlockState(blockpos.above(2)).canBeReplaced(context)) {
             Level level = context.getLevel();
             boolean flag = level.hasNeighborSignal(blockpos) || level.hasNeighborSignal(blockpos.above());
-            return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(HINGE, this.getHinge(context)).setValue(POWERED, flag).setValue(OPEN, flag).setValue(THIRD, TripleBlockPart.LOWER);
+            boolean waterfilled = level.getFluidState(blockpos).getType() == Fluids.WATER; 
+            return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(HINGE, this.getHinge(context)).setValue(POWERED, flag).setValue(OPEN, flag).setValue(THIRD, TripleBlockPart.LOWER).setValue(WATERLOGGED, waterfilled);
         } else {
             return null;
         }
@@ -143,8 +148,10 @@ public class TallDoorBlock extends Block {
 
     @Override
     public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
-        level.setBlock(pos.above(), state.setValue(THIRD, TripleBlockPart.MIDDLE), 3);
-        level.setBlock(pos.above().above(), state.setValue(THIRD, TripleBlockPart.UPPER), 3);
+    	boolean waterfilled = level.getFluidState(pos.above(1)).getType() == Fluids.WATER; 
+    	boolean waterfilled2 = level.getFluidState(pos.above(2)).getType() == Fluids.WATER; 
+        level.setBlock(pos.above(), state.setValue(THIRD, TripleBlockPart.MIDDLE).setValue(WATERLOGGED, waterfilled), 3);
+        level.setBlock(pos.above().above(), state.setValue(THIRD, TripleBlockPart.UPPER).setValue(WATERLOGGED, waterfilled2), 3);
     }
 
     private DoorHingeSide getHinge(BlockPlaceContext context) {
@@ -198,7 +205,7 @@ public class TallDoorBlock extends Block {
             level.setBlock(pos, state, 10);
             level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
             level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
-            if (DDBlocks.TALL_TOOTH_DOOR.get() != null && this == DDBlocks.TALL_TOOTH_DOOR.get()) {
+            if (DDBlocks.TALL_TOOTH_DOOR != null && this == DDBlocks.TALL_TOOTH_DOOR.get()) {
             	level.scheduleTick(pos, this, 20);
             }
             return InteractionResult.sidedSuccess(level.isClientSide);
@@ -305,9 +312,14 @@ public class TallDoorBlock extends Block {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(THIRD, FACING, OPEN, HINGE, POWERED);
+        builder.add(THIRD, FACING, OPEN, HINGE, POWERED, WATERLOGGED);
     }
 
+    @Override
+	public FluidState getFluidState(BlockState state) {
+		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
+	}
+    
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         Direction direction = state.getValue(FACING);
         boolean flag = !state.getValue(OPEN);
