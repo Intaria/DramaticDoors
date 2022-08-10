@@ -120,8 +120,11 @@
 
   "block.dramaticdoors.tall_ceiltrunk_door": "Tall Ceiltrunk Door",
   "block.dramaticdoors.tall_luzawood_door": "Tall Luzawood Door",
-
-  "block.dramaticdoors.tall_petrified_door": "Tall Petrified Door",
+  
+  "block.dramaticdoors.tall_co_copper_door": "Tall Copper Door",
+  "block.dramaticdoors.tall_co_exposed_copper_door": "Tall Exposed Copper Door",
+  "block.dramaticdoors.tall_co_weathered_copper_door": "Tall Weathered Copper Door",
+  "block.dramaticdoors.tall_co_oxidized_copper_door": "Tall Oxidized Copper Door",
 
   "block.dramaticdoors.tall_steel_door": "Tall Steel Door",
   "block.dramaticdoors.tall_locked_steel_door": "Tall Locked Steel Door",
@@ -134,6 +137,8 @@
   "block.dramaticdoors.tall_locked_brass_door": "Tall Locked Brass Door",
   "block.dramaticdoors.tall_locked_copper_door": "Tall Locked Copper Door",
   "block.dramaticdoors.tall_locked_zinc_door": "Tall Locked Zinc Door",
+
+  "block.dramaticdoors.tall_petrified_door": "Tall Petrified Door",
   
   "block.dramaticdoors.tall_cardboard_door": "Tall Cardboard Door",
   "block.dramaticdoors.tall_chain_door": "Tall Chain Link Door",
@@ -152,6 +157,10 @@
   "block.dramaticdoors.tall_ebony_door": "Tall Ebony Door",
   "block.dramaticdoors.tall_pream_door": "Tall Pream Door",
 
+  "block.dramaticdoors.tall_cerulean_door": "Tall Cerulean Door",
+  "block.dramaticdoors.tall_seldge_door": "Tall Seldge Door",
+  "block.dramaticdoors.tall_verdant_door": "Tall Verdant Door",
+  
   "block.dramaticdoors.tall_fairy_ring_mushroom_door": "Tall Fairy Ring Mushroom Door",
 
   "block.dramaticdoors.tall_jaboticaba_door": "Tall Jabuticaba Door",

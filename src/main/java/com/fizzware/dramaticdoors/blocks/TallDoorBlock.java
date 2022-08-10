@@ -5,6 +5,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
+import com.fizzware.dramaticdoors.compat.QuarkCompat;
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import com.mojang.blaze3d.MethodsReturnNonnullByDefault;
@@ -124,11 +125,11 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
         super.playerWillDestroy(level, pos, state, player);
     }
 
-    private int getCloseSound() {
+    protected int getCloseSound() {
         return this.material == Material.METAL ? 1011 : 1012;
     }
 
-    private int getOpenSound() {
+    protected int getOpenSound() {
         return this.material == Material.METAL ? 1005 : 1006;
     }
 
@@ -373,7 +374,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     
     //Double Doors Compatibility
 	public static void tryOpenDoubleDoor(Level world, BlockState state, BlockPos pos) {
-        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.hasQuarkDoubleDoorsModule()) {
+        if (Compats.DOUBLE_DOORS_INSTALLED || QuarkCompat.hasQuarkDoubleDoorsModule()) {
             Direction direction = state.getValue(TallDoorBlock.FACING);
             boolean isOpen = state.getValue(TallDoorBlock.OPEN);
             DoorHingeSide isMirrored = state.getValue(TallDoorBlock.HINGE);

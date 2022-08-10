@@ -19,11 +19,4 @@ public class Compats
     	QUARK_INSTALLED = ModList.get().isLoaded("quark");
     	SUPPLEMENTARIES_INSTALLED = ModList.get().isLoaded("supplementaries");
     }
-    
-    public static boolean hasQuarkDoubleDoorsModule() {
-    	if (QUARK_INSTALLED) {
-    		return true;
-    	}
-    	return false;
-    }
 }

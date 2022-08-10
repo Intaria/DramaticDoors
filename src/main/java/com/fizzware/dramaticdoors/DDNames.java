@@ -143,6 +143,12 @@ public class DDNames
     public static final String TALL_CEILTRUNK = "tall_ceiltrunk_door";
     public static final String TALL_LUZAWOOD = "tall_luzawood_door";
     
+    //Copper Overhaul
+    public static final String TALL_CO_COPPER = "tall_co_copper_door";
+    public static final String TALL_CO_EXPOSED_COPPER = "tall_co_exposed_copper_door";
+    public static final String TALL_CO_WEATHERED_COPPER = "tall_co_weathered_copper_door";
+    public static final String TALL_CO_OXIDIZED_COPPER = "tall_co_oxidized_copper_door";
+    
     //Create: Alloyed
     public static final String TALL_STEEL = "tall_steel_door";
     public static final String TALL_LOCKED_STEEL = "tall_locked_steel_door";
@@ -179,6 +185,12 @@ public class DDNames
     //End's Phantasm
     public static final String TALL_EBONY = "tall_ebony_door";
     public static final String TALL_PREAM = "tall_pream_door";
+    
+    //Enlightened End
+    public static final String TALL_CERULEAN = "tall_cerulean_door";
+    public static final String TALL_SELDGE = "tall_seldge_door";
+    public static final String TALL_STALK = "tall_stalk_door";
+    public static final String TALL_VERDANT = "tall_verdant_door";
     
     //Habitat
     public static final String TALL_FAIRY_RING_MUSHROOM = "tall_fairy_ring_mushroom_door";
