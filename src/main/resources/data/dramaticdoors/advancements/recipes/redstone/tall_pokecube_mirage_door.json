@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "pokecube:mirage_door" ]
+            "items": [ "pokecube_legends:mirage_door" ]
           }
         ]
       }

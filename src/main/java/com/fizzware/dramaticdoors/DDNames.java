@@ -130,6 +130,15 @@ public class DDNames
     //Architects Palette
     public static final String TALL_TWISTED = "tall_twisted_door";
     
+    //Ars Nouveau
+    public static final String TALL_ARCHWOOD = "tall_archwood_door";
+    
+    //Biome Makeover
+    public static final String TALL_BM_ANCIENT_OAK = "tall_bm_ancient_oak_door";
+    public static final String TALL_BM_BLIGHTED_BALSA = "tall_bm_blighted_balsa_door";
+    public static final String TALL_BM_SWAMP_CYPRESS = "tall_bm_swamp_cypress_door";
+    public static final String TALL_BM_WILLOW = "tall_bm_willow_door";
+    
     //Blocks+
     public static final String TALL_BP_BAMBOO = "tall_bp_bamboo_door";
     public static final String TALL_BP_MUSHROOM = "tall_bp_mushroom_door";

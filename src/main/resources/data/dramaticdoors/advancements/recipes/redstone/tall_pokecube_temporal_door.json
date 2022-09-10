@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "pokecube:temporal_door" ]
+            "items": [ "pokecube_legends:temporal_door" ]
           }
         ]
       }

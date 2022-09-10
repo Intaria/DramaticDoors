@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "pokecube:concrete_door" ]
+            "items": [ "pokecube_legends:concrete_door" ]
           }
         ]
       }

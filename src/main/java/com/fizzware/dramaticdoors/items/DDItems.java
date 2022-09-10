@@ -140,6 +140,15 @@ public class DDItems {
     // Architects Palette
     public static final RegistryObject<Item> TALL_TWISTED_DOOR = ITEMS.register(DDNames.TALL_TWISTED, () -> new TallDoorItem(DDBlocks.TALL_TWISTED_DOOR.get(), conditionalTabProperties("architects_palette")));
     
+    // Ars Nouveau
+    public static final RegistryObject<Item> TALL_ARCHWOOD_DOOR = ITEMS.register(DDNames.TALL_ARCHWOOD, () -> new TallDoorItem(DDBlocks.TALL_ARCHWOOD_DOOR.get(), conditionalTabProperties("ars_nouveau")));
+    
+    // Biome Makeover
+    public static final RegistryObject<Item> TALL_BM_ANCIENT_OAK_DOOR = ITEMS.register(DDNames.TALL_BM_ANCIENT_OAK, () -> new TallDoorItem(DDBlocks.TALL_BM_ANCIENT_OAK_DOOR.get(), conditionalTabProperties("biomemakeover")));
+    public static final RegistryObject<Item> TALL_BM_BLIGHTED_BALSA_DOOR = ITEMS.register(DDNames.TALL_BM_BLIGHTED_BALSA, () -> new TallDoorItem(DDBlocks.TALL_BM_BLIGHTED_BALSA_DOOR.get(), conditionalTabProperties("biomemakeover")));
+    public static final RegistryObject<Item> TALL_BM_SWAMP_CYPRESS_DOOR = ITEMS.register(DDNames.TALL_BM_SWAMP_CYPRESS, () -> new TallDoorItem(DDBlocks.TALL_BM_SWAMP_CYPRESS_DOOR.get(), conditionalTabProperties("biomemakeover")));
+    public static final RegistryObject<Item> TALL_BM_WILLOW_DOOR = ITEMS.register(DDNames.TALL_BM_WILLOW, () -> new TallDoorItem(DDBlocks.TALL_BM_WILLOW_DOOR.get(), conditionalTabProperties("biomemakeover")));
+    
     // Blocks+
     public static final RegistryObject<Item> TALL_BP_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_BP_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_BP_BAMBOO_DOOR.get(), conditionalTabProperties("blocksplus")));
     public static final RegistryObject<Item> TALL_BP_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_BP_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_BP_MUSHROOM_DOOR.get(), conditionalTabProperties("blocksplus")));

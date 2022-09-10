@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "pokecube:distortic_door" ]
+            "items": [ "pokecube_legends:distortic_door" ]
           }
         ]
       }

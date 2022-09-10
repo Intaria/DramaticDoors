@@ -95,7 +95,6 @@ public class DDBlocks {
     public static final RegistryObject<Block> TALL_TWILIGHT_OAK_DOOR = BLOCKS.register(DDNames.TALL_TWILIGHT_OAK, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("twilightforest", "twilight_oak_door"))));
     
     public static final RegistryObject<Block> TALL_TOWERWOOD_DOOR = BLOCKS.register(DDNames.TALL_TOWERWOOD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("tflostblocks", "towerwood_door"))));
-
     
     //Atmospheric
     public static final RegistryObject<Block> TALL_ASPEN_DOOR = BLOCKS.register(DDNames.TALL_ASPEN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("atmospheric", "aspen_door"))));
@@ -145,6 +144,15 @@ public class DDBlocks {
     
     //Architects Palette
     public static final RegistryObject<Block> TALL_TWISTED_DOOR = BLOCKS.register(DDNames.TALL_TWISTED, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("architects_palette", "twisted_door"))));
+    
+    // Ars Nouveau
+    public static final RegistryObject<Block> TALL_ARCHWOOD_DOOR = BLOCKS.register(DDNames.TALL_ARCHWOOD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ars_nouveau", "archwood_door"))));
+    
+    // Biome Makeover
+    public static final RegistryObject<Block> TALL_BM_ANCIENT_OAK_DOOR = BLOCKS.register(DDNames.TALL_BM_ANCIENT_OAK, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("biomemakeover", "ancient_oak_door"))));
+    public static final RegistryObject<Block> TALL_BM_BLIGHTED_BALSA_DOOR = BLOCKS.register(DDNames.TALL_BM_BLIGHTED_BALSA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("biomemakeover", "blighted_balsa_door"))));
+    public static final RegistryObject<Block> TALL_BM_SWAMP_CYPRESS_DOOR = BLOCKS.register(DDNames.TALL_BM_SWAMP_CYPRESS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("biomemakeover", "swamp_cypress_door"))));
+    public static final RegistryObject<Block> TALL_BM_WILLOW_DOOR = BLOCKS.register(DDNames.TALL_BM_WILLOW, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("biomemakeover", "willow_door"))));
     
     //Blocks Plus
     public static final RegistryObject<Block> TALL_BP_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_BP_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("blocksplus", "bamboo_door"))));

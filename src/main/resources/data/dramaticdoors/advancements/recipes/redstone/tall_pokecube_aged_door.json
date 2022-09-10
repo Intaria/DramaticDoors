@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "pokecube:aged_door" ]
+            "items": [ "pokecube_legends:aged_door" ]
           }
         ]
       }

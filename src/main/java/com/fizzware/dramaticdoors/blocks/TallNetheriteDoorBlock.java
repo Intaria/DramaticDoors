@@ -31,7 +31,6 @@ public class TallNetheriteDoorBlock extends TallDoorBlock implements EntityBlock
 	
 	@Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-		
 		BlockPos delegatedPos = state.getValue(THIRD) == TripleBlockPart.LOWER ? pos : (state.getValue(THIRD) == TripleBlockPart.UPPER ? pos.below(2) : pos.below(1));
 		BlockEntity be = level.getBlockEntity(delegatedPos);
 		//Execute action.

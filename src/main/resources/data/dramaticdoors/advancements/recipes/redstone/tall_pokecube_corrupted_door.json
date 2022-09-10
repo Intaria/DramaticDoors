@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "pokecube:corrupted_door" ]
+            "items": [ "pokecube_legends:corrupted_door" ]
           }
         ]
       }
