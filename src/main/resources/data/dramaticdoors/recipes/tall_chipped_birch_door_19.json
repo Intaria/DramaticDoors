@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_chipped_birch_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "chipped:birch_door_19"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_chipped_birch_door_19",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "chipped"
+    }
+  ]
+}

@@ -6,5 +6,6 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 public class DDBlockStateProperties extends BlockStateProperties {
    public static final EnumProperty<TripleBlockPart> TRIPLE_BLOCK_THIRD = EnumProperty.create("third", TripleBlockPart.class);
+   public static final EnumProperty<Orientation> ORIENTATION = EnumProperty.create("orientation", Orientation.class);
    public static final IntegerProperty OPENING_PROGRESS = IntegerProperty.create("tall_lead_progress", 0, 2);
 }

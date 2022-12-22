@@ -18,7 +18,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.IItemHandler;
 
 public class TallNetheriteDoorBlockEntity extends BlockEntity
@@ -87,7 +87,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
         }
 
         AtomicReference<IItemHandler> itemHandler = new AtomicReference<>();
-        player.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(itemHandler::set);
+        player.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(itemHandler::set);
         if (itemHandler.get() != null) {
             for (int _idx = 0; _idx < itemHandler.get().getSlots(); _idx++) {
                 ItemStack stack = itemHandler.get().getStackInSlot(_idx);

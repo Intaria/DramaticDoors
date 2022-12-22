@@ -32,7 +32,7 @@ logoFile="icon.png"
 [[dependencies.dramaticdoors]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,)"
+    versionRange="[1.19,1.19.3)"
     ordering="AFTER"
     side="BOTH"
 
@@ -40,6 +40,13 @@ logoFile="icon.png"
     modId="forge"
     mandatory=true
     versionRange="[41.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.dramaticdoors]]
+    modId="morecraft"
+    mandatory=false
+    versionRange="[1.19.2-4.7.5,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -54,13 +61,6 @@ logoFile="icon.png"
     modId="autumnity"
     mandatory=false
     versionRange="[2.1.0,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.dramaticdoors]]
-    modId="bamboo_blocks"
-    mandatory=false
-    versionRange=""
     ordering="AFTER"
     side="BOTH"
 

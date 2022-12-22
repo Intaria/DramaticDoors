@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_chipped_jungle_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "chipped:jungle_door_11"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_chipped_jungle_door_11",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "chipped"
+    }
+  ]
+}

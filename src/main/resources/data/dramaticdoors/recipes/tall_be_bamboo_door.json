@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_wooden_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "bambooeverything:bamboo_door"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_be_bamboo_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bambooeverything"
+    }
+  ]
+}

@@ -29,6 +29,7 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_ACACIA_DOOR = ITEMS.register(DDNames.TALL_ACACIA, () -> new TallDoorItem(DDBlocks.TALL_ACACIA_DOOR.get(), PROPERTIES.tab(DramaticDoors.MAIN_TAB)));
     public static final RegistryObject<Item> TALL_DARK_OAK_DOOR = ITEMS.register(DDNames.TALL_DARK_OAK, () -> new TallDoorItem(DDBlocks.TALL_DARK_OAK_DOOR.get(), PROPERTIES.tab(DramaticDoors.MAIN_TAB)));
     public static final RegistryObject<Item> TALL_MANGROVE_DOOR = ITEMS.register(DDNames.TALL_MANGROVE, () -> new TallDoorItem(DDBlocks.TALL_MANGROVE_DOOR.get(), PROPERTIES.tab(DramaticDoors.MAIN_TAB)));
+    public static final RegistryObject<Item> TALL_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR.get(), conditionalTabProperties("one_twenty_backport"))); // One Twenty Backport
     public static final RegistryObject<Item> TALL_CRIMSON_DOOR = ITEMS.register(DDNames.TALL_CRIMSON, () -> new TallDoorItem(DDBlocks.TALL_CRIMSON_DOOR.get(), PROPERTIES.tab(DramaticDoors.MAIN_TAB)));
     public static final RegistryObject<Item> TALL_WARPED_DOOR = ITEMS.register(DDNames.TALL_WARPED, () -> new TallDoorItem(DDBlocks.TALL_WARPED_DOOR.get(), PROPERTIES.tab(DramaticDoors.MAIN_TAB)));
     
@@ -110,8 +111,6 @@ public class DDItems {
     
     public static final RegistryObject<Item> TALL_MAPLE_DOOR = ITEMS.register(DDNames.TALL_MAPLE, () -> new TallDoorItem(DDBlocks.TALL_MAPLE_DOOR.get(), conditionalTabProperties("autumnity")));
 
-    public static final RegistryObject<Item> TALL_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR.get(), conditionalTabProperties("bamboo_blocks")));
-
     public static final RegistryObject<Item> TALL_HONEYCOMB_DOOR = ITEMS.register(DDNames.TALL_HONEYCOMB, () -> new TallDoorItem(DDBlocks.TALL_HONEYCOMB_DOOR.get(), conditionalTabProperties("buzzier_bees")));
 
     public static final RegistryObject<Item> TALL_AZALEA_DOOR = ITEMS.register(DDNames.TALL_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_AZALEA_DOOR.get(), conditionalTabProperties("caverns_and_chasms")));
@@ -137,11 +136,27 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_RED_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_RED_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_RED_MUSHROOM_DOOR.get(), conditionalTabProperties("enhanced_mushrooms")));
     public static final RegistryObject<Item> TALL_GLOWSHROOM_DOOR = ITEMS.register(DDNames.TALL_GLOWSHROOM, () -> new TallDoorItem(DDBlocks.TALL_GLOWSHROOM_DOOR.get(), conditionalTabProperties("enhanced_mushrooms")));
 
+    // Ad Astra
+    public static final RegistryObject<Item> TALL_AERONOS_DOOR = ITEMS.register(DDNames.TALL_AERONOS, () -> new TallDoorItem(DDBlocks.TALL_AERONOS_DOOR.get(), conditionalTabProperties("ad_astra")));
+    public static final RegistryObject<Item> TALL_GLACIAN_DOOR = ITEMS.register(DDNames.TALL_GLACIAN, () -> new TallDoorItem(DDBlocks.TALL_GLACIAN_DOOR.get(), conditionalTabProperties("ad_astra")));
+    public static final RegistryObject<Item> TALL_STROPHAR_DOOR = ITEMS.register(DDNames.TALL_STROPHAR, () -> new TallDoorItem(DDBlocks.TALL_STROPHAR_DOOR.get(), conditionalTabProperties("ad_astra")));
+    public static final RegistryObject<Item> TALL_AA_STEEL_DOOR = ITEMS.register(DDNames.TALL_AA_STEEL, () -> new TallDoorItem(DDBlocks.TALL_AA_STEEL_DOOR.get(), conditionalTabProperties("ad_astra")));
+    
+    // Abundant Atmosphere
+    public static final RegistryObject<Item> TALL_ASH_DOOR = ITEMS.register(DDNames.TALL_ASH, () -> new TallDoorItem(DDBlocks.TALL_ASH_DOOR.get(), conditionalTabProperties("abundant_atmosphere")));    
+    
     // Architects Palette
     public static final RegistryObject<Item> TALL_TWISTED_DOOR = ITEMS.register(DDNames.TALL_TWISTED, () -> new TallDoorItem(DDBlocks.TALL_TWISTED_DOOR.get(), conditionalTabProperties("architects_palette")));
     
     // Ars Nouveau
     public static final RegistryObject<Item> TALL_ARCHWOOD_DOOR = ITEMS.register(DDNames.TALL_ARCHWOOD, () -> new TallDoorItem(DDBlocks.TALL_ARCHWOOD_DOOR.get(), conditionalTabProperties("ars_nouveau")));
+    
+    // Bamboo Everything
+    public static final RegistryObject<Item> TALL_BE_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_BE_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_BE_BAMBOO_DOOR.get(), conditionalTabProperties("bambooeverything")));  
+    public static final RegistryObject<Item> TALL_BE_DRY_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_BE_DRY_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_BE_DRY_BAMBOO_DOOR.get(), conditionalTabProperties("bambooeverything")));  
+    
+    // Biomancy
+    public static final RegistryObject<Item> TALL_FLESH_DOOR = ITEMS.register(DDNames.TALL_FLESH, () -> new TallDoorItem(DDBlocks.TALL_FLESH_DOOR.get(), conditionalTabProperties("biomancy")));  
     
     // Biome Makeover
     public static final RegistryObject<Item> TALL_BM_ANCIENT_OAK_DOOR = ITEMS.register(DDNames.TALL_BM_ANCIENT_OAK, () -> new TallDoorItem(DDBlocks.TALL_BM_ANCIENT_OAK_DOOR.get(), conditionalTabProperties("biomemakeover")));
@@ -158,9 +173,31 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_BP_EMERALD_DOOR = ITEMS.register(DDNames.TALL_BP_EMERALD, () -> new TallDoorItem(DDBlocks.TALL_BP_EMERALD_DOOR.get(), conditionalTabProperties("blocksplus")));
     public static final RegistryObject<Item> TALL_BP_NETHERITE_DOOR = ITEMS.register(DDNames.TALL_BP_NETHERITE, () -> new TallDoorItem(DDBlocks.TALL_BP_NETHERITE_DOOR.get(), conditionalTabProperties("blocksplus").fireResistant()));
     
+    // Blue Skies
+    public static final RegistryObject<Item> TALL_BS_BLUEBRIGHT_DOOR = ITEMS.register(DDNames.TALL_BS_BLUEBRIGHT, () -> new TallDoorItem(DDBlocks.TALL_BS_BLUEBRIGHT_DOOR.get(), conditionalTabProperties("blue_skies")));
+    public static final RegistryObject<Item> TALL_BS_CHERRY_DOOR = ITEMS.register(DDNames.TALL_BS_CHERRY, () -> new TallDoorItem(DDBlocks.TALL_BS_CHERRY_DOOR.get(), conditionalTabProperties("blue_skies")));
+    public static final RegistryObject<Item> TALL_BS_CRYSTALLIZED_DOOR = ITEMS.register(DDNames.TALL_BS_CRYSTALLIZED, () -> new TallDoorItem(DDBlocks.TALL_BS_CRYSTALLIZED_DOOR.get(), conditionalTabProperties("blue_skies")));
+    public static final RegistryObject<Item> TALL_BS_DUSK_DOOR = ITEMS.register(DDNames.TALL_BS_DUSK, () -> new TallDoorItem(DDBlocks.TALL_BS_DUSK_DOOR.get(), conditionalTabProperties("blue_skies")));
+    public static final RegistryObject<Item> TALL_BS_FROSTBRIGHT_DOOR = ITEMS.register(DDNames.TALL_BS_FROSTBRIGHT, () -> new TallDoorItem(DDBlocks.TALL_BS_FROSTBRIGHT_DOOR.get(), conditionalTabProperties("blue_skies")));
+    public static final RegistryObject<Item> TALL_BS_LUNAR_DOOR = ITEMS.register(DDNames.TALL_BS_LUNAR, () -> new TallDoorItem(DDBlocks.TALL_BS_LUNAR_DOOR.get(), conditionalTabProperties("blue_skies")));
+    public static final RegistryObject<Item> TALL_BS_MAPLE_DOOR = ITEMS.register(DDNames.TALL_BS_MAPLE, () -> new TallDoorItem(DDBlocks.TALL_BS_MAPLE_DOOR.get(), conditionalTabProperties("blue_skies")));
+    public static final RegistryObject<Item> TALL_BS_STARLIT_DOOR = ITEMS.register(DDNames.TALL_BS_STARLIT, () -> new TallDoorItem(DDBlocks.TALL_BS_STARLIT_DOOR.get(), conditionalTabProperties("blue_skies")));
+    
+    // Caupona
+    public static final RegistryObject<Item> TALL_WALNUT_DOOR = ITEMS.register(DDNames.TALL_WALNUT, () -> new TallDoorItem(DDBlocks.TALL_WALNUT_DOOR.get(), conditionalTabProperties("caupona")));
+    
     // The Ceilands
     public static final RegistryObject<Item> TALL_CEILTRUNK_DOOR = ITEMS.register(DDNames.TALL_CEILTRUNK, () -> new TallDoorItem(DDBlocks.TALL_CEILTRUNK_DOOR.get(), conditionalTabProperties("ceilands")));
     public static final RegistryObject<Item> TALL_LUZAWOOD_DOOR = ITEMS.register(DDNames.TALL_LUZAWOOD, () -> new TallDoorItem(DDBlocks.TALL_LUZAWOOD_DOOR.get(), conditionalTabProperties("ceilands")));
+    
+    // Colourful Azaleas
+    public static final RegistryObject<Item> TALL_AZURE_AZALEA_DOOR = ITEMS.register(DDNames.TALL_AZULE_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_AZULE_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
+    public static final RegistryObject<Item> TALL_BRIGHT_AZALEA_DOOR = ITEMS.register(DDNames.TALL_BRIGHT_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_BRIGHT_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
+    public static final RegistryObject<Item> TALL_FISS_AZALEA_DOOR = ITEMS.register(DDNames.TALL_FISS_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_FISS_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
+    public static final RegistryObject<Item> TALL_ROZE_AZALEA_DOOR = ITEMS.register(DDNames.TALL_ROZE_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_ROZE_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
+    public static final RegistryObject<Item> TALL_TECAL_AZALEA_DOOR = ITEMS.register(DDNames.TALL_TECAL_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_TECAL_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
+    public static final RegistryObject<Item> TALL_TITANIUM_AZALEA_DOOR = ITEMS.register(DDNames.TALL_TITANIUM_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_TITANIUM_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
+    public static final RegistryObject<Item> TALL_WALNUT_AZALEA_DOOR = ITEMS.register(DDNames.TALL_WALNUT_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_WALNUT_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
     
     // Copper Overhaul
     public static final RegistryObject<Item> TALL_CO_COPPER_DOOR = ITEMS.register(DDNames.TALL_CO_COPPER, () -> new TallDoorItem(DDBlocks.TALL_CO_COPPER_DOOR.get(), conditionalTabProperties("copperoverhaul")));
@@ -185,6 +222,9 @@ public class DDItems {
     // Darker Depths
     public static final RegistryObject<Item> TALL_PETRIFIED_DOOR = ITEMS.register(DDNames.TALL_PETRIFIED, () -> new TallDoorItem(DDBlocks.TALL_PETRIFIED_DOOR.get(), conditionalTabProperties("darkerdepths")));
 
+    // Deeper Darker
+    public static final RegistryObject<Item> TALL_ECHO_DOOR = ITEMS.register(DDNames.TALL_ECHO, () -> new TallDoorItem(DDBlocks.TALL_ECHO_DOOR.get(), conditionalTabProperties("deeperdarker")));    
+    
     // Dustrial Decor
     public static final RegistryObject<Item> TALL_CARDBOARD_DOOR = ITEMS.register(DDNames.TALL_CARDBOARD, () -> new TallDoorItem(DDBlocks.TALL_CARDBOARD_DOOR.get(), conditionalTabProperties("dustrial_decor")));
     public static final RegistryObject<Item> TALL_CHAIN_DOOR = ITEMS.register(DDNames.TALL_CHAIN, () -> new TallDoorItem(DDBlocks.TALL_CHAIN_DOOR.get(), conditionalTabProperties("dustrial_decor")));
@@ -211,12 +251,61 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_STALK_DOOR = ITEMS.register(DDNames.TALL_STALK, () -> new TallDoorItem(DDBlocks.TALL_STALK_DOOR.get(), addIfItemIsAvailable(new ResourceLocation("nourished_end", "stalk_door"), conditionalTabProperties("nourished_end"))));
     public static final RegistryObject<Item> TALL_VERDANT_DOOR = ITEMS.register(DDNames.TALL_VERDANT, () -> new TallDoorItem(DDBlocks.TALL_VERDANT_DOOR.get(), conditionalTabProperties("nourished_end")));
     
+    // Everything Copper
+    public static final RegistryObject<Item> TALL_EC_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
+    public static final RegistryObject<Item> TALL_EC_EXPOSED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_EXPOSED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_EXPOSED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
+    public static final RegistryObject<Item> TALL_EC_WEATHERED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WEATHERED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WEATHERED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
+    public static final RegistryObject<Item> TALL_EC_OXIDIZED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_OXIDIZED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_OXIDIZED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
+    public static final RegistryObject<Item> TALL_EC_WAXED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WAXED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WAXED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
+    public static final RegistryObject<Item> TALL_EC_WAXED_EXPOSED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WAXED_EXPOSED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WAXED_EXPOSED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
+    public static final RegistryObject<Item> TALL_EC_WAXED_WEATHERED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WAXED_WEATHERED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WAXED_WEATHERED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
+    public static final RegistryObject<Item> TALL_EC_WAXED_OXIDIZED_COPPER_DOOR = ITEMS.register(DDNames.TALL_EC_WAXED_OXIDIZED_COPPER, () -> new TallDoorItem(DDBlocks.TALL_EC_WAXED_OXIDIZED_COPPER_DOOR.get(), conditionalTabProperties("everythingcopper")));
+    
+    // Forbidden & Arcanus
+    public static final RegistryObject<Item> TALL_ARCANE_GOLD_DOOR = ITEMS.register(DDNames.TALL_ARCANE_GOLD, () -> new TallDoorItem(DDBlocks.TALL_ARCANE_GOLD_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
+    public static final RegistryObject<Item> TALL_CHERRYWOOD_DOOR = ITEMS.register(DDNames.TALL_CHERRYWOOD, () -> new TallDoorItem(DDBlocks.TALL_CHERRYWOOD_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
+    public static final RegistryObject<Item> TALL_EDELWOOD_DOOR = ITEMS.register(DDNames.TALL_EDELWOOD, () -> new TallDoorItem(DDBlocks.TALL_EDELWOOD_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
+    public static final RegistryObject<Item> TALL_FUNGYSS_DOOR = ITEMS.register(DDNames.TALL_FUNGYSS, () -> new TallDoorItem(DDBlocks.TALL_FUNGYSS_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
+    public static final RegistryObject<Item> TALL_MYSTERYWOOD_DOOR = ITEMS.register(DDNames.TALL_MYSTERYWOOD, () -> new TallDoorItem(DDBlocks.TALL_MYSTERYWOOD_DOOR.get(), conditionalTabProperties("forbidden_arcanus")));
+    
+    // Good Ending
+    public static final RegistryObject<Item> TALL_GE_CYPRESS_DOOR = ITEMS.register(DDNames.TALL_GE_CYPRESS, () -> new TallDoorItem(DDBlocks.TALL_GE_CYPRESS_DOOR.get(), conditionalTabProperties("goodending")));
+    public static final RegistryObject<Item> TALL_GE_MUDDY_OAK_DOOR = ITEMS.register(DDNames.TALL_GE_MUDDY_OAK, () -> new TallDoorItem(DDBlocks.TALL_GE_MUDDY_OAK_DOOR.get(), conditionalTabProperties("goodending")));
+    
+    // Graveyard
+    public static final RegistryObject<Item> TALL_DARK_IRON_DOOR = ITEMS.register(DDNames.TALL_DARK_IRON, () -> new TallDoorItem(DDBlocks.TALL_DARK_IRON_DOOR.get(), conditionalTabProperties("graveyard")));
+    
     // Habitat
     public static final RegistryObject<Item> TALL_FAIRY_RING_MUSHROOM_DOOR = ITEMS.register(DDNames.TALL_FAIRY_RING_MUSHROOM, () -> new TallDoorItem(DDBlocks.TALL_FAIRY_RING_MUSHROOM_DOOR.get(), addIfItemIsAvailable(new ResourceLocation("habitat", "fairy_ring_mushroom_door"), conditionalTabProperties("habitat"))));
+    
+    // Hexcasting
+    public static final RegistryObject<Item> TALL_AKASHIC_DOOR = ITEMS.register(DDNames.TALL_AKASHIC, () -> new TallDoorItem(DDBlocks.TALL_AKASHIC_DOOR.get(), conditionalTabProperties("hexcasting")));
+    
+    // Hexeri
+    public static final RegistryObject<Item> TALL_HEXEREI_MAHOGANY_DOOR = ITEMS.register(DDNames.TALL_HEXEREI_MAHOGANY, () -> new TallDoorItem(DDBlocks.TALL_HEXEREI_MAHOGANY_DOOR.get(), conditionalTabProperties("hexerei")));
+    public static final RegistryObject<Item> TALL_HEXEREI_WILLOW_DOOR = ITEMS.register(DDNames.TALL_HEXEREI_WILLOW, () -> new TallDoorItem(DDBlocks.TALL_HEXEREI_WILLOW_DOOR.get(), conditionalTabProperties("hexerei")));
+    
+    // Integrated Dynamics
+    public static final RegistryObject<Item> TALL_MENRIL_DOOR = ITEMS.register(DDNames.TALL_MENRIL, () -> new TallDoorItem(DDBlocks.TALL_MENRIL_DOOR.get(), conditionalTabProperties("integrateddynamics")));    
+    
+    // Malum
+    public static final RegistryObject<Item> TALL_RUNEWOOD_DOOR = ITEMS.register(DDNames.TALL_RUNEWOOD, () -> new TallDoorItem(DDBlocks.TALL_RUNEWOOD_DOOR.get(), conditionalTabProperties("malum")));    
+    public static final RegistryObject<Item> TALL_SOULWOOD_DOOR = ITEMS.register(DDNames.TALL_SOULWOOD, () -> new TallDoorItem(DDBlocks.TALL_SOULWOOD_DOOR.get(), conditionalTabProperties("malum")));        
+    
+    // Morecraft
+    public static final RegistryObject<Item> TALL_MORECRAFT_NETHERBRICK_DOOR = ITEMS.register(DDNames.TALL_MORECRAFT_NETHERBRICK, () -> new TallDoorItem(DDBlocks.TALL_MORECRAFT_NETHERBRICK_DOOR.get(), conditionalTabProperties("morecraft")));
+    public static final RegistryObject<Item> TALL_MORECRAFT_NETHERWOOD_DOOR = ITEMS.register(DDNames.TALL_MORECRAFT_NETHERWOOD, () -> new TallDoorItem(DDBlocks.TALL_MORECRAFT_NETHERWOOD_DOOR.get(), conditionalTabProperties("morecraft")));
+    public static final RegistryObject<Item> TALL_MORECRAFT_NETHERITE_DOOR = ITEMS.register(DDNames.TALL_MORECRAFT_NETHERITE, () -> new TallDoorItem(DDBlocks.TALL_MORECRAFT_NETHERITE_DOOR.get(), conditionalTabProperties("morecraft").fireResistant()));
+	public static final RegistryObject<Item> TALL_MORECRAFT_GLASS_DOOR = ITEMS.register(DDNames.TALL_MORECRAFT_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MORECRAFT_GLASS_DOOR.get(), conditionalTabProperties("morecraft")));
+	public static final RegistryObject<Item> TALL_MORECRAFT_SOUL_GLASS_DOOR = ITEMS.register(DDNames.TALL_MORECRAFT_SOUL_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MORECRAFT_SOUL_GLASS_DOOR.get(), conditionalTabProperties("morecraft")));
+    public static final RegistryObject<Item> TALL_MORECRAFT_BONE_DOOR = ITEMS.register(DDNames.TALL_MORECRAFT_BONE, () -> new TallDoorItem(DDBlocks.TALL_MORECRAFT_BONE_DOOR.get(), conditionalTabProperties("morecraft")));
     
     // Nether's Exoticism
     public static final RegistryObject<Item> TALL_JABOTICABA_DOOR = ITEMS.register(DDNames.TALL_JABOTICABA, () -> new TallDoorItem(DDBlocks.TALL_JABOTICABA_DOOR.get(), conditionalTabProperties("nethers_exoticism")));
     public static final RegistryObject<Item> TALL_RAMBOUTAN_DOOR = ITEMS.register(DDNames.TALL_RAMBOUTAN, () -> new TallDoorItem(DDBlocks.TALL_RAMBOUTAN_DOOR.get(), conditionalTabProperties("nethers_exoticism")));    
+    
+    // New World
+    public static final RegistryObject<Item> TALL_FIR_DOOR = ITEMS.register(DDNames.TALL_FIR, () -> new TallDoorItem(DDBlocks.TALL_FIR_DOOR.get(), conditionalTabProperties("newworld")));
     
     // Outer End
     public static final RegistryObject<Item> TALL_AZURE_DOOR = ITEMS.register(DDNames.TALL_AZURE, () -> new TallDoorItem(DDBlocks.TALL_AZURE_DOOR.get(), conditionalTabProperties("outer_end")));
@@ -248,6 +337,9 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_QUARK_AZALEA_DOOR = ITEMS.register(DDNames.TALL_QUARK_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_QUARK_AZALEA_DOOR.get(), conditionalTabProperties("quark")));
     public static final RegistryObject<Item> TALL_QUARK_BLOSSOM_DOOR = ITEMS.register(DDNames.TALL_QUARK_BLOSSOM, () -> new TallDoorItem(DDBlocks.TALL_QUARK_BLOSSOM_DOOR.get(), conditionalTabProperties("quark")));
     
+    // Silent Gear
+    public static final RegistryObject<Item> TALL_NETHERWOOD_DOOR = ITEMS.register(DDNames.TALL_NETHERWOOD, () -> new TallDoorItem(DDBlocks.TALL_NETHERWOOD_DOOR.get(), conditionalTabProperties("silentgear")));
+
     // Snowy Spirit
     public static final RegistryObject<Item> TALL_GINGERBREAD_DOOR = ITEMS.register(DDNames.TALL_GINGERBREAD, () -> new TallDoorItem(DDBlocks.TALL_GINGERBREAD_DOOR.get(), conditionalTabProperties("snowyspirit")));
     
@@ -257,6 +349,11 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_LEAD_DOOR = ITEMS.register(DDNames.TALL_LEAD, () -> new TallDoorItem(DDBlocks.TALL_LEAD_DOOR.get(), addIfItemIsAvailable(new ResourceLocation("supplementaries", "lead_door"), conditionalTabProperties("supplementaries"))));
     public static final RegistryObject<Item> TALL_NETHERITE_DOOR = ITEMS.register(DDNames.TALL_NETHERITE, () -> new TallDoorItem(DDBlocks.TALL_NETHERITE_DOOR.get(), conditionalTabProperties("supplementaries").fireResistant()));
     
+    // Tinkers Construct
+    public static final RegistryObject<Item> TALL_BLOODSHROOM_DOOR = ITEMS.register(DDNames.TALL_BLOODSHROOM, () -> new TallDoorItem(DDBlocks.TALL_BLOODSHROOM_DOOR.get(), conditionalTabProperties("tconstruct")));
+    public static final RegistryObject<Item> TALL_GREENHEART_DOOR = ITEMS.register(DDNames.TALL_GREENHEART, () -> new TallDoorItem(DDBlocks.TALL_GREENHEART_DOOR.get(), conditionalTabProperties("tconstruct")));
+    public static final RegistryObject<Item> TALL_SKYROOT_DOOR = ITEMS.register(DDNames.TALL_SKYROOT, () -> new TallDoorItem(DDBlocks.TALL_SKYROOT_DOOR.get(), conditionalTabProperties("tconstruct")));
+    
     // Twigs
     public static final RegistryObject<Item> TALL_TWIGS_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_TWIGS_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_TWIGS_BAMBOO_DOOR.get(), conditionalTabProperties("twigs")));
 
@@ -264,6 +361,200 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_GRONGLE_DOOR = ITEMS.register(DDNames.TALL_GRONGLE, () -> new TallDoorItem(DDBlocks.TALL_GRONGLE_DOOR.get(), conditionalTabProperties("undergarden")));
     public static final RegistryObject<Item> TALL_SMOGSTEM_DOOR = ITEMS.register(DDNames.TALL_SMOGSTEM, () -> new TallDoorItem(DDBlocks.TALL_SMOGSTEM_DOOR.get(), conditionalTabProperties("undergarden")));
     public static final RegistryObject<Item> TALL_WIGGLEWOOD_DOOR = ITEMS.register(DDNames.TALL_WIGGLEWOOD, () -> new TallDoorItem(DDBlocks.TALL_WIGGLEWOOD_DOOR.get(), conditionalTabProperties("undergarden")));
+    
+    // Windswept
+    public static final RegistryObject<Item> TALL_CHESTNUT_DOOR = ITEMS.register(DDNames.TALL_CHESTNUT, () -> new TallDoorItem(DDBlocks.TALL_CHESTNUT_DOOR.get(), conditionalTabProperties("windswept")));
+    public static final RegistryObject<Item> TALL_HOLLY_DOOR = ITEMS.register(DDNames.TALL_HOLLY, () -> new TallDoorItem(DDBlocks.TALL_HOLLY_DOOR.get(), conditionalTabProperties("windswept")));    
+    
+    // Chipped
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_OAK_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_OAK_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_OAK_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_SPRUCE_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_SPRUCE_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_SPRUCE_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_BIRCH_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_BIRCH_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_BIRCH_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_JUNGLE_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_JUNGLE_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_JUNGLE_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_ACACIA_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_ACACIA_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_ACACIA_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_DARK_OAK_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_DARK_OAK_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_DARK_OAK_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    //Not yet implemented
+    /*public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_MANGROVE_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_MANGROVE_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));*/
+    
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_CRIMSON_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_CRIMSON_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_CRIMSON_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_01 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_01, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_01.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_02 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_02, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_02.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_03 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_03, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_03.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_04 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_04, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_04.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_05 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_05, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_05.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_06 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_06, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_06.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_07 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_07, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_07.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_08 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_08, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_08.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_09 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_09, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_09.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_10 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_10, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_10.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_11 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_11, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_11.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_12 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_12, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_12.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_13 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_13, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_13.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_14 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_14, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_14.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_15 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_15, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_15.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_16 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_16, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_16.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_17 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_17, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_17.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_18 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_18, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_18.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_19 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_19, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_19.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
+    public static final RegistryObject<Item> TALL_CHIPPED_WARPED_DOOR_20 = ITEMS.register(DDNames.TALL_CHIPPED_WARPED_20, () -> new TallDoorItem(DDBlocks.TALL_CHIPPED_WARPED_DOOR_20.get(), PROPERTIES.tab(DramaticDoors.CHIPPED_TAB)));
     
     // Macaw
     public static final RegistryObject<Item> TALL_MACAW_JAIL_DOOR = ITEMS.register(DDNames.TALL_MACAW_JAIL, () -> new TallDoorItem(DDBlocks.TALL_MACAW_JAIL_DOOR.get(), conditionalTabProperties("mcwdoors", DramaticDoors.MACAW_TAB)));

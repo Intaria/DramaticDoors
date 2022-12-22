@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "dramaticdoors:block/chipped/tall_acacia_door_12_bottom",
+    "middle": "dramaticdoors:block/chipped/tall_acacia_door_12_middle",
+    "top": "dramaticdoors:block/chipped/tall_acacia_door_12_top"
+  }
+}

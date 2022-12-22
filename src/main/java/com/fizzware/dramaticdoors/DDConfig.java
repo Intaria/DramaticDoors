@@ -29,12 +29,12 @@ public class DDConfig
 		BUILDER.comment("Dramatic Doors").push(CATEGORY_MIXINS);
 		
         waterloggableDoors = BUILDER
-                .comment("Allow doors to be waterlogged. Enable to allow waterlogging. Disable for compatibility with certain mods.  " + "Default: false")
-                .define("waterloggable_doors", false);
+                .comment("Allow doors to be waterlogged. Enable to allow waterlogging. Disable for compatibility with certain mods. Requires restart after changing.  " + "Default: true")
+                .define("waterloggable_doors", true);
         
         waterloggableFenceGates = BUILDER
-                .comment("Allow fence gates to be waterlogged. Enable to allow waterlogging. Disable for compatibility with certain mods.   " + "Default: false")
-                .define("waterloggable_fence_gates", false);
+                .comment("Allow fence gates to be waterlogged. Enable to allow waterlogging. Disable for compatibility with certain mods. Requires restart after changing.  " + "Default: true")
+                .define("waterloggable_fence_gates", true);
 		
 		BUILDER.pop();
 	}

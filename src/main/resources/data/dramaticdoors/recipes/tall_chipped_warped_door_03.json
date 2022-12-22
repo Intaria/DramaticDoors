@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_chipped_warped_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "chipped:warped_door_3"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_chipped_warped_door_03",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "chipped"
+    }
+  ]
+}

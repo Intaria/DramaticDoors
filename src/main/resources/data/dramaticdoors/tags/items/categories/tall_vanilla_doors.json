@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:tall_iron_door",
+    "dramaticdoors:tall_oak_door",
+    "dramaticdoors:tall_spruce_door",
+    "dramaticdoors:tall_birch_door",
+    "dramaticdoors:tall_jungle_door",
+    "dramaticdoors:tall_acacia_door",
+    "dramaticdoors:tall_dark_oak_door",
+    "dramaticdoors:tall_mangrove_door",
+    "dramaticdoors:tall_crimson_door",
+    "dramaticdoors:tall_warped_door"
+  ]
+}

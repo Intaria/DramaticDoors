@@ -48,7 +48,6 @@ public class DramaticDoors
     	if (Compats.QUARK_INSTALLED) {
     		MinecraftForge.EVENT_BUS.register(new QuarkCompat());
     	}
-        MinecraftForge.EVENT_BUS.register(new DDEvents());
     }
     
     private void setupClient(final FMLClientSetupEvent event) {
@@ -61,6 +60,13 @@ public class DramaticDoors
 			return new ItemStack(DDItems.TALL_OAK_DOOR.get());
 		}
     };
+    
+    public static final CreativeModeTab CHIPPED_TAB = Compats.CHIPPED_INSTALLED ? new CreativeModeTab("dramaticdoors_chipped") {
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_DOOR_07.get());
+		}
+    } : null;
     
     public static final CreativeModeTab MACAW_TAB = Compats.MACAWS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_macaw") {
 		@Override
