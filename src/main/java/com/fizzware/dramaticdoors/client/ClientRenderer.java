@@ -86,6 +86,21 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_PROTOPICEOXYLON_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_ZAMITES_DOOR.get(), RenderType.cutout());
 		
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_BAOBAB_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_BLACKWOOD_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_CHERRY_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_CYPRESS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_DEAD_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_EUCALYPTUS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_JOSHUA_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_LARCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_MAPLE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_MAUVE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_PALM_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_PINE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_REDWOOD_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUE_WILLOW_DOOR.get(), RenderType.cutout());
+		
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_CANOPY_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_DARKWOOD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_TWILIGHT_MANGROVE_DOOR.get(), RenderType.cutout());
@@ -144,6 +159,8 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_BE_DRY_BAMBOO_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_FLESH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_FULL_FLESH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_FLESHKIN_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_BM_ANCIENT_OAK_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_BM_BLIGHTED_BALSA_DOOR.get(), RenderType.cutout());
@@ -216,6 +233,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_EC_WAXED_OXIDIZED_COPPER_DOOR.get(), RenderType.cutout());
 		
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_ARCANE_GOLD_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_ARCANE_EDELWOOD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_CHERRYWOOD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_EDELWOOD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_FUNGYSS_DOOR.get(), RenderType.cutout());
@@ -225,7 +243,8 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_PREAM_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_CERULEAN_DOOR.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_SELDGE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_COSMIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_SELDGE_DOOR.get(), RenderType.translucent());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_STALK_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_VERDANT_DOOR.get(), RenderType.cutout());
 
@@ -296,6 +315,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_SMOGSTEM_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_WIGGLEWOOD_DOOR.get(), RenderType.cutout());
 
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_GOLDEN_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_CHESTNUT_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_HOLLY_DOOR.get(), RenderType.cutout());
 		

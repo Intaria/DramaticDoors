@@ -71,6 +71,22 @@ public class DDNames
     public static final String TALL_PROTOPICEOXYLON = "tall_protopiceoxylon_door";
     public static final String TALL_ZAMITES = "tall_zamites_door";
     
+    //Regions Unexplored
+    public static final String TALL_RUE_BAOBAB = "tall_rue_baobab_door";
+    public static final String TALL_RUE_BLACKWOOD = "tall_rue_blackwood_door";
+    public static final String TALL_RUE_CHERRY = "tall_rue_cherry_door";
+    public static final String TALL_RUE_CYPRESS = "tall_rue_cypress_door";
+    public static final String TALL_RUE_DEAD = "tall_rue_dead_door";
+    public static final String TALL_RUE_EUCALYPTUS = "tall_rue_eucalyptus_door";
+    public static final String TALL_RUE_JOSHUA = "tall_rue_joshua_door";
+    public static final String TALL_RUE_LARCH = "tall_rue_larch_door";
+    public static final String TALL_RUE_MAPLE = "tall_rue_maple_door";
+    public static final String TALL_RUE_MAUVE = "tall_rue_mauve_door";
+    public static final String TALL_RUE_PALM = "tall_rue_palm_door";
+    public static final String TALL_RUE_PINE = "tall_rue_pine_door";
+    public static final String TALL_RUE_REDWOOD = "tall_rue_redwood_door";
+    public static final String TALL_RUE_WILLOW = "tall_rue_willow_door";
+    
     //Twilight Forest
     public static final String TALL_CANOPY = "tall_canopy_door";
     public static final String TALL_DARKWOOD = "tall_darkwood_door";
@@ -146,7 +162,9 @@ public class DDNames
     
     //Biomancy
     public static final String TALL_FLESH = "tall_flesh_door";
-    
+    public static final String TALL_FULL_FLESH = "tall_full_flesh_door";
+    public static final String TALL_FLESHKIN = "tall_fleshkin_door";
+
     //Biome Makeover
     public static final String TALL_BM_ANCIENT_OAK = "tall_bm_ancient_oak_door";
     public static final String TALL_BM_BLIGHTED_BALSA = "tall_bm_blighted_balsa_door";
@@ -234,11 +252,16 @@ public class DDNames
     public static final String TALL_EBONY = "tall_ebony_door";
     public static final String TALL_PREAM = "tall_pream_door";
     
-    //Enlightened End
+    //Enlightened End (Legacy)
     public static final String TALL_CERULEAN = "tall_cerulean_door";
+    public static final String TALL_COSMIC = "tall_cosmic_door";
     public static final String TALL_SELDGE = "tall_seldge_door";
     public static final String TALL_STALK = "tall_stalk_door";
     public static final String TALL_VERDANT = "tall_verdant_door";
+    
+    //Enlightened End (New)
+    public static final String TALL_CONGEALED = "tall_congealed_door";
+    public static final String TALL_EE_EBONY = "tall_ee_ebony_door";
     
     //Everything is Copper
     public static final String TALL_EC_COPPER = "tall_ec_copper_door";
@@ -252,6 +275,7 @@ public class DDNames
     
     //Forbidden & Arcanus
     public static final String TALL_ARCANE_GOLD = "tall_arcane_gold_door";
+    public static final String TALL_ARCANE_EDELWOOD = "tall_arcane_edelwood_door";
     public static final String TALL_CHERRYWOOD = "tall_cherrywood_door";
     public static final String TALL_EDELWOOD = "tall_edelwood_door";
     public static final String TALL_FUNGYSS = "tall_fungyss_door";
@@ -352,6 +376,7 @@ public class DDNames
     public static final String TALL_WIGGLEWOOD = "tall_wigglewood_door";
     
     //Windswept
+    public static final String TALL_GOLDEN = "tall_golden_door";
     public static final String TALL_CHESTNUT = "tall_chestnut_door";
     public static final String TALL_HOLLY = "tall_holly_door";
     

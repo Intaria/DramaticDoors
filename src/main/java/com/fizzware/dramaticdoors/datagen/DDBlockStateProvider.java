@@ -23,6 +23,7 @@ public class DDBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+    	// If Chipped gets updated for 1.19.2.
     	/*tallDoorBlockAlt(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_01.get(), "block/chipped/tall_mangrove_door_01", "block/chipped/tall_mangrove_door_1");
     	tallDoorBlockAlt(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_02.get(), "block/chipped/tall_mangrove_door_02", "block/chipped/tall_mangrove_door_2");
     	tallDoorBlockAlt(DDBlocks.TALL_CHIPPED_MANGROVE_DOOR_03.get(), "block/chipped/tall_mangrove_door_03", "block/chipped/tall_mangrove_door_3");

@@ -18,6 +18,6 @@ public final class DramaticDoorsDataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
         gen.addProvider(true, new DDBlockStateProvider(gen, existingFileHelper));
-
+        gen.addProvider(true, new DDItemModelProvider(gen, existingFileHelper));
     }
 }

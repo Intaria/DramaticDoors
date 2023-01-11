@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_flesh_door"
+    "dramaticdoors:tall_flesh_door",
+    "dramaticdoors:tall_full_flesh_door",
+    "dramaticdoors:tall_fleshkin_door"
   ]
 }

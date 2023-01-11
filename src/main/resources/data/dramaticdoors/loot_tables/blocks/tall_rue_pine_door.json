@@ -9,13 +9,13 @@
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "dramaticdoors:tall_byg_mangrove_door",
+              "block": "dramaticdoors:tall_rue_pine_door",
               "properties": {
                 "third": "lower"
               }
             }
           ],
-          "name": "dramaticdoors:tall_byg_mangrove_door"
+          "name": "dramaticdoors:tall_rue_pine_door"
         }
       ],
       "conditions": [

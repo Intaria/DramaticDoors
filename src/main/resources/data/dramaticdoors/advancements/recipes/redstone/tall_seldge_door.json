@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "nourished_end:seldge_door" ]
+            "items": [ "enlightened_end:congealed_door" ]
           }
         ]
       }
@@ -32,7 +32,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "nourished_end"
+      "modid": "enlightened_end"
     }
   ]
 }
