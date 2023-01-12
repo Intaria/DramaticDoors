@@ -8,7 +8,7 @@
   ],
   "key": {
     "#": {
-      "item": "nourished_end:verdant_door"
+      "item": "enlightened_end:ebony_door"
     }
   },
   "result": {
@@ -18,7 +18,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "nourished_end"
+      "modid": "enlightened_end"
     }
   ]
 }

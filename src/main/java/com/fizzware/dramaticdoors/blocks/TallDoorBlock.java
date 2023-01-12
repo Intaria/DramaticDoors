@@ -301,7 +301,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
         }
     }
 
-    private void playSound(Level level, BlockPos pos, boolean isOpen) {
+    protected void playSound(Level level, BlockPos pos, boolean isOpen) {
         level.levelEvent(null, isOpen ? this.getOpenSound() : this.getCloseSound(), pos, 0);
     }
 

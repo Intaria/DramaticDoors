@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "nourished_end:verdant_door" ]
+            "items": [ "enlightened_end:ebony_door" ]
           }
         ]
       }
@@ -32,7 +32,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "nourished_end"
+      "modid": "enlightened_end"
     }
   ]
 }

@@ -3,6 +3,7 @@
   "values": [
     "#dramaticdoors:tall_wooden_doors",
     "dramaticdoors:tall_iron_door",
+    "dramaticdoors:tall_golden_door",
     "dramaticdoors:tall_gold_door",
     "dramaticdoors:tall_netherite_door",
     "dramaticdoors:tall_silver_door",
@@ -49,6 +50,8 @@
     "dramaticdoors:tall_arcane_gold_door",
     "dramaticdoors:tall_dark_iron_door",
     "dramaticdoors:tall_flesh_door",
+    "dramaticdoors:tall_full_flesh_door",
+    "dramaticdoors:tall_fleshkin_door",
     "dramaticdoors:tall_macaw_jail_door",
     "dramaticdoors:tall_macaw_metal_door",
     "dramaticdoors:tall_macaw_metal_hospital_door",
