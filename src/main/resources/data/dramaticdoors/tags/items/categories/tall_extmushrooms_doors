@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:tall_mushroom_door",
+    "dramaticdoors:tall_poisonous_mushroom_door",
+    "dramaticdoors:tall_glowshroom_door",
+    "dramaticdoors:tall_honey_fungus_door"
+  ]
+}

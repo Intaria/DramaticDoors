@@ -16,6 +16,7 @@ public class DDItemModelProvider extends ItemModelProvider
 	@Override
 	protected void registerModels() {
 		// Insert any tall doors that needs to be data-generated. Example below:
-		super.basicItem(DDItems.TALL_OAK_DOOR.get());
+		//super.basicItem(DDItems.TALL_OAK_DOOR.get());
+		super.basicItem(DDItems.TALL_QUARK_ANCIENT_DOOR.get());
 	}
 }

@@ -8,9 +8,10 @@
         "DoorBlockMixin",
         "FenceGateBlockMixin",
         "IronGateBlockMixin",
+        "FenceGateFrameBlockMixin",
+        "LandPathNodeMakerMixin",
         "OpenDoorsTaskMixin",
         "DoorInteractGoalMixin",
-        "LandPathNodeMakerMixin",
         "WitchMixin"
 	],
 	"minVersion": "0.8"

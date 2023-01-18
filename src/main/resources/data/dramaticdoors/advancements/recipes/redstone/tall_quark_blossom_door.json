@@ -2,14 +2,14 @@
   "parent": "dramaticdoors:recipes/root",
   "rewards": {
     "recipes": [
-      "dramaticdoors:tall_blossom_door"
+      "dramaticdoors:tall_quark_blossom_door"
     ]
   },
   "criteria": {
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "dramaticdoors:tall_blossom_door"
+        "recipe": "dramaticdoors:tall_quark_blossom_door"
       }
     },
     "has_items": {
@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "caverns_and_chasms:blossom_door" ]
+            "items": [ "quark:blossom_door" ]
           }
         ]
       }
@@ -32,7 +32,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "caverns_and_chasms"
+      "modid": "quark"
     }
   ]
 }

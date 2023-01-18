@@ -26,8 +26,12 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 
 @Mixin(DoorBlock.class)
-public class DoorBlockMixin implements SimpleWaterloggedBlock
+public class DoorBlockMixin extends Block implements SimpleWaterloggedBlock
 {
+	public DoorBlockMixin(Properties properties) {
+		super(properties); // Doesn't do anything here.
+	}
+		
 	private static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	@Inject(at = @At("TAIL"), method = "<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V")
@@ -66,7 +70,7 @@ public class DoorBlockMixin implements SimpleWaterloggedBlock
 		callback.cancel();
 	}
 
-	public FluidState m_5888_(BlockState state) {
+	public FluidState getFluidState(BlockState state) {
 		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : Fluids.EMPTY.defaultFluidState();
 	}
 	

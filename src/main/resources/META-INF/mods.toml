@@ -165,7 +165,7 @@ logoFile="icon.png"
 [[dependencies.dramaticdoors]]
     modId="quark"
     mandatory=false
-    versionRange="[3.2,)"
+    versionRange="[3.4,)"
     ordering="AFTER"
     side="BOTH"
     

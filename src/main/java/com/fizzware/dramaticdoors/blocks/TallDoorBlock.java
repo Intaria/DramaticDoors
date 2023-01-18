@@ -215,6 +215,9 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     
 	@Override
 	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+		if (this != DDBlocks.TALL_TOOTH_DOOR.get()) {
+			return; // Should stop the 'dancing' doors.
+		}
 		if (!level.isClientSide) {
 			state = state.cycle(OPEN);
 			level.setBlock(pos, state, 10);

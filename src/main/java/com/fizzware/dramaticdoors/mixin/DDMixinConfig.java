@@ -26,11 +26,14 @@ public class DDMixinConfig implements IMixinConfigPlugin
 
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {			
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {
 			return DDConfig.waterloggableDoors.get();
 		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.FenceGateBlockMixin")) {
 			return DDConfig.waterloggableFenceGates.get();
+		}
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.FenceGateFrameBlockMixin")) {
+			return DDConfig.waterloggableFenceGates.get() && LoadingModList.get().getModFileById("blockcarpentry") != null;
 		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.IronGateBlockMixin")) {
 			return DDConfig.waterloggableFenceGates.get() && LoadingModList.get().getModFileById("supplementaries") != null;

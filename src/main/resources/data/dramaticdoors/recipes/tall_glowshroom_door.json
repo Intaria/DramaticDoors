@@ -8,7 +8,7 @@
   ],
   "key": {
     "#": {
-      "item": "enhanced_mushrooms:glowshroom_door"
+      "item": "extendedmushrooms:glowshroom_door"
     }
   },
   "result": {
@@ -18,7 +18,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "enhanced_mushrooms"
+      "modid": "extendedmushrooms"
     }
   ]
 }

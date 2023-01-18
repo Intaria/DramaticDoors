@@ -2,11 +2,13 @@ buildscript {
     repositories {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://maven.minecraftforge.net' }
+		maven { url = 'https://maven.parchmentmc.org' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
 		classpath 'org.spongepowered:mixingradle:0.7.+'
+		classpath 'org.parchmentmc:librarian:1.+'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -14,7 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.19.2-2.1.7'
+version = '1.19.2-2.1.8'
 group = 'com.fizzware.dramaticdoors' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'DramaticDoors-Forge'
 
@@ -168,8 +170,9 @@ dependencies {
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-	runtimeOnly fg.deobf("curse.maven:selene-499980:4312325")
-	implementation fg.deobf("curse.maven:supplementaries-412082:4312533")
+	runtimeOnly fg.deobf("curse.maven:selene-499980:4348554")
+	implementation fg.deobf("curse.maven:supplementaries-412082:4327257")
+	implementation fg.deobf("curse.maven:blockcarpentry-401658:4094099")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

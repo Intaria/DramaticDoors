@@ -47,17 +47,18 @@ public class DDBlockStateProvider extends BlockStateProvider {
     	
     	// Insert any tall doors that need to be data-generated. Example below:
     	tallDoorBlock(DDBlocks.TALL_OAK_DOOR.get(), "block/tall_oak");
+
     }
     
-    private void tallDoorBlockAlt(Block block, String baseName, String texName) {
+    /*private void tallDoorBlockAlt(Block block, String baseName, String texName) {
     	internalTallDoorBlockAlt((TallDoorBlock)block, baseName, new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_bottom"), new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_middle"), new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_top"));
-    }
+    }*/
     
     private void tallDoorBlock(Block block, String baseName) {
     	internalTallDoorBlock((TallDoorBlock)block, baseName, new ResourceLocation(DramaticDoors.MOD_ID, "" + baseName + "_door_bottom"), new ResourceLocation(DramaticDoors.MOD_ID, "" + baseName + "_door_middle"), new ResourceLocation(DramaticDoors.MOD_ID, "" + baseName + "_door_top"));
     }
     
-    private void internalTallDoorBlockAlt(TallDoorBlock block, String baseName, ResourceLocation bottom, ResourceLocation middle, ResourceLocation top) {
+    /*private void internalTallDoorBlockAlt(TallDoorBlock block, String baseName, ResourceLocation bottom, ResourceLocation middle, ResourceLocation top) {
         ModelFile bottomLeft = models().withExistingParent(baseName + "_bottom_left", "" + ModelProvider.BLOCK_FOLDER + "/door_bottom_left").texture("bottom", bottom).texture("middle", middle).texture("top", top);
         ModelFile bottomLeftOpen = models().withExistingParent(baseName + "_bottom_left_open", "" + ModelProvider.BLOCK_FOLDER + "/door_bottom_left_open").texture("bottom", bottom).texture("middle", middle).texture("top", top);
         ModelFile bottomRight = models().withExistingParent(baseName + "_bottom_right", "" + ModelProvider.BLOCK_FOLDER + "/door_bottom_right").texture("bottom", bottom).texture("middle", middle).texture("top", top);
@@ -71,7 +72,7 @@ public class DDBlockStateProvider extends BlockStateProvider {
         ModelFile topRight = models().withExistingParent(baseName + "_top_right", "" + ModelProvider.BLOCK_FOLDER + "/door_top_right").texture("bottom", bottom).texture("middle", middle).texture("top", top);
         ModelFile topRightOpen = models().withExistingParent(baseName + "_top_right_open", "" + ModelProvider.BLOCK_FOLDER + "/door_top_right_open").texture("bottom", bottom).texture("middle", middle).texture("top",top);
         tallDoorBlock(block, bottomLeft, bottomLeftOpen, bottomRight, bottomRightOpen, middleLeft, middleLeftOpen, middleRight, middleRightOpen, topLeft, topLeftOpen, topRight, topRightOpen);
-    }
+    }*/
     
     private void internalTallDoorBlock(TallDoorBlock block, String baseName, ResourceLocation bottom, ResourceLocation middle, ResourceLocation top) {
         ModelFile bottomLeft = models().withExistingParent(baseName + "_door_bottom_left", "" + ModelProvider.BLOCK_FOLDER + "/door_bottom_left").texture("bottom", bottom).texture("middle", middle).texture("top", top);
