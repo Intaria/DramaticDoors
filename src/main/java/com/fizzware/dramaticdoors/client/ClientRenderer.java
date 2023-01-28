@@ -277,6 +277,35 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RUNEWOOD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_SOULWOOD_DOOR.get(), RenderType.cutout());
 
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_IRON_BAR_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_CHERRY_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_GLOWOOD_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_HELLWOOD_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_MAPLE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_SILVERBELL_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_TIGERWOOD_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_WILLOW_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_SOUL_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_TINTED_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_BLACK_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_GREY_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_LIGHT_GREY_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_WHITE_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_RED_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_ORANGE_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_YELLOW_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_LIME_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_GREEN_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_CYAN_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_BLUE_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_PURPLE_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_MAGENTA_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_PINK_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_LIGHT_BLUE_GLASS_DOOR.get(), RenderType.translucent());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MS_BROWN_GLASS_DOOR.get(), RenderType.translucent());
+
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_JABOTICABA_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_RAMBOUTAN_DOOR.get(), RenderType.cutout());
 
@@ -669,5 +698,127 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_MANGROVE_MYSTIC_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_OAK_MYSTIC_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_SPRUCE_MYSTIC_DOOR.get(), RenderType.cutout());
+		
+		// Set up rendering for all the ManyIdeas doors.
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_BAR_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_BARREL_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_BRICK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_CORRUGATED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_FACTORY_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_MODERN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_SHIP_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_SMOOTH_SANDSTONE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_COPPER_STEAMPUNK_DOOR.get(), RenderType.translucent());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_DWARF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_FANTASY_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_LABORATORY_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_RUSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_SAFE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_SHIP_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_SPACE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_IRON_STONE_BRICK_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_OAK_SHOJI_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_SPRUCE_SHOJI_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_BIRCH_SHOJI_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_JUNGLE_SHOJI_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_ACACIA_SHOJI_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_DARK_OAK_SHOJI_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_MANGROVE_SHOJI_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_CRIMSON_SHOJI_DOOR.get(), RenderType.cutout());
+		
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_BLANK_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_BOOKSHELF_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_CASSETTE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_FRENCH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_FROSTED_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_HEART_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_ORIGIN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_RUSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MANYIDEAS_WARPED_SHOJI_DOOR.get(), RenderType.cutout());
 	}
 }

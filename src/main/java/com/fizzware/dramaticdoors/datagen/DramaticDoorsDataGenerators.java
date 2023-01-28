@@ -19,5 +19,7 @@ public final class DramaticDoorsDataGenerators {
 
         gen.addProvider(true, new DDBlockStateProvider(gen, existingFileHelper));
         gen.addProvider(true, new DDItemModelProvider(gen, existingFileHelper));
+        gen.addProvider(true, new DDRecipeProvider(gen));
+        gen.addProvider(true, new DDLootTableProvider(gen));
     }
 }
