@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_manyideas_copper_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "manyideas_doors:door_copper_factory"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_manyideas_copper_factory_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "manyideas_doors"
+    }
+  ]
+}

@@ -252,6 +252,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 			level.setBlock(pos, state.setValue(OPEN, Boolean.valueOf(open)), 10);
 			this.playSound(level, pos, open);
 			level.gameEvent(entity, open ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+			tryOpenDoubleDoor(level, state, pos);
 		}
  	}
     
@@ -377,7 +378,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     
     //Double Doors Compatibility
 	public static void tryOpenDoubleDoor(Level world, BlockState state, BlockPos pos) {
-        if (Compats.DOUBLE_DOORS_INSTALLED || QuarkCompat.hasQuarkDoubleDoorsModule()) {
+        if (Compats.DOUBLE_DOORS_INSTALLED || Compats.MANYIDEAS_DOORS_INSTALLED || QuarkCompat.hasQuarkDoubleDoorsModule()) {
             Direction direction = state.getValue(TallDoorBlock.FACING);
             boolean isOpen = state.getValue(TallDoorBlock.OPEN);
             DoorHingeSide isMirrored = state.getValue(TallDoorBlock.HINGE);

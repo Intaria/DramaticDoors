@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_manyideas_cassette_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "manyideas_doors:door_oak_cassette"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_manyideas_oak_cassette_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "manyideas_doors"
+    }
+  ]
+}

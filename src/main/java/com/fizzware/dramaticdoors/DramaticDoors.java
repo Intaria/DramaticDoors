@@ -56,23 +56,22 @@ public class DramaticDoors
 
     public static final CreativeModeTab MAIN_TAB = new CreativeModeTab("dramaticdoors") {
 		@Override
-		public ItemStack makeIcon() {
-			return new ItemStack(DDItems.TALL_OAK_DOOR.get());
-		}
+		public ItemStack makeIcon() { return new ItemStack(DDItems.TALL_OAK_DOOR.get()); }
     };
     
     public static final CreativeModeTab CHIPPED_TAB = Compats.CHIPPED_INSTALLED ? new CreativeModeTab("dramaticdoors_chipped") {
 		@Override
-		public ItemStack makeIcon() {
-			return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_DOOR_07.get());
-		}
+		public ItemStack makeIcon() { return new ItemStack(DDItems.TALL_CHIPPED_BIRCH_DOOR_07.get()); }
     } : null;
     
     public static final CreativeModeTab MACAW_TAB = Compats.MACAWS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_macaw") {
 		@Override
-		public ItemStack makeIcon() {
-			return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR.get());
-		}
+		public ItemStack makeIcon() { return new ItemStack(DDItems.TALL_MACAW_DARK_OAK_BARN_DOOR.get()); }
+    } : null;
+    
+    public static final CreativeModeTab MANYIDEAS_TAB = Compats.MANYIDEAS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_manyideas") {
+		@Override
+		public ItemStack makeIcon() { return new ItemStack(DDItems.TALL_MANYIDEAS_CRIMSON_BLANK_DOOR.get()); }
     } : null;
 
     @SubscribeEvent

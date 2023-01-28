@@ -47,7 +47,6 @@ public class DDBlockStateProvider extends BlockStateProvider {
     	
     	// Insert any tall doors that need to be data-generated. Example below:
     	tallDoorBlock(DDBlocks.TALL_OAK_DOOR.get(), "block/tall_oak");
-
     }
     
     /*private void tallDoorBlockAlt(Block block, String baseName, String texName) {
