@@ -84,7 +84,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             }
         } else {
             if (tripleblockpart == TripleBlockPart.LOWER && facing == Direction.DOWN && !stateIn.canSurvive(level, currentPos)) {
-                return level.getFluidState(currentPos).getType() == Fluids.WATER ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState();
+                return Blocks.AIR.defaultBlockState();
             } else {
                 return super.updateShape(stateIn, facing, facingState, level, currentPos, facingPos);
             }

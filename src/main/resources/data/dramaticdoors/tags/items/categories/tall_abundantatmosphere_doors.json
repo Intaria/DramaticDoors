@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_ash_door"
+    "dramaticdoors:tall_ash_door",
+    "dramaticdoors:tall_gourdrot_door"
   ]
 }

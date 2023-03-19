@@ -16,7 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.19.2-2.1.9'
+version = '1.19.2-2.1.10'
 group = 'com.fizzware.dramaticdoors' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'DramaticDoors-Forge'
 
@@ -170,9 +170,10 @@ dependencies {
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-	runtimeOnly fg.deobf("curse.maven:selene-499980:4348554")
-	implementation fg.deobf("curse.maven:supplementaries-412082:4327257")
+	runtimeOnly fg.deobf("curse.maven:selene-499980:4431044")
+	implementation fg.deobf("curse.maven:supplementaries-412082:4438309")
 	implementation fg.deobf("curse.maven:blockcarpentry-401658:4094099")
+	implementation fg.deobf("curse.maven:statement-340604:4275882")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

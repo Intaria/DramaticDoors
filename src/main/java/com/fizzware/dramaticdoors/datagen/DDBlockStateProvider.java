@@ -50,7 +50,7 @@ public class DDBlockStateProvider extends BlockStateProvider {
     }
     
     /*private void tallDoorBlockAlt(Block block, String baseName, String texName) {
-    	internalTallDoorBlockAlt((TallDoorBlock)block, baseName, new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_bottom"), new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_middle"), new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_top"));
+    	internalTallDoorBlockAlt((TallDoorBlock)block, baseName, new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_lower"), new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_middle"), new ResourceLocation(DramaticDoors.MOD_ID, "" + texName + "_upper"));
     }*/
     
     private void tallDoorBlock(Block block, String baseName) {

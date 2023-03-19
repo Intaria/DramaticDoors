@@ -164,6 +164,7 @@ public class DDBlocks {
     
     // Abundant Atmosphere
     public static final RegistryObject<Block> TALL_ASH_DOOR = BLOCKS.register(DDNames.TALL_ASH, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("abundant_atmosphere", "ash_door"))));
+    public static final RegistryObject<Block> TALL_GOURDROT_DOOR = BLOCKS.register(DDNames.TALL_GOURDROT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("abundant_atmosphere", "gourdrot_door"))));
     
     // Architects Palette
     public static final RegistryObject<Block> TALL_TWISTED_DOOR = BLOCKS.register(DDNames.TALL_TWISTED, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("architects_palette", "twisted_door"))));
@@ -208,7 +209,7 @@ public class DDBlocks {
     // Caupona
     public static final RegistryObject<Block> TALL_WALNUT_DOOR = BLOCKS.register(DDNames.TALL_WALNUT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("caupona", "walnut_door"))));    
     
-    //The Ceilands
+    // The Ceilands
     public static final RegistryObject<Block> TALL_CEILTRUNK_DOOR = BLOCKS.register(DDNames.TALL_CEILTRUNK, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ceilands", "ceiltrunk_door"))));
     public static final RegistryObject<Block> TALL_LUZAWOOD_DOOR = BLOCKS.register(DDNames.TALL_LUZAWOOD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ceilands", "luzawood_door"))));
 
@@ -227,11 +228,11 @@ public class DDBlocks {
     public static final RegistryObject<Block> TALL_CO_WEATHERED_COPPER_DOOR = BLOCKS.register(DDNames.TALL_CO_WEATHERED_COPPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("copperoverhaul", "weathered_copper_door"))));
     public static final RegistryObject<Block> TALL_CO_OXIDIZED_COPPER_DOOR = BLOCKS.register(DDNames.TALL_CO_OXIDIZED_COPPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("copperoverhaul", "oxidized_copper_door"))));
     
-    //Create: Alloyed
+    // Create: Alloyed
     public static final RegistryObject<Block> TALL_STEEL_DOOR = BLOCKS.register(DDNames.TALL_STEEL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("alloyed", "steel_door"))));
     public static final RegistryObject<Block> TALL_LOCKED_STEEL_DOOR = BLOCKS.register(DDNames.TALL_LOCKED_STEEL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("alloyed", "locked_steel_door"))));
     
-    //Create: Deco
+    // Create: Deco
     public static final RegistryObject<Block> TALL_ANDESITE_DOOR = BLOCKS.register(DDNames.TALL_ANDESITE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("createdeco", "andesite_door"))));
     public static final RegistryObject<Block> TALL_BRASS_DOOR = BLOCKS.register(DDNames.TALL_BRASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("createdeco", "brass_door"))));
     public static final RegistryObject<Block> TALL_COPPER_DOOR = BLOCKS.register(DDNames.TALL_COPPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("createdeco", "copper_door"))));
@@ -241,13 +242,18 @@ public class DDBlocks {
     public static final RegistryObject<Block> TALL_LOCKED_COPPER_DOOR = BLOCKS.register(DDNames.TALL_LOCKED_COPPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("createdeco", "locked_copper_door"))));
     public static final RegistryObject<Block> TALL_LOCKED_ZINC_DOOR = BLOCKS.register(DDNames.TALL_LOCKED_ZINC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("createdeco", "locked_zinc_door"))));
     
+    // Create: Misc & Things
+    public static final RegistryObject<Block> TALL_ANDESITE_CASING_DOOR = BLOCKS.register(DDNames.TALL_ANDESITE_CASING, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("create_things_and_misc", "andesite_casing_door"))));
+    public static final RegistryObject<Block> TALL_BRASS_CASING_DOOR = BLOCKS.register(DDNames.TALL_BRASS_CASING, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("create_things_and_misc", "brass_casing_door"))));
+    public static final RegistryObject<Block> TALL_COPPER_CASING_DOOR = BLOCKS.register(DDNames.TALL_COPPER_CASING, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("create_things_and_misc", "copper_casing_door"))));    
+    
     // Darker Depths
     public static final RegistryObject<Block> TALL_PETRIFIED_DOOR = BLOCKS.register(DDNames.TALL_PETRIFIED, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("darkerdepths", "petrified_door"))));
     
     // Deeper Darker
     public static final RegistryObject<Block> TALL_ECHO_DOOR = BLOCKS.register(DDNames.TALL_ECHO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("deeperdarker", "echo_door"))));
     
-    //Dustrial Decor
+    // Dustrial Decor
     public static final RegistryObject<Block> TALL_CARDBOARD_DOOR = BLOCKS.register(DDNames.TALL_CARDBOARD, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("dustrial_decor", "cardboard_door"))));
     public static final RegistryObject<Block> TALL_CHAIN_DOOR = BLOCKS.register(DDNames.TALL_CHAIN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("dustrial_decor", "chain_door"))));
     public static final RegistryObject<Block> TALL_INDUSTRIAL_IRON_DOOR = BLOCKS.register(DDNames.TALL_INDUSTRIAL_IRON, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("dustrial_decor", "industrial_iron_door"))));
@@ -257,7 +263,7 @@ public class DDBlocks {
     public static final RegistryObject<Block> TALL_RUSTY_SHEET_METAL_DOOR = BLOCKS.register(DDNames.TALL_RUSTY_SHEET_METAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("dustrial_decor", "rusty_sheet_metal_door"))));
     public static final RegistryObject<Block> TALL_SHEET_METAL_DOOR = BLOCKS.register(DDNames.TALL_SHEET_METAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("dustrial_decor", "sheet_metal_door"))));
 
-    //Ecologics
+    // Ecologics
     public static final RegistryObject<Block> TALL_ECO_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_ECO_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ecologics", "azalea_door"))));
     public static final RegistryObject<Block> TALL_ECO_FLOWERING_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_ECO_FLOWERING_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ecologics", "flowering_azalea_door"))));
     public static final RegistryObject<Block> TALL_ECO_COCONUT_DOOR = BLOCKS.register(DDNames.TALL_ECO_COCONUT, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("ecologics", "coconut_door"))));
@@ -632,6 +638,9 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_CHIPPED_WARPED_DOOR_20 = BLOCKS.register(DDNames.TALL_CHIPPED_WARPED_20, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("chipped", "warped_door_20"))));
     
     // Macaw
+	public static final RegistryObject<Block> TALL_MACAW_STORE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_STORE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "store_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_SLIDING_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_SLIDING_GLASS, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "sliding_glass_door"))));
+
 	public static final RegistryObject<Block> TALL_MACAW_JAIL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_JAIL, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "jail_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_METAL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_METAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "metal_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_METAL_HOSPITAL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_METAL_HOSPITAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "metal_hospital_door"))));
@@ -646,6 +655,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_BARN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_BARN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_barn_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_BARN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_BARN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_barn_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_BARN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_BARN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_barn_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_BARN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_BARN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_barn_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_BARN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_BARN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_barn_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_BARN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_BARN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_barn_door"))));
 
@@ -653,9 +663,10 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_SPRUCE_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_SPRUCE_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "spruce_barn_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_BIRCH_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BIRCH_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "birch_barn_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_JUNGLE_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_JUNGLE_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "jungle_barn_glass_door"))));
-	public static final RegistryObject<Block> TALL_MACAW_ACACIA_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_barn_glass_door"))));
-	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_barn_glass_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_ACACIA_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "acacia_barn_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_barn_glass_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_barn_glass_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_barn_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_barn_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_BARN_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_BARN_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_barn_glass_door"))));
 
@@ -666,6 +677,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_STABLE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_STABLE, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_stable_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_STABLE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_STABLE, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_stable_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_STABLE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_STABLE, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_stable_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_STABLE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_STABLE, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_stable_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_STABLE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_STABLE, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_stable_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_STABLE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_STABLE, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_stable_door"))));
 
@@ -676,6 +688,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_STABLE_HEAD_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_STABLE_HEAD, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_stable_head_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_STABLE_HEAD, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_stable_head_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_STABLE_HEAD_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_STABLE_HEAD, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_stable_head_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_STABLE_HEAD, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_stable_head_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_STABLE_HEAD, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_stable_head_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_STABLE_HEAD_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_STABLE_HEAD, () -> new TallStableDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_stable_head_door"))));
 
@@ -686,6 +699,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_BARK_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_BARK_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_bark_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_BARK_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_bark_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_BARK_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_BARK_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_bark_glass_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_BARK_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_BARK_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_bark_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_STEM_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_STEM_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_stem_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_STEM_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_STEM_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_stem_glass_door"))));
 	
@@ -696,6 +710,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_glass_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_glass_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_glass_door"))));
 
@@ -706,6 +721,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_MODERN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_MODERN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_modern_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_MODERN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_MODERN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_modern_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_MODERN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_MODERN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_modern_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_MODERN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_MODERN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_modern_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_MODERN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_MODERN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_modern_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_MODERN_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_MODERN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_modern_door"))));
 
@@ -716,6 +732,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_JAPANESE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_JAPANESE, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_japanese_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_JAPANESE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_JAPANESE, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_japanese_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_JAPANESE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_JAPANESE, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_japanese_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_JAPANESE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_JAPANESE, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_japanese_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_JAPANESE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_JAPANESE, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_japanese_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_JAPANESE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_JAPANESE, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_japanese_door"))));
 
@@ -726,6 +743,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_JAPANESE2_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_JAPANESE2, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_japanese2_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_JAPANESE2_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_JAPANESE2, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_japanese2_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_JAPANESE2_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_JAPANESE2, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_japanese2_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_JAPANESE2_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_JAPANESE2, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_japanese2_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_JAPANESE2_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_JAPANESE2, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_japanese2_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_JAPANESE2_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_JAPANESE2, () -> new TallSlidingDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_japanese2_door"))));
 
@@ -735,6 +753,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_CLASSIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_CLASSIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_classic_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_CLASSIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_CLASSIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_classic_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_CLASSIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_CLASSIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_classic_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_CLASSIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_CLASSIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_classic_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_CLASSIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_CLASSIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_classic_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_CLASSIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_CLASSIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_classic_door"))));
 
@@ -744,6 +763,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_COTTAGE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_COTTAGE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_cottage_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_COTTAGE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_COTTAGE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_cottage_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_COTTAGE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_COTTAGE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_cottage_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_COTTAGE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_COTTAGE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_cottage_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_COTTAGE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_COTTAGE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_cottage_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_COTTAGE_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_COTTAGE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_cottage_door"))));
 
@@ -753,6 +773,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_PAPER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_PAPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_paper_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_PAPER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_PAPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_paper_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_PAPER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_PAPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_paper_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_PAPER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_PAPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_paper_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_PAPER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_PAPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_paper_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_PAPER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_PAPER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_paper_door"))));
 
@@ -762,6 +783,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_BEACH_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_BEACH, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_beach_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_BEACH_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_BEACH, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_beach_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_BEACH_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_BEACH, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_beach_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_BEACH_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_BEACH, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_beach_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_BEACH_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_BEACH, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_beach_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_BEACH_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_BEACH, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_beach_door"))));
 
@@ -771,6 +793,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_JUNGLE_TROPICAL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_JUNGLE_TROPICAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "jungle_tropical_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_TROPICAL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_TROPICAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_tropical_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_TROPICAL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_TROPICAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_tropical_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_TROPICAL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_TROPICAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_tropical_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_TROPICAL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_TROPICAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_tropical_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_TROPICAL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_TROPICAL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_tropical_door"))));
 
@@ -780,6 +803,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_JUNGLE_FOUR_PANEL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "jungle_four_panel_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_FOUR_PANEL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_FOUR_PANEL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_four_panel_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_FOUR_PANEL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_FOUR_PANEL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_four_panel_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_FOUR_PANEL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_four_panel_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_FOUR_PANEL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_four_panel_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_FOUR_PANEL_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_FOUR_PANEL, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_four_panel_door"))));
 
@@ -789,16 +813,28 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_JUNGLE_SWAMP_DOOR = BLOCKS.register(DDNames.TALL_MACAW_JUNGLE_SWAMP, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "jungle_swamp_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_SWAMP_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_SWAMP, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_swamp_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_SWAMP_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_SWAMP, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_swamp_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_SWAMP_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_SWAMP, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_swamp_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_SWAMP_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_SWAMP, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_swamp_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_SWAMP_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_SWAMP, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_swamp_door"))));
+	
+	public static final RegistryObject<Block> TALL_MACAW_OAK_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_OAK_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "oak_bamboo_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_SPRUCE_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_SPRUCE_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "spruce_bamboo_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BIRCH_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BIRCH_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "birch_bamboo_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_JUNGLE_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_JUNGLE_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "jungle_bamboo_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_ACACIA_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_bamboo_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_bamboo_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_bamboo_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_bamboo_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_WARPED_BAMBOO_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_BAMBOO, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_bamboo_door"))));
 	
 	public static final RegistryObject<Block> TALL_MACAW_OAK_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_OAK_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "oak_nether_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_SPRUCE_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_SPRUCE_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "spruce_nether_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_BIRCH_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BIRCH_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "birch_nether_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_JUNGLE_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_JUNGLE_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "jungle_nether_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_nether_door"))));
-	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_nether_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_nether_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_nether_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_nether_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_WARPED_NETHER_DOOR = BLOCKS.register(DDNames.TALL_MACAW_WARPED_NETHER, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "warped_nether_door"))));
 
 	public static final RegistryObject<Block> TALL_MACAW_OAK_MYSTIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_OAK_MYSTIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "oak_mystic_door"))));
@@ -808,6 +844,7 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MACAW_ACACIA_MYSTIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_ACACIA_MYSTIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_mystic_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_MANGROVE_MYSTIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_MANGROVE_MYSTIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "mangrove_mystic_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_DARK_OAK_MYSTIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_DARK_OAK_MYSTIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "dark_oak_mystic_door"))));
+	public static final RegistryObject<Block> TALL_MACAW_BAMBOO_MYSTIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_BAMBOO_MYSTIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "bamboo_mystic_door"))));
 	public static final RegistryObject<Block> TALL_MACAW_CRIMSON_MYSTIC_DOOR = BLOCKS.register(DDNames.TALL_MACAW_CRIMSON_MYSTIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("mcwdoors", "crimson_mystic_door"))));
     
 	// ManyIdeas Doors

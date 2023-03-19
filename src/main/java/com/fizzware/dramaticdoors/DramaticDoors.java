@@ -6,6 +6,7 @@ import com.fizzware.dramaticdoors.client.ClientRenderer;
 import com.fizzware.dramaticdoors.compat.AutomaticDoorCompat;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.compat.QuarkCompat;
+import com.fizzware.dramaticdoors.compat.StatementCompat;
 import com.fizzware.dramaticdoors.items.DDItems;
 
 import net.minecraft.world.item.CreativeModeTab;
@@ -39,15 +40,22 @@ public class DramaticDoors
         }
 
         MinecraftForge.EVENT_BUS.register(this);
+    	if (Compats.STATEMENT_INSTALLED) {
+    		StatementCompat.implementWaterlogging(false);
+    	}
     }
-
+    
     private void setupCommon(final FMLCommonSetupEvent event) {
+    	if (Compats.STATEMENT_INSTALLED) {
+    		StatementCompat.implementWaterlogging(true);
+    	}
     	if (Compats.AUTOMATIC_DOORS_INSTALLED) {
     		MinecraftForge.EVENT_BUS.register(new AutomaticDoorCompat());
     	}
     	if (Compats.QUARK_INSTALLED) {
     		MinecraftForge.EVENT_BUS.register(new QuarkCompat());
     	}
+    	MinecraftForge.EVENT_BUS.register(DDNoticeEvent.class);
     }
     
     private void setupClient(final FMLClientSetupEvent event) {

@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "hexcasting:akashic_door" ]
+            "items": [ "hexcasting:edified_door" ]
           }
         ]
       }

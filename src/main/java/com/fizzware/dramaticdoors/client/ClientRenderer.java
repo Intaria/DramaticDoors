@@ -150,6 +150,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_AA_STEEL_DOOR.get(), RenderType.cutout());
 		
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_ASH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_GOURDROT_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_TWISTED_DOOR.get(), RenderType.cutout());
 
@@ -199,6 +200,10 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_LOCKED_BRASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_LOCKED_COPPER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_LOCKED_ZINC_DOOR.get(), RenderType.cutout());
+
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_ANDESITE_CASING_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_BRASS_CASING_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_COPPER_CASING_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_CO_COPPER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_CO_EXPOSED_COPPER_DOOR.get(), RenderType.cutout());
@@ -541,6 +546,8 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_CHIPPED_WARPED_DOOR_20.get(), RenderType.cutout());
 
 		// Set up rendering for all the Macaw doors.
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_STORE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_SLIDING_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_JAIL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_METAL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_METAL_HOSPITAL_DOOR.get(), RenderType.cutout());
@@ -549,6 +556,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_METAL_WINDOWED_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_BARN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_BARN_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_BARN_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_BARN_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_BARN_DOOR.get(), RenderType.cutout());
@@ -559,6 +567,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_BARN_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_BARN_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_BARN_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_BARN_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_BARN_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_BARN_GLASS_DOOR.get(), RenderType.cutout());
@@ -569,6 +578,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_BARN_GLASS_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_STABLE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_STABLE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_STABLE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_STABLE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_STABLE_DOOR.get(), RenderType.cutout());
@@ -579,6 +589,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_STABLE_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_STABLE_HEAD_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_STABLE_HEAD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_STABLE_HEAD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_STABLE_HEAD_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_STABLE_HEAD_DOOR.get(), RenderType.cutout());
@@ -589,6 +600,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_STABLE_HEAD_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_GLASS_DOOR.get(), RenderType.cutout());
@@ -599,6 +611,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_GLASS_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_BARK_GLASS_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_BARK_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_BARK_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_STEM_GLASS_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_BARK_GLASS_DOOR.get(), RenderType.cutout());
@@ -609,6 +622,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_STEM_GLASS_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_MODERN_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_MODERN_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_MODERN_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_MODERN_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_MODERN_DOOR.get(), RenderType.cutout());
@@ -619,6 +633,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_MODERN_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_CLASSIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_CLASSIC_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_CLASSIC_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_CLASSIC_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_CLASSIC_DOOR.get(), RenderType.cutout());
@@ -628,15 +643,17 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_CLASSIC_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_COTTAGE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_COTTAGE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_COTTAGE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_COTTAGE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_COTTAGE_DOOR.get(), RenderType.cutout());
-		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_JUNGLE_COTTAGE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_MANGROVE_COTTAGE_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_JUNGLE_COTTAGE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_OAK_COTTAGE_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_COTTAGE_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_PAPER_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_PAPER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_PAPER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_PAPER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_JUNGLE_PAPER_DOOR.get(), RenderType.cutout());
@@ -646,6 +663,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_PAPER_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_BEACH_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_BEACH_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_BEACH_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_BEACH_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_BEACH_DOOR.get(), RenderType.cutout());
@@ -654,6 +672,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_SPRUCE_BEACH_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_BEACH_DOOR.get(), RenderType.cutout());
 
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_TROPICAL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_TROPICAL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_TROPICAL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_TROPICAL_DOOR.get(), RenderType.cutout());
@@ -664,6 +683,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_TROPICAL_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_FOUR_PANEL_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_FOUR_PANEL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_FOUR_PANEL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_FOUR_PANEL_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_JUNGLE_FOUR_PANEL_DOOR.get(), RenderType.cutout());
@@ -673,6 +693,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_FOUR_PANEL_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_SWAMP_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_SWAMP_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_SWAMP_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_SWAMP_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_SWAMP_DOOR.get(), RenderType.cutout());
@@ -681,7 +702,18 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_SPRUCE_SWAMP_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_SWAMP_DOOR.get(), RenderType.cutout());
 		
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_JUNGLE_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_MANGROVE_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_OAK_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_SPRUCE_BAMBOO_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_BAMBOO_DOOR.get(), RenderType.cutout());
+		
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_NETHER_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_NETHER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_NETHER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_NETHER_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_JUNGLE_NETHER_DOOR.get(), RenderType.cutout());
@@ -691,6 +723,7 @@ public class ClientRenderer
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_WARPED_NETHER_DOOR.get(), RenderType.cutout());
 
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_ACACIA_MYSTIC_DOOR.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BAMBOO_MYSTIC_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_BIRCH_MYSTIC_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_CRIMSON_MYSTIC_DOOR.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(DDBlocks.TALL_MACAW_DARK_OAK_MYSTIC_DOOR.get(), RenderType.cutout());

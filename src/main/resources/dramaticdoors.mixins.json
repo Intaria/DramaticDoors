@@ -7,7 +7,6 @@
 	"mixins": [
         "DoorBlockMixin",
         "FenceGateBlockMixin",
-        "IronGateBlockMixin",
         "FenceGateFrameBlockMixin",
         "LandPathNodeMakerMixin",
         "OpenDoorsTaskMixin",

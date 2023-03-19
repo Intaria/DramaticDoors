@@ -12,6 +12,7 @@ public class Compats
     public static final boolean MANYIDEAS_DOORS_INSTALLED;
     public static final boolean QUARK_INSTALLED;
     public static final boolean SUPPLEMENTARIES_INSTALLED;
+    public static final boolean STATEMENT_INSTALLED;
     
     static {
     	AUTOMATIC_DOORS_INSTALLED = ModList.get().isLoaded("automaticdoors");
@@ -22,5 +23,6 @@ public class Compats
     	MANYIDEAS_DOORS_INSTALLED = ModList.get().isLoaded("manyideas_doors");
     	QUARK_INSTALLED = ModList.get().isLoaded("quark");
     	SUPPLEMENTARIES_INSTALLED = ModList.get().isLoaded("supplementaries");
+    	STATEMENT_INSTALLED = ModList.get().isLoaded("statement");
     }
 }
