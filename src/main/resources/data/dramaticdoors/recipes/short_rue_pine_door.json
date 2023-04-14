@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_rue_wooden_door",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:pine_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_rue_pine_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "regions_unexplored"
+    }
+  ]
+}

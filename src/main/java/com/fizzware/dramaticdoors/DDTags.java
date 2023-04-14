@@ -8,9 +8,13 @@ import net.minecraft.world.level.block.Block;
 
 public class DDTags
 {
+	public static final TagKey<Block> SHORT_DOORS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(DramaticDoors.MOD_ID, "short_doors"));
+	public static final TagKey<Block> SHORT_WOODEN_DOORS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(DramaticDoors.MOD_ID, "short_wooden_doors"));
+	public static final TagKey<Block> HAND_OPENABLE_SHORT_METAL_DOORS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(DramaticDoors.MOD_ID, "hand_openable_short_metal_doors"));
+
 	public static final TagKey<Block> TALL_DOORS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(DramaticDoors.MOD_ID, "tall_doors"));
 	public static final TagKey<Block> TALL_WOODEN_DOORS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(DramaticDoors.MOD_ID, "tall_wooden_doors"));
 	public static final TagKey<Block> HAND_OPENABLE_TALL_METAL_DOORS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(DramaticDoors.MOD_ID, "hand_openable_tall_metal_doors"));
-	
+
 	public static final TagKey<Item> KEY = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation("supplementaries", "key"));
 }

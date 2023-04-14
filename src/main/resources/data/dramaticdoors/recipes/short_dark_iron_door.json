@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_metal_door",
+  "ingredients": [
+    {
+      "item": "graveyard:dark_iron_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_dark_iron_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "graveyard"
+    }
+  ]
+}

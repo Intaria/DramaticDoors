@@ -9,6 +9,7 @@
   "block.dramaticdoors.tall_warped_door": "高诡异木门",
   "block.dramaticdoors.tall_mangrove_door": "高红树木门",
   "block.dramaticdoors.tall_bamboo_door": "高竹门",
+  "block.dramaticdoors.tall_cherry_door": "高樱花木门",
   "block.dramaticdoors.tall_iron_door": "高铁门",
   
   "block.dramaticdoors.tall_bop_cherry_door": "高樱桃木门",
@@ -104,7 +105,7 @@
   
   "block.dramaticdoors.tall_poise_door": "高幽仪木门",
   
-  "block.dramaticdoors.tall_cherry_door": "高樱桃木门",
+  "block.dramaticdoors.tall_dark_cherry_door": "高樱桃木门",
   "block.dramaticdoors.tall_wisteria_door": "高紫藤木门",
   "block.dramaticdoors.tall_willow_door": "高柳木门",
   
@@ -128,7 +129,7 @@
 
   "block.dramaticdoors.tall_ash_door": "高梣木门",
   "block.dramaticdoors.tall_gourdrot_door": "高棕垂木门",
-
+  
   "block.dramaticdoors.tall_twisted_door": "高扭曲木门",
   
   "block.dramaticdoors.tall_archwood_door": "高至高木门",
@@ -529,10 +530,9 @@
   "block.dramaticdoors.tall_chipped_warped_door_18": "高诡异木门",
   "block.dramaticdoors.tall_chipped_warped_door_19": "高诡异木门",
   "block.dramaticdoors.tall_chipped_warped_door_20": "高诡异木门",
-
   "block.dramaticdoors.tall_macaw_store_door": "高商店门",
   "block.dramaticdoors.tall_macaw_sliding_glass_door": "高玻璃移门",
-  
+
   "block.dramaticdoors.tall_macaw_jail_door": "高监狱门",
   "block.dramaticdoors.tall_macaw_metal_door": "高金属门",
   "block.dramaticdoors.tall_macaw_metal_hospital_door": "高医院金属门",
@@ -872,7 +872,5 @@
   "itemGroup.dramaticdoors": "Dramatic Doors",
   "itemGroup.dramaticdoors_chipped": "Dramatic Doors丨Chipped",
   "itemGroup.dramaticdoors_macaw": "Dramatic Doors丨Macaw的门",
-  "itemGroup.dramaticdoors_manyideas": "Dramatic Doors丨灵机妙想：门",
-  
-  "message.dramaticdoors.statement_notice": "<DramaticDoors> 如果门和栅栏门显示不正常，可按下F3+T以重载资源包，或在本模组配置文件中禁用含水属性，抑或卸载Statement Library模组。"
+  "itemGroup.dramaticdoors_manyideas": "Dramatic Doors丨灵机妙想：门"
 }

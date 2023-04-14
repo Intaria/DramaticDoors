@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_metal_door",
+  "ingredients": [
+    {
+      "item": "createdeco:locked_brass_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_locked_brass_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "createdeco"
+    }
+  ]
+}

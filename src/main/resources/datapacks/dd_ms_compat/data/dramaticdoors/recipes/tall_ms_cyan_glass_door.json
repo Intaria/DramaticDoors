@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_glass_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "ms:door/cyan_glass"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_ms_cyan_glass_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ms"
+    }
+  ]
+}

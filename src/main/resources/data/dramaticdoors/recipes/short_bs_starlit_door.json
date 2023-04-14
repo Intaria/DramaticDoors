@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_bs_wooden_door",
+  "ingredients": [
+    {
+      "item": "blue_skies:starlit_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_bs_starlit_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "blue_skies"
+    }
+  ]
+}

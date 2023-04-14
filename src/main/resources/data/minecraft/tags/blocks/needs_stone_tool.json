@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "dramaticdoors:short_steel_door",
+    "dramaticdoors:short_locked_steel_door",
     "dramaticdoors:tall_steel_door",
     "dramaticdoors:tall_locked_steel_door"
   ]

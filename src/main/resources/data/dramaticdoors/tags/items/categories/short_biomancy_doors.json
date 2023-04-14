@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_flesh_door",
+    "dramaticdoors:short_full_flesh_door",
+    "dramaticdoors:short_fleshkin_door"
+  ]
+}

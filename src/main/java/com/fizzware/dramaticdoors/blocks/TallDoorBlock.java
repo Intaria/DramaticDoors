@@ -1,14 +1,12 @@
 package com.fizzware.dramaticdoors.blocks;
 
 import javax.annotation.Nullable;
-import javax.annotation.ParametersAreNonnullByDefault;
-
 import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.compat.QuarkCompat;
+import com.fizzware.dramaticdoors.init.DDBlocks;
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
-import com.mojang.blaze3d.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -51,8 +49,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 
-@ParametersAreNonnullByDefault
-@MethodsReturnNonnullByDefault
 @SuppressWarnings("deprecation")
 public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 
@@ -281,7 +277,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 	                this.playSound(level, pos, flag);
 	            }
 	            tryOpenDoubleDoor(level, state, pos);
-	            level.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), 2);
+	            level.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), Block.UPDATE_CLIENTS);
         	}
         }
     }

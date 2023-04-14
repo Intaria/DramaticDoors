@@ -4,6 +4,7 @@
 	"compatibilityLevel": "JAVA_17",
 	"refmap": "mixins.dramaticdoors.refmap.json",
 	"plugin": "com.fizzware.dramaticdoors.mixin.DDMixinConfig",
+	"maxShiftBy": 2,
 	"mixins": [
         "DoorBlockMixin",
         "FenceGateBlockMixin",

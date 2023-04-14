@@ -3,7 +3,7 @@ package com.fizzware.dramaticdoors.datagen;
 import java.util.function.Consumer;
 
 import com.fizzware.dramaticdoors.DramaticDoors;
-import com.fizzware.dramaticdoors.items.DDItems;
+import com.fizzware.dramaticdoors.init.DDItems;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;

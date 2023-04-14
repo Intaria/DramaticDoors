@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_canopy_door",
+    "dramaticdoors:short_darkwood_door",
+    "dramaticdoors:short_twilight_mangrove_door",
+    "dramaticdoors:short_minewood_door",
+    "dramaticdoors:short_sortingwood_door",
+    "dramaticdoors:short_timewood_door",
+    "dramaticdoors:short_transwood_door",
+    "dramaticdoors:short_twilight_oak_door",
+    "dramaticdoors:short_towerwood_door"
+  ]
+}

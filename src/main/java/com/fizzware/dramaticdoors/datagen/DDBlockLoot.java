@@ -2,8 +2,9 @@ package com.fizzware.dramaticdoors.datagen;
 
 import java.util.List;
 
-import com.fizzware.dramaticdoors.blocks.DDBlocks;
+import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
+import com.fizzware.dramaticdoors.init.DDBlocks;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
@@ -22,7 +23,12 @@ public class DDBlockLoot extends BlockLoot
 	@Override
 	protected void addTables() {
 		for (Block block : getKnownBlocks()) {
-			add(block, createTallDoorTable(block));
+			if (block instanceof TallDoorBlock) {
+				add(block, createTallDoorTable(block));
+			}
+			else if (block instanceof ShortDoorBlock) {
+				dropSelf(block);
+			}
 		}
 	}
 	

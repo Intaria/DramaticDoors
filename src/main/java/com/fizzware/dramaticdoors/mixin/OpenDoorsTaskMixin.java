@@ -11,6 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import com.fizzware.dramaticdoors.DDTags;
+import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 
 import net.minecraft.core.BlockPos;
@@ -40,6 +41,15 @@ public class OpenDoorsTaskMixin
 			}
 			((InteractWithDoor)(Object)this).rememberDoorToClose(world, entity, blockpos);
 		}
+		if (blockstate.is(DDTags.SHORT_WOODEN_DOORS, (localblockstate) -> {
+			return localblockstate.getBlock() instanceof ShortDoorBlock;
+		})) {
+			ShortDoorBlock shortdoorblock = (ShortDoorBlock)blockstate.getBlock();
+			if (!shortdoorblock.isOpen(blockstate)) {
+				shortdoorblock.setOpen(entity, world, blockstate, blockpos, true);
+			}
+			((InteractWithDoor)(Object)this).rememberDoorToClose(world, entity, blockpos);
+		}
 	}
 	
 	// Part 2 of inject, lower checks.
@@ -56,6 +66,15 @@ public class OpenDoorsTaskMixin
 			}
 			((InteractWithDoor)(Object)this).rememberDoorToClose(world, entity, blockPosDD2);
 		}
+		if (blockstateDD2.is(DDTags.SHORT_WOODEN_DOORS, (localblockstate) -> {
+			return localblockstate.getBlock() instanceof ShortDoorBlock;
+		})) {
+			ShortDoorBlock talldoorblock = (ShortDoorBlock)blockstateDD2.getBlock();
+			if (!talldoorblock.isOpen(blockstateDD2)) {
+				talldoorblock.setOpen(entity, world, blockstateDD2, blockPosDD2, true);
+			}
+			((InteractWithDoor)(Object)this).rememberDoorToClose(world, entity, blockPosDD2);
+		}
 	}
 	
 	@Inject(method = "closeDoorsThatIHaveOpenedOrPassedThrough(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerLevel;getBlockState(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;"), locals = LocalCapture.CAPTURE_FAILSOFT)
@@ -64,6 +83,10 @@ public class OpenDoorsTaskMixin
         if (blockStateDD.is(DDTags.TALL_WOODEN_DOORS, state -> state.getBlock() instanceof TallDoorBlock)) {
         	TallDoorBlock tallDoorBlock = (TallDoorBlock)blockStateDD.getBlock();
         	tallDoorBlock.setOpen(entity, world, blockStateDD, blockPos, false);
+        }
+        if (blockStateDD.is(DDTags.SHORT_WOODEN_DOORS, state -> state.getBlock() instanceof ShortDoorBlock)) {
+        	ShortDoorBlock shortDoorBlock = (ShortDoorBlock)blockStateDD.getBlock();
+        	shortDoorBlock.setOpen(entity, world, blockStateDD, blockPos, false);
         }
 	}
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_manyideas_shoji_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "manyideas_doors:door_crimson_shoji"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_manyideas_crimson_shoji_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "manyideas_doors"
+    }
+  ]
+}

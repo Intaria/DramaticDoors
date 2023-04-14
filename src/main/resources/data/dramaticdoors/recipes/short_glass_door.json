@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_misc_door",
+  "ingredients": [
+    {
+      "item": "upgrade_aquatic:glass_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_glass_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ]
+}

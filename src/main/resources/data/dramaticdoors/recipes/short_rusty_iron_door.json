@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_metal_door",
+  "ingredients": [
+    {
+      "item": "dustrial_decor:rusty_iron_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_rusty_iron_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "dustrial_decor"
+    }
+  ]
+}

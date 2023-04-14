@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_wooden_door",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_acacia_door",
+    "count": 2
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_gold_door",
+    "dramaticdoors:short_silver_door",
+    "dramaticdoors:short_lead_door",
+    "dramaticdoors:short_dark_iron_door",
+    "dramaticdoors:short_andesite_door",
+    "dramaticdoors:short_brass_door",
+    "dramaticdoors:short_copper_door",
+    "dramaticdoors:short_zinc_door",
+    "dramaticdoors:short_steel_door",
+    "dramaticdoors:short_chain_door",
+    "dramaticdoors:short_sheet_metal_door",
+    "dramaticdoors:short_rusty_sheet_metal_door"
+  ]
+}

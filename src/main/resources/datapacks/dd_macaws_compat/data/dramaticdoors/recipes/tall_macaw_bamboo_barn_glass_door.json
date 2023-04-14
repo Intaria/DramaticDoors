@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_macaw_barn_glass_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "mcwdoors:bamboo_barn_glass_door"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_macaw_bamboo_barn_glass_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mcwdoors"
+    }
+  ]
+}

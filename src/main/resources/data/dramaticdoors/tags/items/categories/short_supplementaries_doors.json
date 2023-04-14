@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_gold_door",
+    "dramaticdoors:short_netherite_door",
+    "dramaticdoors:short_silver_door",
+    "dramaticdoors:short_lead_door"
+  ]
+}

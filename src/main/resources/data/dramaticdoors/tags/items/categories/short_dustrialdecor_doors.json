@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_cardboard_door",
+    "dramaticdoors:short_chain_door",
+    "dramaticdoors:short_industrial_iron_door",
+    "dramaticdoors:short_iron_bar_door",
+    "dramaticdoors:short_padded_door",
+    "dramaticdoors:short_rusty_iron_door",
+    "dramaticdoors:short_rusty_sheet_metal_door",
+    "dramaticdoors:short_sheet_metal_door"
+  ]
+}

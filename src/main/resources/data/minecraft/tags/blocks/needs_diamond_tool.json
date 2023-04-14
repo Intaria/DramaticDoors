@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "dramaticdoors:short_netherite_door",
+    "dramaticdoors:short_morecraft_netherite_door",
+    "dramaticdoors:short_bp_netherite_door",
     "dramaticdoors:tall_netherite_door",
     "dramaticdoors:tall_morecraft_netherite_door",
     "dramaticdoors:tall_bp_netherite_door"

@@ -21,9 +21,9 @@ logoFile="icon.png"
 
     Gone are the ways of the past - with the new Dramatic Doors mod!
 
-    With the modern era of innovations comes a new door type: the tall door.
-    These 3-block-high doors come in every vanilla variety;
-    Iron, Oak, Spruce, Birch, Acacia, Dark Oak, Jungle, Crimson, and Warped! And in 1.19, the all-new Mangrove!
+    With the modern era of innovations comes two new door types: the tall door and the short door.
+    These 1-block-high short doors and 3-block-high tall doors come in every vanilla variety;
+    Iron, Oak, Spruce, Birch, Acacia, Dark Oak, Jungle, Crimson, and Warped! And in 1.19+, the all-new Mangrove!
     Craft one by putting 3 of the variant vertically in a crafting table, whether vanilla or modded.
     
     Now supports over 70 mods!
@@ -32,7 +32,7 @@ logoFile="icon.png"
 [[dependencies.dramaticdoors]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.19.3)"
+    versionRange="[1.19.2,1.19.3)"
     ordering="AFTER"
     side="BOTH"
 

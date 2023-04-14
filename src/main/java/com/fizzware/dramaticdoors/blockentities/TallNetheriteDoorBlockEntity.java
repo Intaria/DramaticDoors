@@ -6,6 +6,7 @@ import javax.annotation.Nullable;
 
 import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
+import com.fizzware.dramaticdoors.init.DDBlockEntities;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -71,7 +72,7 @@ public class TallNetheriteDoorBlockEntity extends BlockEntity
         return isCorrectKey(key, this.password);
     }
 
-    public enum KeyStatus {
+    public static enum KeyStatus {
         CORRECT_KEY,
         INCORRECT_KEY,
         NO_KEY

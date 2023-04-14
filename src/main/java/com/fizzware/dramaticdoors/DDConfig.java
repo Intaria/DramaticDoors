@@ -12,7 +12,7 @@ public class DDConfig
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 	
 	public static ForgeConfigSpec CONFIG;
-	
+
 	public static final String CATEGORY_MIXINS = "Mixins";
 	
 	public static ForgeConfigSpec.BooleanValue waterloggableDoors;

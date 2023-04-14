@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_misc_door",
+  "ingredients": [
+    {
+      "item": "buzzier_bees:honeycomb_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_honeycomb_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "buzzier_bees"
+    }
+  ]
+}

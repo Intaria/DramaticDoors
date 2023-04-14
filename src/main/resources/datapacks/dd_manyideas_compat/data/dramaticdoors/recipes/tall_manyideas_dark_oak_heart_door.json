@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_manyideas_heart_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "manyideas_doors:door_dark_oak_heart"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_manyideas_dark_oak_heart_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "manyideas_doors"
+    }
+  ]
+}

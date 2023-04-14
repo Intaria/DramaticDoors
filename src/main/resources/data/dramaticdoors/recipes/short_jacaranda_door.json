@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_wooden_door",
+  "ingredients": [
+    {
+      "item": "abundance:jacaranda_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_jacaranda_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "abundance"
+    }
+  ]
+}

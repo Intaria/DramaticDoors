@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_copper_door",
+  "ingredients": [
+    {
+      "item": "everythingcopper:copper_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_ec_copper_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "everythingcopper"
+    }
+  ]
+}

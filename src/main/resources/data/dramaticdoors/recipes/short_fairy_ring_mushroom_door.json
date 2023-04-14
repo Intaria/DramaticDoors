@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "short_wooden_door",
+  "ingredients": [
+    {
+      "item": "habitat:fairy_ring_mushroom_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_fairy_ring_mushroom_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "habitat"
+    }
+  ]
+}

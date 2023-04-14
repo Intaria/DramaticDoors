@@ -3,6 +3,7 @@ package com.fizzware.dramaticdoors.blocks;
 import java.util.Optional;
 import java.util.function.Supplier;
 
+import com.fizzware.dramaticdoors.init.DDBlocks;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;

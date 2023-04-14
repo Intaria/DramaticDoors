@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tall_manyideas_iron_door",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "manyideas_doors:door_iron_space"
+    }
+  },
+  "result": {
+    "item": "dramaticdoors:tall_manyideas_iron_space_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "manyideas_doors"
+    }
+  ]
+}

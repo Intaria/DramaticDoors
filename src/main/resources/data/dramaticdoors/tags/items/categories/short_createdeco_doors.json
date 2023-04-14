@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_andesite_door",
+    "dramaticdoors:short_brass_door",
+    "dramaticdoors:short_copper_door",
+    "dramaticdoors:short_zinc_door",
+    "dramaticdoors:short_locked_andesite_door",
+    "dramaticdoors:short_locked_brass_door",
+    "dramaticdoors:short_locked_copper_door",
+    "dramaticdoors:short_locked_zinc_door"
+  ]
+}
