@@ -2,19 +2,27 @@ package com.fizzware.dramaticdoors;
 
 import java.io.IOException;
 
+import com.fizzware.dramaticdoors.blockentities.DDBlockEntities;
+import com.fizzware.dramaticdoors.blocks.DDBlocks;
+
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
+
 import com.fizzware.dramaticdoors.client.ClientRenderer;
 import com.fizzware.dramaticdoors.compat.AutomaticDoorCompat;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.compat.QuarkCompat;
 import com.fizzware.dramaticdoors.compat.StatementCompat;
-import com.fizzware.dramaticdoors.init.DDBlockEntities;
-import com.fizzware.dramaticdoors.init.DDBlocks;
-import com.fizzware.dramaticdoors.init.DDItems;
-import com.fizzware.dramaticdoors.init.compat.DDBYGRegistry;
-import com.fizzware.dramaticdoors.init.compat.DDChippedRegistry;
-import com.fizzware.dramaticdoors.init.compat.DDMacawsDoorsRegistry;
-import com.fizzware.dramaticdoors.init.compat.DDManyIdeasDoorsRegistry;
-import com.fizzware.dramaticdoors.init.compat.DDMoShizRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDBiomePackRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDChippedRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDDimensionalPackRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDMacawsDoorsRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDMagicPackRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDManyIdeasDoorsRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDMiscPackRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDTechPackRegistry;
+import com.fizzware.dramaticdoors.compat.registries.DDVanillaesquePackRegistry;
+import com.fizzware.dramaticdoors.items.DDItems;
 import com.google.common.collect.ImmutableList;
 
 import net.minecraft.network.chat.Component;
@@ -41,17 +49,19 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.resource.PathPackResources;
-import oshi.util.tuples.Triplet;
+import oshi.util.tuples.Quartet;
 
 @Mod("dramaticdoors")
 public class DramaticDoors
 {
     public static final String MOD_ID = "dramaticdoors";
     
+    //public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    
     public DramaticDoors() {
     	IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus(); // Please let this be a normal field trip.
     	
-    	// With the LexManos? No freakin' way! Register events for the Magic Forge Bus to take them on an extraordinary trip.
+    	// With the Mr. Fizzware? No freakin' way! Register events for the Magic Forge Bus to take them on an extraordinary trip.
     	DDBlocks.BLOCKS.register(bus);
     	DDItems.ITEMS.register(bus);
     	DDBlockEntities.BLOCK_ENTITIES.register(bus);
@@ -63,6 +73,24 @@ public class DramaticDoors
         MinecraftForge.EVENT_BUS.register(this);
         
         // Hook in the compats.
+        if (Compats.VANILLAESQUE_PACK_ENABLED) {
+        	bus.register(DDVanillaesquePackRegistry.class);
+        }
+        if (Compats.BIOME_PACK_ENABLED) {
+        	bus.register(DDBiomePackRegistry.class);
+        }
+        if (Compats.DIMENSIONAL_PACK_ENABLED) {
+        	bus.register(DDDimensionalPackRegistry.class);
+        }
+        if (Compats.MAGIC_PACK_ENABLED) {
+        	bus.register(DDMagicPackRegistry.class);
+        }
+        if (Compats.TECH_PACK_ENABLED) {
+        	bus.register(DDTechPackRegistry.class);
+        }
+        if (Compats.MISC_PACK_ENABLED) {
+        	bus.register(DDMiscPackRegistry.class);
+        }
         if (Compats.CHIPPED_INSTALLED) {
         	bus.register(DDChippedRegistry.class);
         }
@@ -71,12 +99,6 @@ public class DramaticDoors
         }
         if (Compats.MANYIDEAS_DOORS_INSTALLED) {
         	bus.register(DDManyIdeasDoorsRegistry.class);
-        }
-        if (ModList.get().isLoaded("byg")) {
-        	bus.register(DDBYGRegistry.class);
-        }
-       if (ModList.get().isLoaded("ms")) {
-        	bus.register(DDMoShizRegistry.class);
         }
     	/*if (Compats.STATEMENT_INSTALLED) { 
     		StatementCompat.implementWaterlogging(false);
@@ -126,25 +148,29 @@ public class DramaticDoors
     
     private void setupBuiltInDataPack(final AddPackFindersEvent event) {
     	// Declare variables and bundle them in an immutable list.
-    	var pack1 = new Triplet<>("byg", "datapacks/dd_byg_compat", "Dramatic Doors - Oh the Biomes You'll Go Compat");
-    	var pack2 = new Triplet<>("ms", "datapacks/dd_ms_compat", "Dramatic Doors - Mo'Shiz Compat");
-    	var pack3 = new Triplet<>("chipped", "datapacks/dd_chipped_compat", "Dramatic Doors - Chipped Compat");
-    	var pack4 = new Triplet<>("mcwdoors", "datapacks/dd_macaws_compat", "Dramatic Doors - Macaw's Doors Compat");
-    	var pack5 = new Triplet<>("manyideas_doors", "datapacks/dd_manyideas_compat", "Dramatic Doors - ManyIdeas Doors Compat");
-    	var packs = ImmutableList.of(pack1, pack2, pack3, pack4, pack5);
+    	var packVanilla = new Quartet<>("vanillaesque", Compats.VANILLAESQUE_PACK_ENABLED, "datapacks/dd_vanillaesque_compatpack", "DD - Vanillaesque Pack");
+    	var packBiome = new Quartet<>("biome", Compats.BIOME_PACK_ENABLED, "datapacks/dd_biomes_compatpack", "DD - Biome Pack");
+    	var packDim = new Quartet<>("dimensional", Compats.DIMENSIONAL_PACK_ENABLED, "datapacks/dd_dimensions_compatpack", "DD - Dimensional Pack");
+    	var packMagic = new Quartet<>("magic", Compats.MAGIC_PACK_ENABLED, "datapacks/dd_magic_compatpack", "DD - Magic Pack");
+    	var packTech = new Quartet<>("tech", Compats.TECH_PACK_ENABLED, "datapacks/dd_tech_compatpack", "DD - Tech Pack");
+    	var packMisc = new Quartet<>("misc", Compats.MISC_PACK_ENABLED, "datapacks/dd_misc_compatpack", "DD - Misc Pack");
+    	var pack1 = new Quartet<>("chipped", Compats.CHIPPED_INSTALLED, "datapacks/dd_chipped_compat", "DD - Chipped Compat");
+    	var pack2 = new Quartet<>("macaw", Compats.MACAWS_DOORS_INSTALLED, "datapacks/dd_macaws_compat", "DD - Macaw's Doors Compat");
+    	var pack3 = new Quartet<>("manyideas", Compats.MANYIDEAS_DOORS_INSTALLED, "datapacks/dd_manyideas_compat", "DD - ManyIdeas Doors Compat");
+    	var packs = ImmutableList.of(packVanilla, packBiome, packDim, packMagic, packTech, packMisc, pack1, pack2, pack3);
     	// Iterate through the pack list and accordingly add packs.
 
     	if (event.getPackType() == PackType.SERVER_DATA) {
     		try {
-		    	for (Triplet<String, String, String> packToCheck : packs) {
-	    			if (!ModList.get().isLoaded(packToCheck.getA())) {
+		    	for (Quartet<String, Boolean, String, String> packToCheck : packs) {
+	    			if (!packToCheck.getB()) {
 	    				continue;
 	    			}
-	        		var resourcePath = ModList.get().getModFileById(MOD_ID).getFile().findResource(packToCheck.getB());
+	        		var resourcePath = ModList.get().getModFileById(MOD_ID).getFile().findResource(packToCheck.getC());
 	                try (var pack = new PathPackResources(ModList.get().getModFileById(MOD_ID).getFile().getFileName() + ":" + resourcePath, resourcePath)) {
 						var metadataSection = pack.getMetadataSection(PackMetadataSection.SERIALIZER);
 						if (metadataSection != null) {
-						    event.addRepositorySource((packConsumer, packConstructor) -> packConsumer.accept(packConstructor.create("builtin/dramaticdoors-" + packToCheck.getA(), Component.literal(packToCheck.getC()), false, () -> pack, metadataSection, Pack.Position.BOTTOM, PackSource.BUILT_IN, false)));
+						    event.addRepositorySource((packConsumer, packConstructor) -> packConsumer.accept(packConstructor.create("builtin/dramaticdoors-" + packToCheck.getA(), Component.literal(packToCheck.getD()), false, () -> pack, metadataSection, Pack.Position.BOTTOM, PackSource.BUILT_IN, false)));
 						}
 					}
 		    	}

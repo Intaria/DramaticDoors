@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "Dramatic Doors: Chipped compat data",
+    "description": "DD: Chipped compat data",
     "pack_format": 10,
     "_comment": "Provides compatibility for Chipped."
   }

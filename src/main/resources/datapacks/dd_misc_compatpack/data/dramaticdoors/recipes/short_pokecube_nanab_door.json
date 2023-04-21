@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "short_pokecube_wooden_door",
+  "ingredients": [
+    {
+      "item": "pokecube:nanab_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_pokecube_nanab_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pokecube"
+    }
+  ]
+}

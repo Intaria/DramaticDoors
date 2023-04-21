@@ -69,9 +69,9 @@ public class OpenDoorsTaskMixin
 		if (blockstateDD2.is(DDTags.SHORT_WOODEN_DOORS, (localblockstate) -> {
 			return localblockstate.getBlock() instanceof ShortDoorBlock;
 		})) {
-			ShortDoorBlock talldoorblock = (ShortDoorBlock)blockstateDD2.getBlock();
-			if (!talldoorblock.isOpen(blockstateDD2)) {
-				talldoorblock.setOpen(entity, world, blockstateDD2, blockPosDD2, true);
+			ShortDoorBlock shortdoorblock = (ShortDoorBlock)blockstateDD2.getBlock();
+			if (!shortdoorblock.isOpen(blockstateDD2)) {
+				shortdoorblock.setOpen(entity, world, blockstateDD2, blockPosDD2, true);
 			}
 			((InteractWithDoor)(Object)this).rememberDoorToClose(world, entity, blockPosDD2);
 		}

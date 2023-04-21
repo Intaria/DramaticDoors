@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:short_jaboticaba_door",
-    "dramaticdoors:short_ramboutan_door"
+    {"id": "dramaticdoors:short_jaboticaba_door", "required": false},
+    {"id": "dramaticdoors:short_ramboutan_door", "required": false}
   ]
 }

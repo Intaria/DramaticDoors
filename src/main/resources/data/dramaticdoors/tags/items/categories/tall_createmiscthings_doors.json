@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_andesite_casing_door",
-    "dramaticdoors:tall_brass_casing_door",
-    "dramaticdoors:tall_copper_casing_door"
+    {"id": "dramaticdoors:tall_andesite_casing_door", "required": false},
+    {"id": "dramaticdoors:tall_brass_casing_door", "required": false},
+    {"id": "dramaticdoors:tall_copper_casing_door", "required": false}
   ]
 }

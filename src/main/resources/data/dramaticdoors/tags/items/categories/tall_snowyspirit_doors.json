@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_gingerbread_door"
+    {"id": "dramaticdoors:tall_gingerbread_door", "required": false}
   ]
 }

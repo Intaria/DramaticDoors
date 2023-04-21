@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_top_left_open",
-  "textures": {
-    "bottom": "dramaticdoors:block/chipped/tall_birch_door_11_bottom",
-    "middle": "dramaticdoors:block/chipped/tall_birch_door_11_middle",
-    "top": "dramaticdoors:block/chipped/tall_birch_door_11_top"
-  }
-}

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:short_soulblight_door",
-    "dramaticdoors:short_whistlecane_door"
+    {"id": "dramaticdoors:short_soulblight_door", "required": false},
+    {"id": "dramaticdoors:short_whistlecane_door", "required": false}
   ]
 }

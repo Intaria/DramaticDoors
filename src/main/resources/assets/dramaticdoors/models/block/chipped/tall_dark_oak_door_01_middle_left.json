@@ -1,8 +1,0 @@
-{
-  "parent": "dramaticdoors:block/door_middle_left",
-  "textures": {
-    "bottom": "dramaticdoors:block/chipped/tall_dark_oak_door_1_middle",
-    "middle": "dramaticdoors:block/chipped/tall_dark_oak_door_1_middle",
-    "top": "dramaticdoors:block/chipped/tall_dark_oak_door_1_middle"
-  }
-}

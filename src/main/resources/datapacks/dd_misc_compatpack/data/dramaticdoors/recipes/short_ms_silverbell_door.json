@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "short_wooden_door",
+  "ingredients": [
+    {
+      "item": "ms:door/silverbell"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_ms_silverbell_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ms"
+    }
+  ]
+}

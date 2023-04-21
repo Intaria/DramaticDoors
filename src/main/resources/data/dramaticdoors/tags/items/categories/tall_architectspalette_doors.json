@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_twisted_door"
+    {"id": "dramaticdoors:tall_twisted_door", "required": false}
   ]
 }

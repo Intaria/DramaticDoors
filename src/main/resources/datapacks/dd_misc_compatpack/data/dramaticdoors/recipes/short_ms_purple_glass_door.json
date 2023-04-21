@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "short_glass_door",
+  "ingredients": [
+    {
+      "item": "ms:door/purple_glass"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_ms_purple_glass_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ms"
+    }
+  ]
+}

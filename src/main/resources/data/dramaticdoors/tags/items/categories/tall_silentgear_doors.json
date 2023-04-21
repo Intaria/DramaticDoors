@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_netherwood_door"
+    {"id": "dramaticdoors:tall_netherwood_door", "required": false}
   ]
 }

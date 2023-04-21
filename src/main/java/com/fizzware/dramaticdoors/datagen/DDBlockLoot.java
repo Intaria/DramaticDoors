@@ -1,22 +1,21 @@
 package com.fizzware.dramaticdoors.datagen;
 
 import java.util.List;
+import java.util.Map;
 
 import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
-import com.fizzware.dramaticdoors.init.DDBlocks;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class DDBlockLoot extends BlockLoot
 {
 	@Override
 	protected Iterable<Block> getKnownBlocks() {
-		List<Block> blocks = DDBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).toList();
-		//LOGGER.info(logMarker, "generating loot tables for {} blocks...", blocks.size());
+		List<Block> blocks = ForgeRegistries.BLOCKS.getEntries().stream().filter(entry -> entry.getValue() instanceof ShortDoorBlock || entry.getValue() instanceof TallDoorBlock).map(Map.Entry::getValue).toList();
 		return blocks;
 	}
 	

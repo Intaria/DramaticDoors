@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:short_bp_bamboo_door",
-    "dramaticdoors:short_bp_mushroom_door",
-    "dramaticdoors:short_bp_copper_door",
-    "dramaticdoors:short_bp_golden_door",
-    "dramaticdoors:short_bp_emerald_door",
-    "dramaticdoors:short_bp_diamond_door",
-    "dramaticdoors:short_bp_netherite_door"
+    {"id": "dramaticdoors:short_bp_bamboo_door", "required": false},
+    {"id": "dramaticdoors:short_bp_mushroom_door", "required": false},
+    {"id": "dramaticdoors:short_bp_copper_door", "required": false},
+    {"id": "dramaticdoors:short_bp_golden_door", "required": false},
+    {"id": "dramaticdoors:short_bp_emerald_door", "required": false},
+    {"id": "dramaticdoors:short_bp_diamond_door", "required": false},
+    {"id": "dramaticdoors:short_bp_netherite_door", "required": false}
   ]
 }

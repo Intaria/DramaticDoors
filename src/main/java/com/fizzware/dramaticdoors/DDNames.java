@@ -606,6 +606,35 @@ public class DDNames
     public static final String TALL_SOULWOOD = "tall_soulwood_door";
     
     //Mo'Shiz
+    public static final String SHORT_MS_IRON_BAR = "short_ms_iron_bar_door";
+    public static final String SHORT_MS_BAMBOO = "short_ms_bamboo_door";
+    public static final String SHORT_MS_CHERRY = "short_ms_cherry_door";
+    public static final String SHORT_MS_GLOWOOD = "short_ms_glowood_door";
+    public static final String SHORT_MS_HELLWOOD = "short_ms_hellwood_door";
+    public static final String SHORT_MS_MAPLE = "short_ms_maple_door";
+    public static final String SHORT_MS_SILVERBELL = "short_ms_silverbell_door";
+    public static final String SHORT_MS_TIGERWOOD = "short_ms_tigerwood_door";
+    public static final String SHORT_MS_WILLOW = "short_ms_willow_door";
+    public static final String SHORT_MS_GLASS = "short_ms_glass_door";
+    public static final String SHORT_MS_SOUL_GLASS = "short_ms_soul_glass_door";
+    public static final String SHORT_MS_TINTED_GLASS = "short_ms_tinted_glass_door";
+    public static final String SHORT_MS_BLACK_GLASS = "short_ms_black_glass_door";
+    public static final String SHORT_MS_GREY_GLASS = "short_ms_grey_glass_door";
+    public static final String SHORT_MS_LIGHT_GREY_GLASS = "short_ms_light_grey_glass_door";
+    public static final String SHORT_MS_WHITE_GLASS = "short_ms_white_glass_door";
+    public static final String SHORT_MS_RED_GLASS = "short_ms_red_glass_door";
+    public static final String SHORT_MS_ORANGE_GLASS = "short_ms_orange_glass_door";
+    public static final String SHORT_MS_YELLOW_GLASS = "short_ms_yellow_glass_door";
+    public static final String SHORT_MS_LIME_GLASS = "short_ms_lime_glass_door";
+    public static final String SHORT_MS_GREEN_GLASS = "short_ms_green_glass_door";
+    public static final String SHORT_MS_CYAN_GLASS = "short_ms_cyan_glass_door";
+    public static final String SHORT_MS_BLUE_GLASS = "short_ms_blue_glass_door";
+    public static final String SHORT_MS_PURPLE_GLASS = "short_ms_purple_glass_door";
+    public static final String SHORT_MS_MAGENTA_GLASS = "short_ms_magenta_glass_door";
+    public static final String SHORT_MS_PINK_GLASS = "short_ms_pink_glass_door";
+    public static final String SHORT_MS_LIGHT_BLUE_GLASS = "short_ms_light_blue_glass_door";
+    public static final String SHORT_MS_BROWN_GLASS = "short_ms_brown_glass_door";
+    
     public static final String TALL_MS_IRON_BAR = "tall_ms_iron_bar_door";
     public static final String TALL_MS_BAMBOO = "tall_ms_bamboo_door";
     public static final String TALL_MS_CHERRY = "tall_ms_cherry_door";

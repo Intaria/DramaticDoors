@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:short_apricorn_door"
+    {"id": "dramaticdoors:short_apricorn_door", "required": false}
   ]
 }

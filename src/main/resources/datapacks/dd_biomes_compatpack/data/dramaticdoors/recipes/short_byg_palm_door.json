@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "short_byg_wooden_door",
+  "ingredients": [
+    {
+      "item": "byg:palm_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_byg_palm_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ]
+}

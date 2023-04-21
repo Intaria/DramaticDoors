@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "DD: Tech compat pack",
+    "pack_format": 10,
+    "_comment": "Provides compatibility for technological mods."
+  }
+}

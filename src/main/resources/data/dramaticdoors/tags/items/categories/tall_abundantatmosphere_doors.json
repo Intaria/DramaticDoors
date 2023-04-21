@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_ash_door",
-    "dramaticdoors:tall_gourdrot_door"
+    {"id": "dramaticdoors:tall_ash_door", "required": false},
+    {"id": "dramaticdoors:tall_gourdrot_door", "required": false}
   ]
 }

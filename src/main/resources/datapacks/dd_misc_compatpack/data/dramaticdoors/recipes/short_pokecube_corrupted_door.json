@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "short_pokecube_legends_door",
+  "ingredients": [
+    {
+      "item": "pokecube_legends:corrupted_door"
+    }
+  ],
+  "result": {
+    "item": "dramaticdoors:short_pokecube_corrupted_door",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pokecube"
+    }
+  ]
+}

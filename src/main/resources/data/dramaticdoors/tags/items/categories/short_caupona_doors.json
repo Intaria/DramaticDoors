@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:short_walnut_door"
+    {"id": "dramaticdoors:short_walnut_door", "required": false}
   ]
 }

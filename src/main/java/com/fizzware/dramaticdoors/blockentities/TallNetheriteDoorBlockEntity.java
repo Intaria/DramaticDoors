@@ -6,7 +6,6 @@ import javax.annotation.Nullable;
 
 import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
-import com.fizzware.dramaticdoors.init.DDBlockEntities;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

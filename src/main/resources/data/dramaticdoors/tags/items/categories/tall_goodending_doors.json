@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_ge_cypress_door",
-    "dramaticdoors:tall_ge_muddy_oak_door"
+    {"id": "dramaticdoors:tall_ge_cypress_door", "required": false},
+    {"id": "dramaticdoors:tall_ge_muddy_oak_door", "required": false}
   ]
 }

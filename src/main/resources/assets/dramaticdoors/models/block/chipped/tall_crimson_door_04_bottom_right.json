@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_right",
-  "textures": {
-    "bottom": "dramaticdoors:block/chipped/tall_crimson_door_4_bottom",
-    "middle": "dramaticdoors:block/chipped/tall_crimson_door_4_middle",
-    "top": "dramaticdoors:block/chipped/tall_crimson_door_4_top"
-  }
-}

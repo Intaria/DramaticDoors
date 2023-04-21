@@ -1,8 +1,0 @@
-{
-  "parent": "dramaticdoors:block/door_middle_right_open",
-  "textures": {
-    "bottom": "dramaticdoors:block/chipped/tall_jungle_door_18_middle",
-    "middle": "dramaticdoors:block/chipped/tall_jungle_door_18_middle",
-    "top": "dramaticdoors:block/chipped/tall_jungle_door_18_middle"
-  }
-}

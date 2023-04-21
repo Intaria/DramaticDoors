@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:short_chestnut_door",
-    "dramaticdoors:short_holly_door"
+    {"id": "dramaticdoors:short_chestnut_door", "required": false},
+    {"id": "dramaticdoors:short_holly_door", "required": false}
   ]
 }

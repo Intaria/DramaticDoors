@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:short_congealed_door",
-    "dramaticdoors:short_ee_ebony_door"
+    {"id": "dramaticdoors:short_congealed_door", "required": false},
+    {"id": "dramaticdoors:short_ee_ebony_door", "required": false}
   ]
 }

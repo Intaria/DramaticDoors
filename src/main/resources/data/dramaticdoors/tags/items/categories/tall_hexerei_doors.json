@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_hexerei_mahogany_door",
-    "dramaticdoors:tall_hexerei_willow_door",
-    "dramaticdoors:tall_hexerei_witch_hazel_door"
+    {"id": "dramaticdoors:tall_hexerei_mahogany_door", "required": false},
+    {"id": "dramaticdoors:tall_hexerei_willow_door", "required": false},
+    {"id": "dramaticdoors:tall_hexerei_witch_hazel_door", "required": false}
   ]
 }

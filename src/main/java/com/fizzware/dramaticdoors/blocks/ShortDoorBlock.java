@@ -5,7 +5,8 @@ import javax.annotation.Nullable;
 import com.fizzware.dramaticdoors.DDTags;
 import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.compat.QuarkCompat;
-import com.fizzware.dramaticdoors.init.DDBlocks;
+import com.fizzware.dramaticdoors.compat.registries.DDVanillaesquePackRegistry;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -90,9 +91,15 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
         BlockPos blockpos = context.getClickedPos();
         if (blockpos.getY() < context.getLevel().getMaxBuildHeight() && context.getLevel().getBlockState(blockpos).canBeReplaced(context)) {
             Level level = context.getLevel();
+            Direction face = context.getHorizontalDirection();
+            DoorHingeSide hinge = this.getHinge(context);
             boolean flag = level.hasNeighborSignal(blockpos) || level.hasNeighborSignal(blockpos.above());
             boolean waterfilled = level.getFluidState(blockpos).getType() == Fluids.WATER; 
-            return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(HINGE, this.getHinge(context)).setValue(POWERED, flag).setValue(OPEN, flag).setValue(WATERLOGGED, waterfilled);
+            if (context.getClickedFace() == context.getHorizontalDirection() && context.getClickedFace().getAxis().isHorizontal()) { // Flip the direction.
+            	face = face.getOpposite();
+            	hinge = hinge == DoorHingeSide.LEFT ? DoorHingeSide.RIGHT : DoorHingeSide.LEFT; // Flip the hinge.
+            }
+            return this.defaultBlockState().setValue(FACING, face).setValue(HINGE, this.getHinge(context)).setValue(POWERED, flag).setValue(OPEN, flag).setValue(WATERLOGGED, waterfilled);
         } else {
             return null;
         }
@@ -136,10 +143,10 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
             return InteractionResult.PASS;
         } 
     	else {
-        	if (this == DDBlocks.SHORT_GOLD_DOOR.get() && state.getValue(POWERED)) {
+        	if (this == DDVanillaesquePackRegistry.SHORT_GOLD_DOOR && state.getValue(POWERED)) {
         		return InteractionResult.PASS;
         	}
-        	if (this == DDBlocks.SHORT_SILVER_DOOR.get() && !state.getValue(POWERED)) {
+        	if (this == DDVanillaesquePackRegistry.SHORT_SILVER_DOOR && !state.getValue(POWERED)) {
         		return InteractionResult.PASS;
         	}
         	tryOpenDoubleDoor(level, state, pos);
@@ -150,7 +157,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 			if (state.getValue(WATERLOGGED)) {
 				level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
 			}
-            if (DDBlocks.SHORT_TOOTH_DOOR != null && this == DDBlocks.SHORT_TOOTH_DOOR.get()) {
+            if (DDVanillaesquePackRegistry.SHORT_TOOTH_DOOR != null && this == DDVanillaesquePackRegistry.SHORT_TOOTH_DOOR) {
             	level.scheduleTick(pos, this, 20);
             }
             return InteractionResult.sidedSuccess(level.isClientSide);
@@ -159,7 +166,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     
 	@Override
 	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-		if (this != DDBlocks.SHORT_TOOTH_DOOR.get()) {
+		if (this != DDVanillaesquePackRegistry.SHORT_TOOTH_DOOR) {
 			return; // Should stop the 'dancing' doors.
 		}
 		if (!level.isClientSide) {
@@ -187,6 +194,13 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 			this.playSound(level, pos, open);
 			level.gameEvent(entity, open ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
 			tryOpenDoubleDoor(level, state, pos);
+			// If there is a short door above, also try to open that half.
+			BlockState stateAbove = level.getBlockState(pos.above(1));
+			if (stateAbove.is(DDTags.SHORT_WOODEN_DOORS)) {
+				if ((level.isNight() && (open || stateAbove.getValue(OPEN))) || (level.isDay() && !stateAbove.getValue(OPEN))) {
+					level.setBlock(pos.above(), stateAbove.setValue(OPEN, Boolean.valueOf(open)), 10);
+				}
+			}
 		}
  	}
     
@@ -194,7 +208,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
         boolean flag = level.hasNeighborSignal(pos);
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	if (this == DDBlocks.SHORT_GOLD_DOOR.get() || this == DDBlocks.SHORT_SILVER_DOOR.get() || this == DDBlocks.SHORT_LEAD_DOOR.get()) {
+        	if (this == DDVanillaesquePackRegistry.SHORT_GOLD_DOOR || this == DDVanillaesquePackRegistry.SHORT_SILVER_DOOR || this == DDVanillaesquePackRegistry.SHORT_LEAD_DOOR) {
         		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {
@@ -203,6 +217,9 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 	            }
 	            tryOpenDoubleDoor(level, state, pos);
 	            level.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), Block.UPDATE_CLIENTS);
+				if (state.getValue(WATERLOGGED)) {
+					level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+				}
         	}
         }
     }

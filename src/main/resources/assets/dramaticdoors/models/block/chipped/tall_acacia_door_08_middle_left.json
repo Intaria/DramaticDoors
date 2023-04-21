@@ -1,8 +1,0 @@
-{
-  "parent": "dramaticdoors:block/door_middle_left",
-  "textures": {
-    "bottom": "dramaticdoors:block/chipped/tall_acacia_door_8_middle",
-    "middle": "dramaticdoors:block/chipped/tall_acacia_door_8_middle",
-    "top": "dramaticdoors:block/chipped/tall_acacia_door_8_middle"
-  }
-}

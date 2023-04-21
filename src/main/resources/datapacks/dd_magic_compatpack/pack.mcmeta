@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "DD: Magic compat pack",
+    "pack_format": 10,
+    "_comment": "Provides compatibility for magic mods."
+  }
+}

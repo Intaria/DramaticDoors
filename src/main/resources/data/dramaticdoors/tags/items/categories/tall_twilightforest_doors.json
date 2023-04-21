@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_canopy_door",
-    "dramaticdoors:tall_darkwood_door",
-    "dramaticdoors:tall_twilight_mangrove_door",
-    "dramaticdoors:tall_minewood_door",
-    "dramaticdoors:tall_sortingwood_door",
-    "dramaticdoors:tall_timewood_door",
-    "dramaticdoors:tall_transwood_door",
-    "dramaticdoors:tall_twilight_oak_door",
-    "dramaticdoors:tall_towerwood_door"
+    {"id": "dramaticdoors:tall_canopy_door", "required": false},
+    {"id": "dramaticdoors:tall_darkwood_door", "required": false},
+    {"id": "dramaticdoors:tall_twilight_mangrove_door", "required": false},
+    {"id": "dramaticdoors:tall_minewood_door", "required": false},
+    {"id": "dramaticdoors:tall_sortingwood_door", "required": false},
+    {"id": "dramaticdoors:tall_timewood_door", "required": false},
+    {"id": "dramaticdoors:tall_transwood_door", "required": false},
+    {"id": "dramaticdoors:tall_twilight_oak_door", "required": false},
+    {"id": "dramaticdoors:tall_towerwood_door", "required": false}
   ]
 }

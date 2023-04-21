@@ -3,7 +3,7 @@ package com.fizzware.dramaticdoors.blocks;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-import com.fizzware.dramaticdoors.init.DDBlocks;
+import com.fizzware.dramaticdoors.compat.registries.DDMiscPackRegistry;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableBiMap;
@@ -33,7 +33,7 @@ import net.minecraft.world.phys.BlockHitResult;
 public class ShortCopperDoorBlock extends ShortDoorBlock implements WeatheringCopper
 {
 	private static Supplier<BiMap<Block, Block>> NEXT_BY_BLOCK = Suppliers.memoize(() -> {
-		return ImmutableBiMap.<Block, Block>builder().put(DDBlocks.SHORT_EC_COPPER_DOOR.get(), DDBlocks.SHORT_EC_EXPOSED_COPPER_DOOR.get()).put(DDBlocks.SHORT_EC_EXPOSED_COPPER_DOOR.get(), DDBlocks.SHORT_EC_WEATHERED_COPPER_DOOR.get()).put(DDBlocks.SHORT_EC_WEATHERED_COPPER_DOOR.get(), DDBlocks.SHORT_EC_OXIDIZED_COPPER_DOOR.get()).build();
+		return ImmutableBiMap.<Block, Block>builder().put(DDMiscPackRegistry.SHORT_COPPER_DOOR, DDMiscPackRegistry.SHORT_EXPOSED_COPPER_DOOR).put(DDMiscPackRegistry.SHORT_EXPOSED_COPPER_DOOR, DDMiscPackRegistry.SHORT_WEATHERED_COPPER_DOOR).put(DDMiscPackRegistry.SHORT_WEATHERED_COPPER_DOOR, DDMiscPackRegistry.SHORT_OXIDIZED_COPPER_DOOR).build();
 	});
 	private static Supplier<BiMap<Block, Block>> PREVIOUS_BY_BLOCK = Suppliers.memoize(() -> { return NEXT_BY_BLOCK.get().inverse(); });
 
@@ -50,7 +50,7 @@ public class ShortCopperDoorBlock extends ShortDoorBlock implements WeatheringCo
 		Block block = state.getBlock();
 		// Wax on
 		if (itemstack != null && itemstack.getItem() == Items.HONEYCOMB) {
-			if (block == DDBlocks.SHORT_EC_WAXED_COPPER_DOOR.get() || block == DDBlocks.SHORT_EC_WAXED_EXPOSED_COPPER_DOOR.get() || block == DDBlocks.SHORT_EC_WAXED_WEATHERED_COPPER_DOOR.get() || block == DDBlocks.SHORT_EC_WAXED_OXIDIZED_COPPER_DOOR.get()) {
+			if (block == DDMiscPackRegistry.SHORT_WAXED_COPPER_DOOR || block == DDMiscPackRegistry.SHORT_WAXED_EXPOSED_COPPER_DOOR || block == DDMiscPackRegistry.SHORT_WAXED_WEATHERED_COPPER_DOOR || block == DDMiscPackRegistry.SHORT_WAXED_OXIDIZED_COPPER_DOOR) {
 				return InteractionResult.PASS;
 			}
 			if (player instanceof ServerPlayer) {
@@ -65,17 +65,17 @@ public class ShortCopperDoorBlock extends ShortDoorBlock implements WeatheringCo
 		}
 		// Wax off
 		if (itemstack != null && itemstack.getItem() instanceof AxeItem) {
-			if (block == DDBlocks.SHORT_EC_WAXED_COPPER_DOOR.get() || block == DDBlocks.SHORT_EC_WAXED_EXPOSED_COPPER_DOOR.get() || block == DDBlocks.SHORT_EC_WAXED_WEATHERED_COPPER_DOOR.get() || block == DDBlocks.SHORT_EC_WAXED_OXIDIZED_COPPER_DOOR.get()) {
+			if (block == DDMiscPackRegistry.SHORT_WAXED_COPPER_DOOR || block == DDMiscPackRegistry.SHORT_WAXED_EXPOSED_COPPER_DOOR || block == DDMiscPackRegistry.SHORT_WAXED_WEATHERED_COPPER_DOOR || block == DDMiscPackRegistry.SHORT_WAXED_OXIDIZED_COPPER_DOOR) {
 				level.playSound(player, pos, SoundEvents.AXE_WAX_OFF, SoundSource.BLOCKS, 1.0F, 1.0F);
 				level.levelEvent(player, 3004, pos, 0);
 				removeWaxFromCopperDoor(state, level, pos);
 			}
-			else if (block == DDBlocks.SHORT_EC_EXPOSED_COPPER_DOOR.get() || block == DDBlocks.SHORT_EC_WEATHERED_COPPER_DOOR.get() || block == DDBlocks.SHORT_EC_OXIDIZED_COPPER_DOOR.get()) {
+			else if (block == DDMiscPackRegistry.SHORT_EXPOSED_COPPER_DOOR || block == DDMiscPackRegistry.SHORT_WEATHERED_COPPER_DOOR || block == DDMiscPackRegistry.SHORT_OXIDIZED_COPPER_DOOR) {
 				level.playSound(player, pos, SoundEvents.AXE_SCRAPE, SoundSource.BLOCKS, 1.0F, 1.0F);
 				level.levelEvent(player, 3005, pos, 0);
 				deoxidizeCopperDoor(state, level, pos);
 			}
-			else if (block == DDBlocks.SHORT_EC_COPPER_DOOR.get()) {
+			else if (block == DDMiscPackRegistry.SHORT_COPPER_DOOR) {
 				return InteractionResult.PASS;
 			}
 			if (player != null && !player.isCreative()) {
@@ -89,14 +89,14 @@ public class ShortCopperDoorBlock extends ShortDoorBlock implements WeatheringCo
 	private void applyWaxOnCopperDoor(BlockState state, Level level, BlockPos pos) {
 		BlockState newState = state;
 		boolean waterfilled0 = level.getFluidState(pos).getType() == Fluids.WATER;
-		if (state.getBlock() == DDBlocks.TALL_EC_COPPER_DOOR.get()) {
-			newState = copyProperties(DDBlocks.TALL_EC_WAXED_COPPER_DOOR.get(), state);
-		} else if (state.getBlock() == DDBlocks.TALL_EC_EXPOSED_COPPER_DOOR.get()) {
-			newState = copyProperties(DDBlocks.TALL_EC_WAXED_EXPOSED_COPPER_DOOR.get(), state);
-		} else if (state.getBlock() == DDBlocks.TALL_EC_WEATHERED_COPPER_DOOR.get()) {
-			newState = copyProperties(DDBlocks.TALL_EC_WAXED_WEATHERED_COPPER_DOOR.get(), state);
-		} else if (state.getBlock() == DDBlocks.TALL_EC_OXIDIZED_COPPER_DOOR.get()) {
-			newState = copyProperties(DDBlocks.TALL_EC_WAXED_OXIDIZED_COPPER_DOOR.get(), state);
+		if (state.getBlock() == DDMiscPackRegistry.TALL_COPPER_DOOR) {
+			newState = copyProperties(DDMiscPackRegistry.TALL_WAXED_COPPER_DOOR, state);
+		} else if (state.getBlock() == DDMiscPackRegistry.TALL_EXPOSED_COPPER_DOOR) {
+			newState = copyProperties(DDMiscPackRegistry.TALL_WAXED_EXPOSED_COPPER_DOOR, state);
+		} else if (state.getBlock() == DDMiscPackRegistry.TALL_WEATHERED_COPPER_DOOR) {
+			newState = copyProperties(DDMiscPackRegistry.TALL_WAXED_WEATHERED_COPPER_DOOR, state);
+		} else if (state.getBlock() == DDMiscPackRegistry.TALL_OXIDIZED_COPPER_DOOR) {
+			newState = copyProperties(DDMiscPackRegistry.TALL_WAXED_OXIDIZED_COPPER_DOOR, state);
 		}
 		level.removeBlock(pos, false);
 		level.setBlock(pos, newState.setValue(WATERLOGGED, waterfilled0), 35);
@@ -105,14 +105,14 @@ public class ShortCopperDoorBlock extends ShortDoorBlock implements WeatheringCo
 	private void removeWaxFromCopperDoor(BlockState state, Level level, BlockPos pos) {
 		BlockState newState = state;
 		boolean waterfilled0 = level.getFluidState(pos).getType() == Fluids.WATER;
-		if (state.getBlock() == DDBlocks.TALL_EC_WAXED_COPPER_DOOR.get()) {
-			newState = copyProperties(DDBlocks.TALL_EC_COPPER_DOOR.get(), state);
-		} else if (state.getBlock() == DDBlocks.TALL_EC_WAXED_EXPOSED_COPPER_DOOR.get()) {
-			newState = copyProperties(DDBlocks.TALL_EC_EXPOSED_COPPER_DOOR.get(), state);
-		} else if (state.getBlock() == DDBlocks.TALL_EC_WAXED_WEATHERED_COPPER_DOOR.get()) {
-			newState = copyProperties(DDBlocks.TALL_EC_WEATHERED_COPPER_DOOR.get(), state);
-		} else if (state.getBlock() == DDBlocks.TALL_EC_WAXED_OXIDIZED_COPPER_DOOR.get()) {
-			newState = copyProperties(DDBlocks.TALL_EC_OXIDIZED_COPPER_DOOR.get(), state);
+		if (state.getBlock() == DDMiscPackRegistry.TALL_WAXED_COPPER_DOOR) {
+			newState = copyProperties(DDMiscPackRegistry.TALL_COPPER_DOOR, state);
+		} else if (state.getBlock() == DDMiscPackRegistry.TALL_WAXED_EXPOSED_COPPER_DOOR) {
+			newState = copyProperties(DDMiscPackRegistry.TALL_EXPOSED_COPPER_DOOR, state);
+		} else if (state.getBlock() == DDMiscPackRegistry.TALL_WAXED_WEATHERED_COPPER_DOOR) {
+			newState = copyProperties(DDMiscPackRegistry.TALL_WEATHERED_COPPER_DOOR, state);
+		} else if (state.getBlock() == DDMiscPackRegistry.TALL_WAXED_OXIDIZED_COPPER_DOOR) {
+			newState = copyProperties(DDMiscPackRegistry.TALL_OXIDIZED_COPPER_DOOR, state);
 		}
 		level.removeBlock(pos, false);
 		level.removeBlock(pos.above(1), false);

@@ -13,6 +13,10 @@ public class DDConfig
 	
 	public static ForgeConfigSpec CONFIG;
 
+	public static final String CATEGORY_EXPERIMENTAL = "Experimental";
+
+	public static ForgeConfigSpec.BooleanValue devMode;
+
 	public static final String CATEGORY_MIXINS = "Mixins";
 	
 	public static ForgeConfigSpec.BooleanValue waterloggableDoors;
@@ -26,7 +30,15 @@ public class DDConfig
 	
 	private static void initializeConfig()
 	{
-		BUILDER.comment("Dramatic Doors").push(CATEGORY_MIXINS);
+		BUILDER.comment("Dramatic Doors").push(CATEGORY_EXPERIMENTAL);
+		
+        devMode = BUILDER
+                .comment("Development mode ensures that all compat doors are always registered regardless of whether mods are installed or not, for development purposes.  " + "Default: false")
+                .define("dev_mode", false);
+		
+        BUILDER.pop();
+        
+		BUILDER.push(CATEGORY_MIXINS);
 		
         waterloggableDoors = BUILDER
                 .comment("Allow doors to be waterlogged. Enable to allow waterlogging. Disable for compatibility with certain mods. Requires restart after changing.  " + "Default: true")

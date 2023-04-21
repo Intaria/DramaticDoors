@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_right",
-  "textures": {
-    "bottom": "dramaticdoors:block/chipped/tall_acacia_door_16_bottom",
-    "middle": "dramaticdoors:block/chipped/tall_acacia_door_16_middle",
-    "top": "dramaticdoors:block/chipped/tall_acacia_door_16_top"
-  }
-}

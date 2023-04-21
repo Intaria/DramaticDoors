@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:tall_archwood_door"
+    {"id": "dramaticdoors:tall_archwood_door", "required": false}
   ]
 }
