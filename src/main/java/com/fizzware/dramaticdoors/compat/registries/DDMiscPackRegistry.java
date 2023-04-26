@@ -154,7 +154,24 @@ public class DDMiscPackRegistry
 			helper.register(DDNames.SHORT_APRICORN, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("cobblemon", "apricorn_door"))));
 		
 			helper.register(DDNames.TALL_APRICORN, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("cobblemon", "apricorn_door"))));
-				    
+
+		    // Colourful Azaleas
+		    helper.register(DDNames.SHORT_AZULE_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "azule_azalea_door"))));
+		    helper.register(DDNames.SHORT_BRIGHT_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "bright_azalea_door"))));
+		    helper.register(DDNames.SHORT_FISS_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "fiss_azalea_door"))));
+		    helper.register(DDNames.SHORT_ROZE_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "roze_azalea_door"))));
+		    helper.register(DDNames.SHORT_TECAL_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "tecal_azalea_door"))));
+		    helper.register(DDNames.SHORT_TITANIUM_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "titanium_azalea_door"))));
+		    helper.register(DDNames.SHORT_WALNUT_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "walnut_azalea_door"))));    
+		    
+		    helper.register(DDNames.TALL_AZULE_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "azule_azalea_door"))));
+		    helper.register(DDNames.TALL_BRIGHT_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "bright_azalea_door"))));
+		    helper.register(DDNames.TALL_FISS_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "fiss_azalea_door"))));
+		    helper.register(DDNames.TALL_ROZE_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "roze_azalea_door"))));
+		    helper.register(DDNames.TALL_TECAL_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "tecal_azalea_door"))));
+		    helper.register(DDNames.TALL_TITANIUM_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "titanium_azalea_door"))));
+		    helper.register(DDNames.TALL_WALNUT_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("colorfulazaleas", "walnut_azalea_door"))));    
+
 		    // Copper Overhaul
 		    helper.register(DDNames.SHORT_CO_COPPER, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("copperoverhaul", "copper_door"))));
 		    helper.register(DDNames.SHORT_CO_EXPOSED_COPPER, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("copperoverhaul", "exposed_copper_door"))));
@@ -363,6 +380,24 @@ public class DDMiscPackRegistry
 		    
 		    helper.register(DDNames.TALL_APRICORN, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_APRICORN)), DDItems.conditionalTabProperties("cobblemon")));
 
+		    // Colourful Azaleas
+		    helper.register(DDNames.SHORT_AZULE_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AZULE_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.SHORT_BRIGHT_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BRIGHT_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.SHORT_FISS_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FISS_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.SHORT_ROZE_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ROZE_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.SHORT_TECAL_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TECAL_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.SHORT_TITANIUM_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TITANIUM_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.SHORT_WALNUT_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WALNUT_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    
+		    helper.register(DDNames.TALL_AZULE_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AZULE_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.TALL_BRIGHT_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BRIGHT_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.TALL_FISS_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FISS_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.TALL_ROZE_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ROZE_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.TALL_TECAL_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TECAL_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.TALL_TITANIUM_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TITANIUM_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    helper.register(DDNames.TALL_WALNUT_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WALNUT_AZALEA)), DDItems.conditionalTabProperties("colorfulazaleas")));
+		    
+		    // Copper Overhaul
 		    helper.register(DDNames.SHORT_CO_COPPER, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CO_COPPER)), DDItems.conditionalTabProperties("copperoverhaul")));
 		    helper.register(DDNames.SHORT_CO_EXPOSED_COPPER, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CO_EXPOSED_COPPER)), DDItems.conditionalTabProperties("copperoverhaul")));
 		    helper.register(DDNames.SHORT_CO_WEATHERED_COPPER, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CO_WEATHERED_COPPER)), DDItems.conditionalTabProperties("copperoverhaul")));

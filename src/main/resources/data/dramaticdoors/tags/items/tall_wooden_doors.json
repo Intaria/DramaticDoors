@@ -121,6 +121,7 @@
     {"id": "dramaticdoors:tall_aeronos_door", "required": false}, 
     {"id": "dramaticdoors:tall_glacian_door", "required": false}, 
     {"id": "dramaticdoors:tall_strophar_door", "required": false}, 
+    {"id": "dramaticdoors:tall_aether_skyroot_door", "required": false},
     {"id": "dramaticdoors:tall_ash_door", "required": false}, 
     {"id": "dramaticdoors:tall_gourdrot_door", "required": false}, 
     {"id": "dramaticdoors:tall_twisted_door", "required": false}, 

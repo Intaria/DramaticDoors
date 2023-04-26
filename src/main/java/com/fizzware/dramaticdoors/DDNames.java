@@ -294,6 +294,11 @@ public class DDNames
     public static final String TALL_STROPHAR = "tall_strophar_door";
     public static final String TALL_AA_STEEL = "tall_aa_steel_door";
     
+    //Aether
+    public static final String SHORT_AETHER_SKYROOT = "short_aether_skyroot_door";
+
+    public static final String TALL_AETHER_SKYROOT = "tall_aether_skyroot_door";
+    
     //Architects Palette
     public static final String SHORT_TWISTED = "short_twisted_door";
     

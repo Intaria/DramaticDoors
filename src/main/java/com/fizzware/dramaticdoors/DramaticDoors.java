@@ -73,22 +73,22 @@ public class DramaticDoors
         MinecraftForge.EVENT_BUS.register(this);
         
         // Hook in the compats.
-        if (Compats.VANILLAESQUE_PACK_ENABLED) {
+        if (Compats.VANILLAESQUE_PACK_ENABLED.getValue()) {
         	bus.register(DDVanillaesquePackRegistry.class);
         }
-        if (Compats.BIOME_PACK_ENABLED) {
+        if (Compats.BIOME_PACK_ENABLED.getValue()) {
         	bus.register(DDBiomePackRegistry.class);
         }
-        if (Compats.DIMENSIONAL_PACK_ENABLED) {
+        if (Compats.DIMENSIONAL_PACK_ENABLED.getValue()) {
         	bus.register(DDDimensionalPackRegistry.class);
         }
-        if (Compats.MAGIC_PACK_ENABLED) {
+        if (Compats.MAGIC_PACK_ENABLED.getValue()) {
         	bus.register(DDMagicPackRegistry.class);
         }
-        if (Compats.TECH_PACK_ENABLED) {
+        if (Compats.TECH_PACK_ENABLED.getValue()) {
         	bus.register(DDTechPackRegistry.class);
         }
-        if (Compats.MISC_PACK_ENABLED) {
+        if (Compats.MISC_PACK_ENABLED.getValue()) {
         	bus.register(DDMiscPackRegistry.class);
         }
         if (Compats.CHIPPED_INSTALLED) {
@@ -148,12 +148,12 @@ public class DramaticDoors
     
     private void setupBuiltInDataPack(final AddPackFindersEvent event) {
     	// Declare variables and bundle them in an immutable list.
-    	var packVanilla = new Quartet<>("vanillaesque", Compats.VANILLAESQUE_PACK_ENABLED, "datapacks/dd_vanillaesque_compatpack", "DD - Vanillaesque Pack");
-    	var packBiome = new Quartet<>("biome", Compats.BIOME_PACK_ENABLED, "datapacks/dd_biomes_compatpack", "DD - Biome Pack");
-    	var packDim = new Quartet<>("dimensional", Compats.DIMENSIONAL_PACK_ENABLED, "datapacks/dd_dimensions_compatpack", "DD - Dimensional Pack");
-    	var packMagic = new Quartet<>("magic", Compats.MAGIC_PACK_ENABLED, "datapacks/dd_magic_compatpack", "DD - Magic Pack");
-    	var packTech = new Quartet<>("tech", Compats.TECH_PACK_ENABLED, "datapacks/dd_tech_compatpack", "DD - Tech Pack");
-    	var packMisc = new Quartet<>("misc", Compats.MISC_PACK_ENABLED, "datapacks/dd_misc_compatpack", "DD - Misc Pack");
+    	var packVanilla = new Quartet<>("vanillaesque", Compats.VANILLAESQUE_PACK_ENABLED.getValue(), "datapacks/dd_vanillaesque_compatpack", "DD - Vanillaesque Pack");
+    	var packBiome = new Quartet<>("biome", Compats.BIOME_PACK_ENABLED.getValue(), "datapacks/dd_biomes_compatpack", "DD - Biome Pack");
+    	var packDim = new Quartet<>("dimensional", Compats.DIMENSIONAL_PACK_ENABLED.getValue(), "datapacks/dd_dimensions_compatpack", "DD - Dimensional Pack");
+    	var packMagic = new Quartet<>("magic", Compats.MAGIC_PACK_ENABLED.getValue(), "datapacks/dd_magic_compatpack", "DD - Magic Pack");
+    	var packTech = new Quartet<>("tech", Compats.TECH_PACK_ENABLED.getValue(), "datapacks/dd_tech_compatpack", "DD - Tech Pack");
+    	var packMisc = new Quartet<>("misc", Compats.MISC_PACK_ENABLED.getValue(), "datapacks/dd_misc_compatpack", "DD - Misc Pack");
     	var pack1 = new Quartet<>("chipped", Compats.CHIPPED_INSTALLED, "datapacks/dd_chipped_compat", "DD - Chipped Compat");
     	var pack2 = new Quartet<>("macaw", Compats.MACAWS_DOORS_INSTALLED, "datapacks/dd_macaws_compat", "DD - Macaw's Doors Compat");
     	var pack3 = new Quartet<>("manyideas", Compats.MANYIDEAS_DOORS_INSTALLED, "datapacks/dd_manyideas_compat", "DD - ManyIdeas Doors Compat");

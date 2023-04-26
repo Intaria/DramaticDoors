@@ -121,6 +121,7 @@
     {"id": "dramaticdoors:short_aeronos_door", "required": false}, 
     {"id": "dramaticdoors:short_glacian_door", "required": false}, 
     {"id": "dramaticdoors:short_strophar_door", "required": false}, 
+    {"id": "dramaticdoors:short_aether_skyroot_door", "required": false},
     {"id": "dramaticdoors:short_ash_door", "required": false}, 
     {"id": "dramaticdoors:short_gourdrot_door", "required": false}, 
     {"id": "dramaticdoors:short_twisted_door", "required": false}, 

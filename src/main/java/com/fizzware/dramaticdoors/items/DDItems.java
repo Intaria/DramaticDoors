@@ -42,24 +42,7 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_BAMBOO_DOOR = ITEMS.register(DDNames.TALL_BAMBOO, () -> new TallDoorItem(DDBlocks.TALL_BAMBOO_DOOR.get(), conditionalTabProperties("quark"))); // Quark's Bamboo Backport
     public static final RegistryObject<Item> TALL_CRIMSON_DOOR = ITEMS.register(DDNames.TALL_CRIMSON, () -> new TallDoorItem(DDBlocks.TALL_CRIMSON_DOOR.get(), PROPERTIES.tab(DramaticDoors.MAIN_TAB)));
     public static final RegistryObject<Item> TALL_WARPED_DOOR = ITEMS.register(DDNames.TALL_WARPED, () -> new TallDoorItem(DDBlocks.TALL_WARPED_DOOR.get(), PROPERTIES.tab(DramaticDoors.MAIN_TAB)));
-    
-    // Colourful Azaleas
-    public static final RegistryObject<Item> SHORT_AZULE_AZALEA_DOOR = ITEMS.register(DDNames.SHORT_AZULE_AZALEA, () -> new ShortDoorItem(DDBlocks.SHORT_AZULE_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> SHORT_BRIGHT_AZALEA_DOOR = ITEMS.register(DDNames.SHORT_BRIGHT_AZALEA, () -> new ShortDoorItem(DDBlocks.SHORT_BRIGHT_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> SHORT_FISS_AZALEA_DOOR = ITEMS.register(DDNames.SHORT_FISS_AZALEA, () -> new ShortDoorItem(DDBlocks.SHORT_FISS_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> SHORT_ROZE_AZALEA_DOOR = ITEMS.register(DDNames.SHORT_ROZE_AZALEA, () -> new ShortDoorItem(DDBlocks.SHORT_ROZE_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> SHORT_TECAL_AZALEA_DOOR = ITEMS.register(DDNames.SHORT_TECAL_AZALEA, () -> new ShortDoorItem(DDBlocks.SHORT_TECAL_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> SHORT_TITANIUM_AZALEA_DOOR = ITEMS.register(DDNames.SHORT_TITANIUM_AZALEA, () -> new ShortDoorItem(DDBlocks.SHORT_TITANIUM_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> SHORT_WALNUT_AZALEA_DOOR = ITEMS.register(DDNames.SHORT_WALNUT_AZALEA, () -> new ShortDoorItem(DDBlocks.SHORT_WALNUT_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    
-    public static final RegistryObject<Item> TALL_AZULE_AZALEA_DOOR = ITEMS.register(DDNames.TALL_AZULE_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_AZULE_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> TALL_BRIGHT_AZALEA_DOOR = ITEMS.register(DDNames.TALL_BRIGHT_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_BRIGHT_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> TALL_FISS_AZALEA_DOOR = ITEMS.register(DDNames.TALL_FISS_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_FISS_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> TALL_ROZE_AZALEA_DOOR = ITEMS.register(DDNames.TALL_ROZE_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_ROZE_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> TALL_TECAL_AZALEA_DOOR = ITEMS.register(DDNames.TALL_TECAL_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_TECAL_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> TALL_TITANIUM_AZALEA_DOOR = ITEMS.register(DDNames.TALL_TITANIUM_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_TITANIUM_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    public static final RegistryObject<Item> TALL_WALNUT_AZALEA_DOOR = ITEMS.register(DDNames.TALL_WALNUT_AZALEA, () -> new TallDoorItem(DDBlocks.TALL_WALNUT_AZALEA_DOOR.get(), conditionalTabProperties("colorfulazaleas")));
-    
+
 	public static Item.Properties conditionalTabProperties(String modid) {
 		return conditionalTabProperties(modid, DramaticDoors.MAIN_TAB);
 	}

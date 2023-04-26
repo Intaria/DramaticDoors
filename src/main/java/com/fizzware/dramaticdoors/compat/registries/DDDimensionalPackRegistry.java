@@ -21,15 +21,20 @@ public class DDDimensionalPackRegistry
 	public static void register(RegisterEvent event) {
 		event.register(ForgeRegistries.Keys.BLOCKS, helper -> {
 		    // Ad Astra
-		    helper.register(DDNames.SHORT_AERONOS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "aeronos"))));
+		    helper.register(DDNames.SHORT_AERONOS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "aeronos_door"))));
 		    helper.register(DDNames.SHORT_GLACIAN, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "glacian_door"))));
 		    helper.register(DDNames.SHORT_STROPHAR, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "strophar_door"))));
 		    helper.register(DDNames.SHORT_AA_STEEL, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "steel_door"), Blocks.IRON_DOOR)));
 		    
-		    helper.register(DDNames.TALL_AERONOS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "aeronos"))));
+		    helper.register(DDNames.TALL_AERONOS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "aeronos_door"))));
 		    helper.register(DDNames.TALL_GLACIAN, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "glacian_door"))));
 		    helper.register(DDNames.TALL_STROPHAR, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "strophar_door"))));
 		    helper.register(DDNames.TALL_AA_STEEL, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ad_astra", "steel_door"), Blocks.IRON_DOOR)));
+		    
+		    // The Aether
+		    helper.register(DDNames.SHORT_AETHER_SKYROOT, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("aether", "skyroot_door"))));
+		    
+		    helper.register(DDNames.TALL_AETHER_SKYROOT, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("aether", "skyroot_door"))));
 		    
 		    // Blue Skies
 		    helper.register(DDNames.SHORT_BS_BLUEBRIGHT, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("blue_skies", "bluebright_door"))));
@@ -138,6 +143,11 @@ public class DDDimensionalPackRegistry
 		    helper.register(DDNames.TALL_STROPHAR, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_STROPHAR)), DDItems.conditionalTabProperties("ad_astra")));
 		    helper.register(DDNames.TALL_AA_STEEL, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AA_STEEL)), DDItems.conditionalTabProperties("ad_astra")));
 		    
+		    // The Aether
+		    helper.register(DDNames.SHORT_AETHER_SKYROOT, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AETHER_SKYROOT)), DDItems.conditionalTabProperties("aether")));
+
+		    helper.register(DDNames.TALL_AETHER_SKYROOT, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_AETHER_SKYROOT)), DDItems.conditionalTabProperties("aether")));
+
 		    // Blue Skies
 		    helper.register(DDNames.SHORT_BS_BLUEBRIGHT, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BS_BLUEBRIGHT)), DDItems.conditionalTabProperties("blue_skies")));
 		    helper.register(DDNames.SHORT_BS_CHERRY, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BS_CHERRY)), DDItems.conditionalTabProperties("blue_skies")));

@@ -41,23 +41,6 @@ public class DDBlocks {
     public static final RegistryObject<Block> TALL_CRIMSON_DOOR = BLOCKS.register(DDNames.TALL_CRIMSON, () -> new TallDoorBlock(Blocks.CRIMSON_DOOR));
     public static final RegistryObject<Block> TALL_WARPED_DOOR = BLOCKS.register(DDNames.TALL_WARPED, () -> new TallDoorBlock(Blocks.WARPED_DOOR));
 
-    // Colourful Azaleas
-    public static final RegistryObject<Block> SHORT_AZULE_AZALEA_DOOR = BLOCKS.register(DDNames.SHORT_AZULE_AZALEA, () -> new ShortDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "azule_azalea_door"))));
-    public static final RegistryObject<Block> SHORT_BRIGHT_AZALEA_DOOR = BLOCKS.register(DDNames.SHORT_BRIGHT_AZALEA, () -> new ShortDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "bright_azalea_door"))));
-    public static final RegistryObject<Block> SHORT_FISS_AZALEA_DOOR = BLOCKS.register(DDNames.SHORT_FISS_AZALEA, () -> new ShortDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "fiss_azalea_door"))));
-    public static final RegistryObject<Block> SHORT_ROZE_AZALEA_DOOR = BLOCKS.register(DDNames.SHORT_ROZE_AZALEA, () -> new ShortDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "roze_azalea_door"))));
-    public static final RegistryObject<Block> SHORT_TECAL_AZALEA_DOOR = BLOCKS.register(DDNames.SHORT_TECAL_AZALEA, () -> new ShortDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "tecal_azalea_door"))));
-    public static final RegistryObject<Block> SHORT_TITANIUM_AZALEA_DOOR = BLOCKS.register(DDNames.SHORT_TITANIUM_AZALEA, () -> new ShortDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "titanium_azalea_door"))));
-    public static final RegistryObject<Block> SHORT_WALNUT_AZALEA_DOOR = BLOCKS.register(DDNames.SHORT_WALNUT_AZALEA, () -> new ShortDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "walnut_azalea_door"))));    
-    
-    public static final RegistryObject<Block> TALL_AZULE_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_AZULE_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "azule_azalea_door"))));
-    public static final RegistryObject<Block> TALL_BRIGHT_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_BRIGHT_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "bright_azalea_door"))));
-    public static final RegistryObject<Block> TALL_FISS_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_FISS_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "fiss_azalea_door"))));
-    public static final RegistryObject<Block> TALL_ROZE_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_ROZE_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "roze_azalea_door"))));
-    public static final RegistryObject<Block> TALL_TECAL_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_TECAL_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "tecal_azalea_door"))));
-    public static final RegistryObject<Block> TALL_TITANIUM_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_TITANIUM_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "titanium_azalea_door"))));
-    public static final RegistryObject<Block> TALL_WALNUT_AZALEA_DOOR = BLOCKS.register(DDNames.TALL_WALNUT_AZALEA, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("colorfulazaleas", "walnut_azalea_door"))));    
-
     public static Block getBlockByKey(ResourceLocation loc) {
     	return getBlockByKey(loc, Blocks.OAK_DOOR);
     }
