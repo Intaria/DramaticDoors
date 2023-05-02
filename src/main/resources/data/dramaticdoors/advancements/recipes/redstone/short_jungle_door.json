@@ -28,5 +28,14 @@
       "has_the_recipe",
       "has_items"
     ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "woodworks"
+      }
+    }
   ]
 }

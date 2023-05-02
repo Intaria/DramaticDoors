@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_misc_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "snowyspirit:gingerbread_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_gingerbread_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_gingerbread_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "snowyspirit"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "snowyspirit"
+        }
+      ]
     }
   ]
 }

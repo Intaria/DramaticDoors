@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_pf_wooden_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "prehistoricfauna:schilderia_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_schilderia_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_schilderia_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "prehistoricfauna"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "prehistoricfauna"
+        }
+      ]
     }
   ]
 }

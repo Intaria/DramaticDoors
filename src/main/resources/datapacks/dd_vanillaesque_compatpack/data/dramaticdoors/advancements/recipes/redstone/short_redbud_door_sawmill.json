@@ -1,0 +1,47 @@
+{
+  "parent": "dramaticdoors:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dramaticdoors:short_redbud_door_sawmill"
+    ]
+  },
+  "criteria": {
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dramaticdoors:short_redbud_door_sawmill"
+      }
+    },
+    "has_items": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "horizons:redbud_door" ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_items"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "woodworks"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "horizons"
+        }
+      ]
+    }
+  ]
+}

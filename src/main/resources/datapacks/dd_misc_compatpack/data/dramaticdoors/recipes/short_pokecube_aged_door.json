@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "short_pokecube_legends_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "pokecube_legends:aged_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_pokecube_aged_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_pokecube_aged_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "pokecube"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "pokecube"
+        }
+      ]
     }
   ]
 }

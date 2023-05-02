@@ -1,0 +1,23 @@
+{
+  "type": "woodworks:sawmill",
+  "ingredient": {
+      "item": "twilightforest:mangrove_door"
+  },
+  "result": "dramaticdoors:short_twilight_mangrove_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "woodworks"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "twilightforest"
+        }
+      ]
+    }
+  ]
+}

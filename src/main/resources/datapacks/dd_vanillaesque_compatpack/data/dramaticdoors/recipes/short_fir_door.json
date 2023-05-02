@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_metal_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "newworld:fir_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_fir_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_fir_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "newworld"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "newworld"
+        }
+      ]
     }
   ]
 }

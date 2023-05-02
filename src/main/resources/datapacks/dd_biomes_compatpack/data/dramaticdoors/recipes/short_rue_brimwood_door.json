@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "regions_unexplored:brimwood_door"
+  },
+  "result": "dramaticdoors:short_rue_brimwood_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ]
+    }
+  ]
+}

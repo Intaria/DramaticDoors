@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_wooden_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "endergetic:poise_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_poise_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_poise_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "endergetic"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "endergetic"
+        }
+      ]
     }
   ]
 }

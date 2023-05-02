@@ -3,6 +3,7 @@
   "values": [
     {"id": "dramaticdoors:short_rue_baobab_door", "required": false},
     {"id": "dramaticdoors:short_rue_blackwood_door", "required": false},
+    {"id": "dramaticdoors:short_rue_brimwood_door", "required": false},
     {"id": "dramaticdoors:short_rue_cherry_door", "required": false},
     {"id": "dramaticdoors:short_rue_cypress_door", "required": false},
     {"id": "dramaticdoors:short_rue_dead_door", "required": false},

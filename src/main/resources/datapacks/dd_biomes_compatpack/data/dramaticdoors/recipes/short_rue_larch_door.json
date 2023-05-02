@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_rue_wooden_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "regions_unexplored:larch_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_rue_larch_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_rue_larch_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "regions_unexplored"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ]
     }
   ]
 }

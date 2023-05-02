@@ -31,8 +31,20 @@
   ],
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "integrateddynamics"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "integrateddynamics"
+        }
+      ]
     }
   ]
 }

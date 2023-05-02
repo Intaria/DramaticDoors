@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "bayou_blues:cypress_door" ]
+            "items": [ "horizons:cypress_door" ]
           }
         ]
       }
@@ -32,7 +32,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "bayou_blues"
+      "modid": "horizons"
     }
   ]
 }

@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_wooden_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "ad_astra:aeronos_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_aeronos_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_aeronos_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "ad_astra"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        }
+      ]
     }
   ]
 }

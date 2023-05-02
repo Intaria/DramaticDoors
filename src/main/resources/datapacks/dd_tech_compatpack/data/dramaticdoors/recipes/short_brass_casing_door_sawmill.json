@@ -1,0 +1,23 @@
+{
+  "type": "woodworks:sawmill",
+  "ingredient": {
+      "item": "create_things_and_misc:brass_casing_door"
+  },
+  "result": "dramaticdoors:short_brass_casing_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "woodworks"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create_things_and_misc"
+        }
+      ]
+    }
+  ]
+}

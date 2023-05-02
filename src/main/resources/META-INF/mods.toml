@@ -224,3 +224,10 @@ logoFile="icon.png"
     versionRange="[1.0.8,)"
     ordering="AFTER"
     side="BOTH"
+    
+[[dependencies.dramaticdoors]]
+    modId="regions_unexplored"
+    mandatory=false
+    versionRange="[0.4.1,)"
+    ordering="AFTER"
+    side="BOTH"

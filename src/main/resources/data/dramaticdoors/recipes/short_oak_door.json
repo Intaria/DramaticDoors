@@ -1,13 +1,17 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_wooden_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "minecraft:oak_door"
+  },
+  "result": "dramaticdoors:short_oak_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "woodworks"
+      }
     }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_oak_door",
-    "count": 2
-  }
+  ]
 }

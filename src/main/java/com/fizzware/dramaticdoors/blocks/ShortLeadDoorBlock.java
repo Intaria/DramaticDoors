@@ -40,7 +40,7 @@ public class ShortLeadDoorBlock extends ShortDoorBlock
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
         if (this.canBeOpened(state)) {
-            TallDoorBlock.tryOpenDoubleDoor(level, state, pos);
+            ShortDoorBlock.tryOpenDoubleDoor(level, state, pos);
 
             state = state.cycle(OPEN).setValue(OPENING_PROGRESS, 0);
             level.setBlock(pos, state, 10);

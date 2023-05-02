@@ -1,0 +1,23 @@
+{
+  "type": "woodworks:sawmill",
+  "ingredient": {
+      "item": "prehistoricfauna:protopiceoxylon_door"
+  },
+  "result": "dramaticdoors:short_protopiceoxylon_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "woodworks"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "prehistoricfauna"
+        }
+      ]
+    }
+  ]
+}

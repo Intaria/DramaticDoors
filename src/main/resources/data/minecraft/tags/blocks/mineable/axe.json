@@ -3,6 +3,7 @@
   "values": [
     "#dramaticdoors:short_wooden_doors",
     "#dramaticdoors:tall_wooden_doors",
-    "dramaticdoors:tall_cardboard_door"
+    {"id": "dramaticdoors:short_cardboard_door", "required": false},
+    {"id": "dramaticdoors:tall_cardboard_door", "required": false}
   ]
 }

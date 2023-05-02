@@ -8,7 +8,7 @@
   ],
   "key": {
     "#": {
-      "item": "abundance:jacaranda_door"
+      "item": "horizons:jacaranda_door"
     }
   },
   "result": {
@@ -18,7 +18,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "abundance"
+      "modid": "horizons"
     }
   ]
 }

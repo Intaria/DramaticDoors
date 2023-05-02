@@ -1,13 +1,8 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_wooden_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "minecraft:iron_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_iron_door",
-    "count": 2
-  }
+  },
+  "result": "dramaticdoors:short_iron_door",
+  "count": 2
 }

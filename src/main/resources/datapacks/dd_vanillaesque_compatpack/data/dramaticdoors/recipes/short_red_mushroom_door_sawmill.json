@@ -1,0 +1,23 @@
+{
+  "type": "woodworks:sawmill",
+  "ingredient": {
+      "item": "enhanced_mushrooms:red_mushroom_door"
+  },
+  "result": "dramaticdoors:short_red_mushroom_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "woodworks"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "enhanced_mushrooms"
+        }
+      ]
+    }
+  ]
+}

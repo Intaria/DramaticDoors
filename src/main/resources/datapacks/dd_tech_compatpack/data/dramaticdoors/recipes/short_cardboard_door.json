@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "group": "short_misc_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "dustrial_decor:cardboard_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_cardboard_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_cardboard_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "dustrial_decor"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "dustrial_decor"
+        }
+      ]
     }
   ]
 }

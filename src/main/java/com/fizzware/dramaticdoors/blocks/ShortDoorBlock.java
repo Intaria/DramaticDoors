@@ -95,11 +95,11 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
             DoorHingeSide hinge = this.getHinge(context);
             boolean flag = level.hasNeighborSignal(blockpos) || level.hasNeighborSignal(blockpos.above());
             boolean waterfilled = level.getFluidState(blockpos).getType() == Fluids.WATER; 
-            if (context.getClickedFace() == context.getHorizontalDirection() && context.getClickedFace().getAxis().isHorizontal()) { // Flip the direction.
+            if (context.getClickedFace() == context.getHorizontalDirection().getOpposite() && context.getClickedFace().getAxis().isHorizontal()) { // Flip the direction.
             	face = face.getOpposite();
             	hinge = hinge == DoorHingeSide.LEFT ? DoorHingeSide.RIGHT : DoorHingeSide.LEFT; // Flip the hinge.
             }
-            return this.defaultBlockState().setValue(FACING, face).setValue(HINGE, this.getHinge(context)).setValue(POWERED, flag).setValue(OPEN, flag).setValue(WATERLOGGED, waterfilled);
+            return this.defaultBlockState().setValue(FACING, face).setValue(HINGE, hinge).setValue(POWERED, flag).setValue(OPEN, flag).setValue(WATERLOGGED, waterfilled);
         } else {
             return null;
         }

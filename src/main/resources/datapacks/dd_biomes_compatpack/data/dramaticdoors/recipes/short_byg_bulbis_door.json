@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "short_byg_wooden_door",
-  "ingredients": [
-    {
+  "type": "minecraft:stonecutting",
+  "ingredient": {
       "item": "byg:bulbis_door"
-    }
-  ],
-  "result": {
-    "item": "dramaticdoors:short_byg_bulbis_door",
-    "count": 2
   },
+  "result": "dramaticdoors:short_byg_bulbis_door",
+  "count": 2,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "byg"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "byg"
+        }
+      ]
     }
   ]
 }

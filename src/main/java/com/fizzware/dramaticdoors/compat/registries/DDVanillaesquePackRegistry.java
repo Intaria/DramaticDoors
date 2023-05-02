@@ -75,15 +75,15 @@ public class DDVanillaesquePackRegistry
 		    helper.register(DDNames.TALL_TOOTH, TALL_TOOTH_DOOR);
 		    
 		    // Team Aurora Mods (3 mod compats)
-		    helper.register(DDNames.SHORT_JACARANDA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("abundance", "jacaranda_door"))));
-		    helper.register(DDNames.SHORT_REDBUD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("abundance", "redbud_door"))));
-		    helper.register(DDNames.SHORT_CYPRESS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("cypress", "cypress_door"))));
+		    helper.register(DDNames.SHORT_JACARANDA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("horizons", "jacaranda_door"))));
+		    helper.register(DDNames.SHORT_REDBUD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("horizons", "redbud_door"))));
+		    helper.register(DDNames.SHORT_CYPRESS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("horizons", "cypress_door"))));
 		    helper.register(DDNames.SHORT_BROWN_MUSHROOM, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("enhanced_mushrooms", "brown_mushroom_door"))));
 		    helper.register(DDNames.SHORT_RED_MUSHROOM, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("enhanced_mushrooms", "red_mushroom_door"))));
 		    
-		    helper.register(DDNames.TALL_JACARANDA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("abundance", "jacaranda_door"))));
-		    helper.register(DDNames.TALL_REDBUD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("abundance", "redbud_door"))));
-		    helper.register(DDNames.TALL_CYPRESS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("cypress", "cypress_door"))));
+		    helper.register(DDNames.TALL_JACARANDA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("horizons", "jacaranda_door"))));
+		    helper.register(DDNames.TALL_REDBUD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("horizons", "redbud_door"))));
+		    helper.register(DDNames.TALL_CYPRESS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("horizons", "cypress_door"))));
 		    helper.register(DDNames.TALL_BROWN_MUSHROOM, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("enhanced_mushrooms", "brown_mushroom_door"))));
 		    helper.register(DDNames.TALL_RED_MUSHROOM, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("enhanced_mushrooms", "red_mushroom_door"))));
 		

@@ -31,8 +31,20 @@
   ],
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "pyromancer"
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "pyromancer"
+        }
+      ]
     }
   ]
 }

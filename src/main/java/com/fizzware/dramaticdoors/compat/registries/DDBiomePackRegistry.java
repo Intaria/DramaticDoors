@@ -10,6 +10,7 @@ import com.fizzware.dramaticdoors.items.ShortDoorItem;
 import com.fizzware.dramaticdoors.items.TallDoorItem;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
@@ -114,6 +115,7 @@ public class DDBiomePackRegistry
 			// Regions Unexplored
 		    helper.register(DDNames.SHORT_RUE_BAOBAB,  new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "baobab_door"))));
 		    helper.register(DDNames.SHORT_RUE_BLACKWOOD,  new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "blackwood_door"))));
+		    helper.register(DDNames.SHORT_RUE_BRIMWOOD,  new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "brimwood_door"), Blocks.CRIMSON_DOOR)));
 		    helper.register(DDNames.SHORT_RUE_CHERRY,  new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "cherry_door"))));
 		    helper.register(DDNames.SHORT_RUE_CYPRESS,  new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "cypress_door"))));
 		    helper.register(DDNames.SHORT_RUE_DEAD,  new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "dead_door"))));
@@ -129,6 +131,7 @@ public class DDBiomePackRegistry
 		
 		    helper.register(DDNames.TALL_RUE_BAOBAB,  new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "baobab_door"))));
 		    helper.register(DDNames.TALL_RUE_BLACKWOOD,  new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "blackwood_door"))));
+		    helper.register(DDNames.TALL_RUE_BRIMWOOD,  new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "brimwood_door"), Blocks.CRIMSON_DOOR)));
 		    helper.register(DDNames.TALL_RUE_CHERRY,  new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "cherry_door"))));
 		    helper.register(DDNames.TALL_RUE_CYPRESS,  new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "cypress_door"))));
 		    helper.register(DDNames.TALL_RUE_DEAD,  new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("regions_unexplored", "dead_door"))));
@@ -313,6 +316,7 @@ public class DDBiomePackRegistry
 		    // Regions Unexplored
 		    helper.register(DDNames.SHORT_RUE_BAOBAB, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BAOBAB)), DDItems.conditionalTabProperties("regions_unexplored")));
 		    helper.register(DDNames.SHORT_RUE_BLACKWOOD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BLACKWOOD)), DDItems.conditionalTabProperties("regions_unexplored")));
+		    helper.register(DDNames.SHORT_RUE_BRIMWOOD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_BRIMWOOD)), DDItems.conditionalTabProperties("regions_unexplored")));
 		    helper.register(DDNames.SHORT_RUE_CHERRY, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_CHERRY)), DDItems.conditionalTabProperties("regions_unexplored")));
 		    helper.register(DDNames.SHORT_RUE_CYPRESS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_CYPRESS)), DDItems.conditionalTabProperties("regions_unexplored")));
 		    helper.register(DDNames.SHORT_RUE_DEAD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RUE_DEAD)), DDItems.conditionalTabProperties("regions_unexplored")));
@@ -328,6 +332,7 @@ public class DDBiomePackRegistry
 		
 		    helper.register(DDNames.TALL_RUE_BAOBAB, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BAOBAB)), DDItems.conditionalTabProperties("regions_unexplored")));
 		    helper.register(DDNames.TALL_RUE_BLACKWOOD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BLACKWOOD)), DDItems.conditionalTabProperties("regions_unexplored")));
+		    helper.register(DDNames.TALL_RUE_BRIMWOOD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_BRIMWOOD)), DDItems.conditionalTabProperties("regions_unexplored")));
 		    helper.register(DDNames.TALL_RUE_CHERRY, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_CHERRY)), DDItems.conditionalTabProperties("regions_unexplored")));
 		    helper.register(DDNames.TALL_RUE_CYPRESS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_CYPRESS)), DDItems.conditionalTabProperties("regions_unexplored")));
 		    helper.register(DDNames.TALL_RUE_DEAD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RUE_DEAD)), DDItems.conditionalTabProperties("regions_unexplored")));

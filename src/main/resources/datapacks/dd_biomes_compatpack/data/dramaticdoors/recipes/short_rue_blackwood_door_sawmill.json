@@ -1,0 +1,23 @@
+{
+  "type": "woodworks:sawmill",
+  "ingredient": {
+      "item": "regions_unexplored:blackwood_door"
+  },
+  "result": "dramaticdoors:short_rue_blackwood_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "woodworks"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "regions_unexplored"
+        }
+      ]
+    }
+  ]
+}
