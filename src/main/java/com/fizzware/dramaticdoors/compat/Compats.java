@@ -7,6 +7,7 @@ import com.fizzware.dramaticdoors.DDConfig;
 import com.google.common.collect.ImmutableList;
 
 import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 import oshi.util.tuples.Pair;
 
 public class Compats
@@ -43,9 +44,9 @@ public class Compats
     	AUTOMATIC_DOORS_INSTALLED = ModList.get().isLoaded("automaticdoors");
     	CURIOS_INSTALLED = ModList.get().isLoaded("curios");
     	DOUBLE_DOORS_INSTALLED = ModList.get().isLoaded("doubledoors");
-    	CHIPPED_INSTALLED = ModList.get().isLoaded("chipped") || DDConfig.devMode.get();
-    	MACAWS_DOORS_INSTALLED = ModList.get().isLoaded("mcwdoors") || DDConfig.devMode.get();
-    	MANYIDEAS_DOORS_INSTALLED = ModList.get().isLoaded("manyideas_doors") || DDConfig.devMode.get();
+    	CHIPPED_INSTALLED = ModList.get().isLoaded("chipped") || isDev();
+    	MACAWS_DOORS_INSTALLED = ModList.get().isLoaded("mcwdoors") || isDev();
+    	MANYIDEAS_DOORS_INSTALLED = ModList.get().isLoaded("manyideas_doors") || isDev();
     	QUARK_INSTALLED = ModList.get().isLoaded("quark");
     	SUPPLEMENTARIES_INSTALLED = ModList.get().isLoaded("supplementaries");
     	STATEMENT_INSTALLED = ModList.get().isLoaded("statement");
@@ -58,9 +59,16 @@ public class Compats
 	    			break;
 	    		}	
 	    	}
-	    	if (DDConfig.devMode.get()) {
+	    	if (isDev()) {
 	    		compatpackIteration.getB().setTrue();
 	    	}
     	}
+    }
+    
+    public static boolean isDev() {
+    	if (!FMLEnvironment.production) { // Stops the error when trying to data-gen.
+    		return true;
+    	}
+    	return DDConfig.devMode.get();
     }
 }

@@ -16,7 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.19.2-2.3.4'
+version = '1.19.2-2.3.5'
 group = 'com.fizzware.dramaticdoors' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'DramaticDoors-Forge'
 

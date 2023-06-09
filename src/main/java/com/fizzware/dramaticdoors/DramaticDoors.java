@@ -64,7 +64,6 @@ public class DramaticDoors
     	// With the Mr. Fizzware? No freakin' way! Register events for the Magic Forge Bus to take them on an extraordinary trip.
     	DDBlocks.BLOCKS.register(bus);
     	DDItems.ITEMS.register(bus);
-    	DDBlockEntities.BLOCK_ENTITIES.register(bus);
     	ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DDConfig.CONFIG);
     	
         bus.addListener(this::setupCommon);
@@ -75,6 +74,7 @@ public class DramaticDoors
         // Hook in the compats.
         if (Compats.VANILLAESQUE_PACK_ENABLED.getValue()) {
         	bus.register(DDVanillaesquePackRegistry.class);
+        	DDBlockEntities.BLOCK_ENTITIES.register(bus);
         }
         if (Compats.BIOME_PACK_ENABLED.getValue()) {
         	bus.register(DDBiomePackRegistry.class);

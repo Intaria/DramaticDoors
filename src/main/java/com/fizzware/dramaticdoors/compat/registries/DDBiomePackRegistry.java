@@ -187,11 +187,20 @@ public class DDBiomePackRegistry
 		    helper.register(DDNames.TALL_EE_EBONY, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("enlightened_end", "verdant_door"))));
 		
 		    // Gardens of the Dead
-		    helper.register(DDNames.SHORT_SOULBLIGHT, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("fruittrees", "soulblight_door"))));
-		    helper.register(DDNames.SHORT_WHISTLECANE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("fruittrees", "whistlecane_door"))));
+		    helper.register(DDNames.SHORT_SOULBLIGHT, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("gardens_of_the_dead", "soulblight_door"))));
+		    helper.register(DDNames.SHORT_WHISTLECANE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("gardens_of_the_dead", "whistlecane_door"))));
 		
-		    helper.register(DDNames.TALL_SOULBLIGHT, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("fruittrees", "soulblight_door"))));
-		    helper.register(DDNames.TALL_WHISTLECANE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("fruittrees", "whistlecane_door"))));
+		    helper.register(DDNames.TALL_SOULBLIGHT, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("gardens_of_the_dead", "soulblight_door"))));
+		    helper.register(DDNames.TALL_WHISTLECANE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("gardens_of_the_dead", "whistlecane_door"))));
+		    
+		    // Mystic's Biomes
+		    helper.register(DDNames.SHORT_MB_CHERRY, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("mysticsbiomes", "cherry_door"))));
+		    helper.register(DDNames.SHORT_MB_JACARANDA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("mysticsbiomes", "jacaranda_door"))));
+		    helper.register(DDNames.SHORT_MB_STRAWBERRY, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("mysticsbiomes", "strawberry_door"))));
+
+		    helper.register(DDNames.TALL_MB_CHERRY, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("mysticsbiomes", "cherry_door"))));
+		    helper.register(DDNames.TALL_MB_JACARANDA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("mysticsbiomes", "jacaranda_door"))));
+		    helper.register(DDNames.TALL_MB_STRAWBERRY, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("mysticsbiomes", "strawberry_door"))));
 		    
 		    // Nether's Exoticism
 		    helper.register(DDNames.SHORT_JABOTICABA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("nethers_exoticism", "jaboticaba_door"))));
@@ -394,12 +403,21 @@ public class DDBiomePackRegistry
 		    helper.register(DDNames.TALL_SOULBLIGHT, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SOULBLIGHT)), DDItems.conditionalTabProperties("gardens_of_the_dead")));
 		    helper.register(DDNames.TALL_WHISTLECANE, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WHISTLECANE)), DDItems.conditionalTabProperties("gardens_of_the_dead")));
 		    
+		    // Mystic's Biomes
+		    helper.register(DDNames.SHORT_MB_CHERRY, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MB_CHERRY)), DDItems.conditionalTabProperties("mysticsbiomes")));
+		    helper.register(DDNames.SHORT_MB_JACARANDA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MB_JACARANDA)), DDItems.conditionalTabProperties("mysticsbiomes")));    
+		    helper.register(DDNames.SHORT_MB_STRAWBERRY, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MB_STRAWBERRY)), DDItems.conditionalTabProperties("mysticsbiomes")));
+		
+		    helper.register(DDNames.TALL_MB_CHERRY, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MB_CHERRY)), DDItems.conditionalTabProperties("mysticsbiomes")));
+		    helper.register(DDNames.TALL_MB_JACARANDA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MB_JACARANDA)), DDItems.conditionalTabProperties("mysticsbiomes")));    
+		    helper.register(DDNames.TALL_MB_STRAWBERRY, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MB_STRAWBERRY)), DDItems.conditionalTabProperties("mysticsbiomes")));
+		    
 		    // Nether's Exoticism
 		    helper.register(DDNames.SHORT_JABOTICABA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JABOTICABA)), DDItems.conditionalTabProperties("nethers_exoticism")));
-		    helper.register(DDNames.SHORT_RAMBOUTAN, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RAMBOUTAN)), DDItems.conditionalTabProperties("nethers_exoticism")));    
+		    helper.register(DDNames.SHORT_RAMBOUTAN, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RAMBOUTAN)), DDItems.conditionalTabProperties("nethers_exoticism")));
 		
 		    helper.register(DDNames.TALL_JABOTICABA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_JABOTICABA)), DDItems.conditionalTabProperties("nethers_exoticism")));
-		    helper.register(DDNames.TALL_RAMBOUTAN, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RAMBOUTAN)), DDItems.conditionalTabProperties("nethers_exoticism")));    
+		    helper.register(DDNames.TALL_RAMBOUTAN, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RAMBOUTAN)), DDItems.conditionalTabProperties("nethers_exoticism")));
 		    
 		    // Outer End
 		    helper.register(DDNames.SHORT_AZURE, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_AZURE)), DDItems.conditionalTabProperties("outer_end")));

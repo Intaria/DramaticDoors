@@ -143,12 +143,14 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
             return InteractionResult.PASS;
         } 
     	else {
-        	if (this == DDVanillaesquePackRegistry.SHORT_GOLD_DOOR && state.getValue(POWERED)) {
-        		return InteractionResult.PASS;
-        	}
-        	if (this == DDVanillaesquePackRegistry.SHORT_SILVER_DOOR && !state.getValue(POWERED)) {
-        		return InteractionResult.PASS;
-        	}
+    		if (Compats.VANILLAESQUE_PACK_ENABLED.getValue()) {
+	        	if (this == DDVanillaesquePackRegistry.SHORT_GOLD_DOOR && state.getValue(POWERED)) {
+	        		return InteractionResult.PASS;
+	        	}
+	        	if (this == DDVanillaesquePackRegistry.SHORT_SILVER_DOOR && !state.getValue(POWERED)) {
+	        		return InteractionResult.PASS;
+	        	}
+    		}
         	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
             level.setBlock(pos, state, 10);
@@ -157,7 +159,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 			if (state.getValue(WATERLOGGED)) {
 				level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
 			}
-            if (DDVanillaesquePackRegistry.SHORT_TOOTH_DOOR != null && this == DDVanillaesquePackRegistry.SHORT_TOOTH_DOOR) {
+            if (Compats.VANILLAESQUE_PACK_ENABLED.getValue() && this == DDVanillaesquePackRegistry.SHORT_TOOTH_DOOR) {
             	level.scheduleTick(pos, this, 20);
             }
             return InteractionResult.sidedSuccess(level.isClientSide);
@@ -208,7 +210,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
         boolean flag = level.hasNeighborSignal(pos);
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	if (this == DDVanillaesquePackRegistry.SHORT_GOLD_DOOR || this == DDVanillaesquePackRegistry.SHORT_SILVER_DOOR || this == DDVanillaesquePackRegistry.SHORT_LEAD_DOOR) {
+        	if (Compats.VANILLAESQUE_PACK_ENABLED.getValue() && (this == DDVanillaesquePackRegistry.SHORT_GOLD_DOOR || this == DDVanillaesquePackRegistry.SHORT_SILVER_DOOR || this == DDVanillaesquePackRegistry.SHORT_LEAD_DOOR)) {
         		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {

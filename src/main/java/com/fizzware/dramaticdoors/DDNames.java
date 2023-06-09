@@ -686,6 +686,18 @@ public class DDNames
     public static final String TALL_MORECRAFT_GLASS = "tall_morecraft_glass_door";
     public static final String TALL_MORECRAFT_SOUL_GLASS = "tall_morecraft_soul_glass_door";
     
+    // More Doors
+       // Perhaps...?
+    
+    // Mystic's Biomes
+    public static final String SHORT_MB_CHERRY = "short_mb_cherry_door";
+    public static final String SHORT_MB_JACARANDA = "short_mb_jacaranda_door";
+    public static final String SHORT_MB_STRAWBERRY = "short_mb_strawberry_door";
+
+    public static final String TALL_MB_CHERRY = "tall_mb_cherry_door";
+    public static final String TALL_MB_JACARANDA = "tall_mb_jacaranda_door";
+    public static final String TALL_MB_STRAWBERRY = "tall_mb_strawberry_door";
+        
     //Nether's Exoticism
     public static final String SHORT_JABOTICABA = "short_jaboticaba_door";
     public static final String SHORT_RAMBOUTAN = "short_ramboutan_door";
@@ -811,6 +823,11 @@ public class DDNames
     public static final String SHORT_HOLLY = "short_holly_door";
     public static final String TALL_CHESTNUT = "tall_chestnut_door";
     public static final String TALL_HOLLY = "tall_holly_door";
+    
+    // Yippee
+    public static final String SHORT_MYSTICAL_OAK = "short_mystical_oak_door";
+    
+    public static final String TALL_MYSTICAL_OAK = "tall_mystical_oak_door";
     
     //Chipped (Holy hell!)
     public static final String TALL_CHIPPED_OAK_HEAVY = "tall_chipped_heavy_oak_door";

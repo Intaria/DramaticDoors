@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "dramaticdoors:short_steel_door",
-    "dramaticdoors:short_locked_steel_door",
-    "dramaticdoors:tall_steel_door",
-    "dramaticdoors:tall_locked_steel_door"
+    {"id": "dramaticdoors:short_steel_door", "required": false},
+    {"id": "dramaticdoors:short_locked_steel_door", "required": false},
+    {"id": "dramaticdoors:tall_steel_door", "required": false},
+    {"id": "dramaticdoors:tall_locked_steel_door", "required": false}
   ]
 }

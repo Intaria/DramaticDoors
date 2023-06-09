@@ -1,0 +1,50 @@
+{
+  "parent": "dramaticdoors:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dramaticdoors:short_mb_jacaranda_door"
+    ]
+  },
+  "criteria": {
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dramaticdoors:short_mb_jacaranda_door"
+      }
+    },
+    "has_items": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "mysticsbiomes:jacaranda_door" ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_items"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mysticsbiomes"
+        }
+      ]
+    }
+  ]
+}

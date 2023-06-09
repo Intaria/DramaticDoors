@@ -191,18 +191,20 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             return InteractionResult.PASS;
         } 
     	else {
-        	if (this == DDVanillaesquePackRegistry.TALL_GOLD_DOOR && state.getValue(POWERED)) {
-        		return InteractionResult.PASS;
-        	}
-        	if (this == DDVanillaesquePackRegistry.TALL_SILVER_DOOR && !state.getValue(POWERED)) {
-        		return InteractionResult.PASS;
-        	}
+    		if (Compats.VANILLAESQUE_PACK_ENABLED.getValue()) {
+	        	if (this == DDVanillaesquePackRegistry.TALL_GOLD_DOOR && state.getValue(POWERED)) {
+	        		return InteractionResult.PASS;
+	        	}
+	        	if (this == DDVanillaesquePackRegistry.TALL_SILVER_DOOR && !state.getValue(POWERED)) {
+	        		return InteractionResult.PASS;
+	        	}
+    		}
         	tryOpenDoubleDoor(level, state, pos);
             state = state.cycle(OPEN);
             level.setBlock(pos, state, 10);
             level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
             level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
-            if (DDVanillaesquePackRegistry.TALL_TOOTH_DOOR != null && this == DDVanillaesquePackRegistry.TALL_TOOTH_DOOR) {
+            if (Compats.VANILLAESQUE_PACK_ENABLED.getValue() && this == DDVanillaesquePackRegistry.TALL_TOOTH_DOOR) {
             	level.scheduleTick(pos, this, 20);
             }
             return InteractionResult.sidedSuccess(level.isClientSide);
@@ -269,7 +271,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             }
         }
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	if (this == DDVanillaesquePackRegistry.TALL_GOLD_DOOR || this == DDVanillaesquePackRegistry.TALL_SILVER_DOOR || this == DDVanillaesquePackRegistry.TALL_LEAD_DOOR) {
+        	if (Compats.VANILLAESQUE_PACK_ENABLED.getValue() && (this == DDVanillaesquePackRegistry.TALL_GOLD_DOOR || this == DDVanillaesquePackRegistry.TALL_SILVER_DOOR || this == DDVanillaesquePackRegistry.TALL_LEAD_DOOR)) {
         		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {

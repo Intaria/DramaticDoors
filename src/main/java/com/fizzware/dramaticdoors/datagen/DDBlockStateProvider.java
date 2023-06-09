@@ -1,5 +1,6 @@
 package com.fizzware.dramaticdoors.datagen;
 
+import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.blocks.DDBlocks;
 import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
@@ -15,6 +16,7 @@ import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class DDBlockStateProvider extends BlockStateProvider {
 		
@@ -27,6 +29,8 @@ public class DDBlockStateProvider extends BlockStateProvider {
     	// Insert any blocks that need to be data-generated. Example below:
     	shortDoorBlock(DDBlocks.SHORT_OAK_DOOR.get(), "block/short_oak");
     	tallDoorBlock(DDBlocks.TALL_OAK_DOOR.get(), "block/tall_oak");
+    	shortDoorBlock(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_BIRCH)), "block/short_birch");
+    	tallDoorBlock(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_BIRCH)), "block/tall_birch");
     }
     
     /*private void tallDoorBlockAlt(Block block, String baseName, String texName) {

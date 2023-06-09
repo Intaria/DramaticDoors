@@ -554,6 +554,13 @@
   "block.dramaticdoors.tall_ms_light_blue_glass_door": "Tall Light Blue Stained Glass Door",
   "block.dramaticdoors.tall_ms_brown_glass_door": "Tall Brown Stained Glass Door",
 
+  "block.dramaticdoors.short_mb_cherry_door": "Short Cherry Door",
+  "block.dramaticdoors.short_mb_jacaranda_door": "Short Jacaranda Door",
+  "block.dramaticdoors.short_mb_strawberry_door": "Short Strawberry Door",
+  "block.dramaticdoors.tall_mb_cherry_door": "Tall Cherry Door",
+  "block.dramaticdoors.tall_mb_jacaranda_door": "Tall Jacaranda Door",
+  "block.dramaticdoors.tall_mb_strawberry_door": "Tall Strawberry Door",
+  
   "block.dramaticdoors.short_jaboticaba_door": "Short Jabuticaba Door",
   "block.dramaticdoors.short_ramboutan_door": "Short Rambutan Door",
   "block.dramaticdoors.tall_jaboticaba_door": "Tall Jabuticaba Door",
@@ -655,6 +662,9 @@
   "block.dramaticdoors.tall_golden_door": "Tall Golden Door",
   "block.dramaticdoors.tall_chestnut_door": "Tall Chestnut Door",
   "block.dramaticdoors.tall_holly_door": "Tall Holly Door",
+
+  "block.dramaticdoors.short_mystical_oak_door": "Short Mystical Oak Door",
+  "block.dramaticdoors.tall_mystical_oak_door": "Tall Mystical Oak Door",
 
   "block.dramaticdoors.short_morecraft_netherbrick_door": "Short Nether Brick Door",
   "block.dramaticdoors.short_morecraft_netherwood_door": "Short Netherwood Door",
