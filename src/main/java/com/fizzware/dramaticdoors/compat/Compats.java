@@ -14,11 +14,11 @@ public class Compats
 {
     // Determining what Data Packs will be enabled, and additionally register extra blocks. Create lists and values.
 	public static final List<String> VANILLAESQUE_PACK_MODS = ImmutableList.of("blueprint", "horizons", "enhanced_mushrooms", "quark", "supplementaries", "goodending", "morecraft", "habitat", "abundant_atmosphere", "newworld", "windswept");
-	public static final List<String> BIOME_PACK_MODS = ImmutableList.of("biomesoplenty", "byg", "regions_unexplored", "biomemakeover", "darkerdepths", "ecologics", "phantasm", "enlightened_end", "gardens_of_the_dead", "nethers_exoticism", "outer_end", "premium_wood");
+	public static final List<String> BIOME_PACK_MODS = ImmutableList.of("biomesoplenty", "byg", "regions_unexplored", "biomemakeover", "darkerdepths", "ecologics", "phantasm", "endlessbiomes", "enlightened_end", "gardens_of_the_dead", "mysticsbiomes", "nethers_exoticism", "outer_end", "premium_wood");
 	public static final List<String> DIMENSIONAL_PACK_MODS = ImmutableList.of("ad_astra", "aether", "blue_skies", "ceilands", "deeperdarker", "prehistoricfauna", "twilightforest", "undergarden");
 	public static final List<String> TECH_PACK_MODS = ImmutableList.of("create", "dustrial_decor", "integrateddynamics", "tconstruct");
 	public static final List<String> MAGIC_PACK_MODS = ImmutableList.of("ars_nouveau", "forbidden_arcanus", "hexcasting", "hexerei", "malum", "pyromancer");
-	public static final List<String> MISC_PACK_MODS = ImmutableList.of("ms", "pokecube", "architects_palette", "bambooeverything", "biomancy", "blocksplus", "caupona", "cobblemon", "copperoverhaul", "everythingcopper", "extendedmushrooms", "fruittrees", "graveyard", "silentgear", "snowyspirit", "twigs");
+	public static final List<String> MISC_PACK_MODS = ImmutableList.of("ms", "pokecube", "architects_palette", "bambooeverything", "biomancy", "blocksplus", "caupona", "cobblemon", "copperoverhaul", "everythingcopper", "extendedmushrooms", "fruittrees", "graveyard", "silentgear", "snowyspirit", "terraqueous", "twigs", "yippee");
 	
     public static final MutableBoolean VANILLAESQUE_PACK_ENABLED = new MutableBoolean(false);
     public static final MutableBoolean BIOME_PACK_ENABLED = new MutableBoolean(false);

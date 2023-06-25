@@ -2,6 +2,7 @@ package com.fizzware.dramaticdoors.datagen;
 
 import java.util.Objects;
 
+import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.items.DDItems;
 
@@ -25,6 +26,8 @@ public class DDItemModelProvider extends ItemModelProvider
 		// Insert any items that need to be data-generated. Example below:
 		super.basicItem(DDItems.SHORT_OAK_DOOR.get());
 		super.basicItem(DDItems.TALL_OAK_DOOR.get());
+    	super.basicItem(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_SPRUCE)));
+    	super.basicItem(ForgeRegistries.ITEMS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_SPRUCE)));
 	}
 	
 	// For item textures stored in a subfolder. Otherwise, use super.basicItem

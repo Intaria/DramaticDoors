@@ -179,6 +179,13 @@ public class DDBiomePackRegistry
 		    helper.register(DDNames.TALL_EBONY, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("phantasm", "ebony_door"))));
 		    helper.register(DDNames.TALL_PREAM, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("phantasm", "pream_door"))));
 		    
+		    // Endless Biomes
+		    helper.register(DDNames.SHORT_EB_TWISTED, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("endlessbiomes", "twisted_door"))));
+		    helper.register(DDNames.SHORT_EB_PENUMBRA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("endlessbiomes", "penumbra_door"))));
+		
+		    helper.register(DDNames.TALL_EB_TWISTED, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("endlessbiomes", "twisted_door"))));
+		    helper.register(DDNames.TALL_EB_PENUMBRA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("endlessbiomes", "penumbra_door"))));
+		    
 		    // Enlightened End
 		    helper.register(DDNames.SHORT_CONGEALED, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("enlightened_end", "congealed_door"))));
 		    helper.register(DDNames.SHORT_EE_EBONY, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("enlightened_end", "verdant_door"))));
@@ -388,6 +395,13 @@ public class DDBiomePackRegistry
 		    
 		    helper.register(DDNames.TALL_EBONY, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_EBONY)), DDItems.conditionalTabProperties("phantasm")));
 		    helper.register(DDNames.TALL_PREAM, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PREAM)), DDItems.conditionalTabProperties("phantasm")));
+		    
+		    // Endless Biomes
+		    helper.register(DDNames.SHORT_EB_TWISTED, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_EB_TWISTED)), DDItems.conditionalTabProperties("endlessbiomes")));
+		    helper.register(DDNames.SHORT_EB_PENUMBRA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_EB_PENUMBRA)), DDItems.conditionalTabProperties("endlessbiomes")));
+		    
+		    helper.register(DDNames.TALL_EB_TWISTED, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_EB_TWISTED)), DDItems.conditionalTabProperties("endlessbiomes")));
+		    helper.register(DDNames.TALL_EB_PENUMBRA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_EB_PENUMBRA)), DDItems.conditionalTabProperties("endlessbiomes")));
 		    
 		    // Enlightened End
 		    helper.register(DDNames.SHORT_CONGEALED, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CONGEALED)), DDItems.conditionalTabProperties("enlightened_end")));

@@ -266,6 +266,37 @@ public class DDMiscPackRegistry
 		
 		    helper.register(DDNames.TALL_GINGERBREAD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("snowyspirit", "gingerbread_door"))));
 		    
+		    // Terraqueous
+		    helper.register(DDNames.SHORT_TQ_LIGHT_CLOUD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "light_cloud_door"))));
+		    helper.register(DDNames.SHORT_TQ_DENSE_CLOUD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "dense_cloud_door"))));
+		    helper.register(DDNames.SHORT_TQ_STORM_CLOUD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "storm_cloud_door"))));
+		    helper.register(DDNames.SHORT_TQ_APPLE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "apple_door"))));
+		    helper.register(DDNames.SHORT_TQ_BANANA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "banana_door"))));
+		    helper.register(DDNames.SHORT_TQ_CHERRY, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "cherry_door"))));
+		    helper.register(DDNames.SHORT_TQ_COCONUT, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "coconut_door"))));
+		    helper.register(DDNames.SHORT_TQ_LEMON, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "lemon_door"))));
+		    helper.register(DDNames.SHORT_TQ_MANGO, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "mango_door"))));
+		    helper.register(DDNames.SHORT_TQ_MULBERRY, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "mulberry_door"))));
+		    helper.register(DDNames.SHORT_TQ_ORANGE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "orange_door"))));
+		    helper.register(DDNames.SHORT_TQ_PEACH, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "peach_door"))));
+		    helper.register(DDNames.SHORT_TQ_PEAR, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "pear_door"))));
+		    helper.register(DDNames.SHORT_TQ_PLUM, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "plum_door"))));
+		
+		    helper.register(DDNames.TALL_TQ_LIGHT_CLOUD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "light_cloud_door"))));
+		    helper.register(DDNames.TALL_TQ_DENSE_CLOUD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "dense_cloud_door"))));
+		    helper.register(DDNames.TALL_TQ_STORM_CLOUD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "storm_cloud_door"))));
+		    helper.register(DDNames.TALL_TQ_APPLE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "apple_door"))));
+		    helper.register(DDNames.TALL_TQ_BANANA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "banana_door"))));
+		    helper.register(DDNames.TALL_TQ_CHERRY, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "cherry_door"))));
+		    helper.register(DDNames.TALL_TQ_COCONUT, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "coconut_door"))));
+		    helper.register(DDNames.TALL_TQ_LEMON, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "lemon_door"))));
+		    helper.register(DDNames.TALL_TQ_MANGO, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "mango_door"))));
+		    helper.register(DDNames.TALL_TQ_MULBERRY, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "mulberry_door"))));
+		    helper.register(DDNames.TALL_TQ_ORANGE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "orange_door"))));
+		    helper.register(DDNames.TALL_TQ_PEACH, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "peach_door"))));
+		    helper.register(DDNames.TALL_TQ_PEAR, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "pear_door"))));
+		    helper.register(DDNames.TALL_TQ_PLUM, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("terraqueous", "plum_door"))));
+		    
 		    // Twigs
 			helper.register(DDNames.SHORT_TWIGS_BAMBOO, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("twigs", "bamboo_door"))));    
 		
@@ -495,6 +526,37 @@ public class DDMiscPackRegistry
 		    helper.register(DDNames.SHORT_GINGERBREAD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GINGERBREAD)), DDItems.conditionalTabProperties("snowyspirit")));
 		    
 		    helper.register(DDNames.TALL_GINGERBREAD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GINGERBREAD)), DDItems.conditionalTabProperties("snowyspirit")));
+		    
+		    // Terraqueous
+		    helper.register(DDNames.SHORT_TQ_LIGHT_CLOUD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_LIGHT_CLOUD)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_DENSE_CLOUD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_DENSE_CLOUD)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_STORM_CLOUD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_STORM_CLOUD)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_APPLE, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_APPLE)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_BANANA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_BANANA)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_CHERRY, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_CHERRY)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_COCONUT, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_COCONUT)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_LEMON, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_LEMON)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_MANGO, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_MANGO)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_MULBERRY, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_MULBERRY)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_ORANGE, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_ORANGE)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_PEACH, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_PEACH)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_PEAR, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_PEAR)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.SHORT_TQ_PLUM, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TQ_PLUM)), DDItems.conditionalTabProperties("terraqueous")));
+
+		    helper.register(DDNames.TALL_TQ_LIGHT_CLOUD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_LIGHT_CLOUD)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_DENSE_CLOUD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_DENSE_CLOUD)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_STORM_CLOUD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_STORM_CLOUD)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_APPLE, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_APPLE)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_BANANA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_BANANA)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_CHERRY, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_CHERRY)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_COCONUT, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_COCONUT)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_LEMON, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_LEMON)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_MANGO, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_MANGO)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_MULBERRY, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_MULBERRY)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_ORANGE, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_ORANGE)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_PEACH, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_PEACH)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_PEAR, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_PEAR)), DDItems.conditionalTabProperties("terraqueous")));
+		    helper.register(DDNames.TALL_TQ_PLUM, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TQ_PLUM)), DDItems.conditionalTabProperties("terraqueous")));
 		    
 		    // Twigs
 		    helper.register(DDNames.SHORT_TWIGS_BAMBOO, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWIGS_BAMBOO)), DDItems.conditionalTabProperties("twigs")));

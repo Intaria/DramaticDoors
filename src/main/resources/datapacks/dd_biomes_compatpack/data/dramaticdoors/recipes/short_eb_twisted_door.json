@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "endlessbiomes:twisted_door"
+  },
+  "result": "dramaticdoors:short_eb_twisted_door",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "woodworks"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "endlessbiomes"
+        }
+      ]
+    }
+  ]
+}

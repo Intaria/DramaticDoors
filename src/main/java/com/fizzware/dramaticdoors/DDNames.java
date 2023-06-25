@@ -501,6 +501,13 @@ public class DDNames
     public static final String TALL_EBONY = "tall_ebony_door";
     public static final String TALL_PREAM = "tall_pream_door";
     
+    //Endless Biomes
+    public static final String SHORT_EB_TWISTED = "short_eb_twisted_door";
+    public static final String SHORT_EB_PENUMBRA = "short_eb_penumbra_door";
+    
+    public static final String TALL_EB_TWISTED = "tall_eb_twisted_door";
+    public static final String TALL_EB_PENUMBRA = "tall_eb_penumbra_door";
+    
     //Enlightened End
     public static final String SHORT_CONGEALED = "short_congealed_door";
     public static final String SHORT_EE_EBONY = "short_ee_ebony_door";
@@ -795,6 +802,37 @@ public class DDNames
     public static final String TALL_SILVER = "tall_silver_door";
     public static final String TALL_LEAD = "tall_lead_door";
     public static final String TALL_NETHERITE = "tall_netherite_door";
+    
+    //Terraqueous
+    public static final String SHORT_TQ_LIGHT_CLOUD = "short_tq_light_cloud_door";
+    public static final String SHORT_TQ_DENSE_CLOUD = "short_tq_dense_cloud_door";
+    public static final String SHORT_TQ_STORM_CLOUD = "short_tq_storm_cloud_door";
+    public static final String SHORT_TQ_APPLE = "short_tq_apple_door";
+    public static final String SHORT_TQ_BANANA = "short_tq_banana_door";
+    public static final String SHORT_TQ_CHERRY = "short_tq_cherry_door";
+    public static final String SHORT_TQ_COCONUT = "short_tq_coconut_door";
+    public static final String SHORT_TQ_LEMON = "short_tq_lemon_door";
+    public static final String SHORT_TQ_MANGO = "short_tq_mango_door";
+    public static final String SHORT_TQ_MULBERRY = "short_tq_mulberry_door";
+    public static final String SHORT_TQ_ORANGE = "short_tq_orange_door";
+    public static final String SHORT_TQ_PEACH = "short_tq_peach_door";
+    public static final String SHORT_TQ_PEAR = "short_tq_pear_door";
+    public static final String SHORT_TQ_PLUM = "short_tq_plum_door";
+
+    public static final String TALL_TQ_LIGHT_CLOUD = "tall_tq_light_cloud_door";
+    public static final String TALL_TQ_DENSE_CLOUD = "tall_tq_dense_cloud_door";
+    public static final String TALL_TQ_STORM_CLOUD = "tall_tq_storm_cloud_door";
+    public static final String TALL_TQ_APPLE = "tall_tq_apple_door";
+    public static final String TALL_TQ_BANANA = "tall_tq_banana_door";
+    public static final String TALL_TQ_CHERRY = "tall_tq_cherry_door";
+    public static final String TALL_TQ_COCONUT = "tall_tq_coconut_door";
+    public static final String TALL_TQ_LEMON = "tall_tq_lemon_door";
+    public static final String TALL_TQ_MANGO = "tall_tq_mango_door";
+    public static final String TALL_TQ_MULBERRY = "tall_tq_mulberry_door";
+    public static final String TALL_TQ_ORANGE = "tall_tq_orange_door";
+    public static final String TALL_TQ_PEACH = "tall_tq_peach_door";
+    public static final String TALL_TQ_PEAR = "tall_tq_pear_door";
+    public static final String TALL_TQ_PLUM = "tall_tq_plum_door";
     
     //Tinkers Construct
     public static final String SHORT_BLOODSHROOM = "short_bloodshroom_door";

@@ -109,14 +109,14 @@ public class DDVanillaesquePackRegistry
 		    // Morecraft
 		    helper.register(DDNames.SHORT_MORECRAFT_NETHERBRICK, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherbrick_door")))); 
 			helper.register(DDNames.SHORT_MORECRAFT_NETHERWOOD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherwood_door"))));
-			helper.register(DDNames.SHORT_MORECRAFT_NETHERITE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherite_door"))));
+			helper.register(DDNames.SHORT_MORECRAFT_NETHERITE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherite_door"), Blocks.IRON_DOOR)));
 			helper.register(DDNames.SHORT_MORECRAFT_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "glass_door"))));
 			helper.register(DDNames.SHORT_MORECRAFT_SOUL_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "soul_glass_door"))));
 			helper.register(DDNames.SHORT_MORECRAFT_BONE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "bone_door"))));
 			
 		    helper.register(DDNames.TALL_MORECRAFT_NETHERBRICK, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherbrick_door")))); 
 			helper.register(DDNames.TALL_MORECRAFT_NETHERWOOD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherwood_door"))));
-			helper.register(DDNames.TALL_MORECRAFT_NETHERITE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherite_door"))));
+			helper.register(DDNames.TALL_MORECRAFT_NETHERITE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherite_door"), Blocks.IRON_DOOR)));
 			helper.register(DDNames.TALL_MORECRAFT_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "glass_door"))));
 			helper.register(DDNames.TALL_MORECRAFT_SOUL_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "soul_glass_door"))));
 			helper.register(DDNames.TALL_MORECRAFT_BONE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "bone_door"))));
