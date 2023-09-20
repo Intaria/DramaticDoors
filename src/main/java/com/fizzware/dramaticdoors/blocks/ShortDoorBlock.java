@@ -159,18 +159,12 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
 			if (state.getValue(WATERLOGGED)) {
 				level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
 			}
-            if (Compats.VANILLAESQUE_PACK_ENABLED.getValue() && this == DDVanillaesquePackRegistry.SHORT_TOOTH_DOOR) {
-            	level.scheduleTick(pos, this, 20);
-            }
             return InteractionResult.sidedSuccess(level.isClientSide);
         }
     }
     
 	@Override
 	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-		if (this != DDVanillaesquePackRegistry.SHORT_TOOTH_DOOR) {
-			return; // Should stop the 'dancing' doors.
-		}
 		if (!level.isClientSide) {
 			state = state.cycle(OPEN);
 			level.setBlock(pos, state, 10);

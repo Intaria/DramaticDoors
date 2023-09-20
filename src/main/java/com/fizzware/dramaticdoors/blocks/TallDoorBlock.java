@@ -204,18 +204,12 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
             level.setBlock(pos, state, 10);
             level.levelEvent(player, state.getValue(OPEN) ? this.getOpenSound() : this.getCloseSound(), pos, 0);
             level.gameEvent(player, state.getValue(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
-            if (Compats.VANILLAESQUE_PACK_ENABLED.getValue() && this == DDVanillaesquePackRegistry.TALL_TOOTH_DOOR) {
-            	level.scheduleTick(pos, this, 20);
-            }
             return InteractionResult.sidedSuccess(level.isClientSide);
         }
     }
     
 	@Override
 	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-		if (this != DDVanillaesquePackRegistry.TALL_TOOTH_DOOR) {
-			return; // Should stop the 'dancing' doors.
-		}
 		if (!level.isClientSide) {
 			state = state.cycle(OPEN);
 			level.setBlock(pos, state, 10);

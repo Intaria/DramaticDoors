@@ -19,8 +19,6 @@
     {"id": "dramaticdoors:tall_locked_zinc_door", "required": false}, 
     {"id": "dramaticdoors:tall_locked_steel_door", "required": false}, 
     {"id": "dramaticdoors:tall_honeycomb_door", "required": false}, 
-    {"id": "dramaticdoors:tall_glass_door", "required": false}, 
-    {"id": "dramaticdoors:tall_tooth_door", "required": false}, 
     {"id": "dramaticdoors:tall_cardboard_door", "required": false}, 
     {"id": "dramaticdoors:tall_chain_door", "required": false}, 
     {"id": "dramaticdoors:tall_industrial_iron_door", "required": false}, 

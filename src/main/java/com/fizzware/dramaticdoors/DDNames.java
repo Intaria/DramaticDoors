@@ -247,17 +247,6 @@ public class DDNames
     public static final String TALL_CHERRY = "tall_cherry_door";
     public static final String TALL_WILLOW = "tall_willow_door";
     public static final String TALL_WISTERIA = "tall_wisteria_door";
-
-    //Upgrade Aquatic
-    public static final String SHORT_DRIFTWOOD = "short_driftwood_door";
-    public static final String SHORT_RIVER = "short_river_door";
-    public static final String SHORT_GLASS = "short_glass_door";
-    public static final String SHORT_TOOTH = "short_tooth_door";
-    
-    public static final String TALL_DRIFTWOOD = "tall_driftwood_door";
-    public static final String TALL_RIVER = "tall_river_door";
-    public static final String TALL_GLASS = "tall_glass_door";
-    public static final String TALL_TOOTH = "tall_tooth_door";
     
     //Abundance
     public static final String SHORT_JACARANDA = "short_jacaranda_door";

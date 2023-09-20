@@ -13,10 +13,6 @@
     {"id": "dramaticdoors:tall_cherry_door", "required": false},
     {"id": "dramaticdoors:tall_willow_door", "required": false},
     {"id": "dramaticdoors:tall_wisteria_door", "required": false},
-    {"id": "dramaticdoors:tall_honeycomb_door", "required": false},
-    {"id": "dramaticdoors:tall_driftwood_door", "required": false},
-    {"id": "dramaticdoors:tall_river_door", "required": false},
-    {"id": "dramaticdoors:tall_tooth_door", "required": false},
-    {"id": "dramaticdoors:tall_glass_door", "required": false}
+    {"id": "dramaticdoors:tall_honeycomb_door", "required": false}
   ]
 }

@@ -31,8 +31,6 @@ public class DDVanillaesquePackRegistry
 	public static final Block TALL_LEAD_DOOR = new TallLeadDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("supplementaries", "lead_door"), Blocks.IRON_DOOR));
 	public static final Block SHORT_NETHERITE_DOOR = new ShortNetheriteDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("supplementaries", "netherite_door"), Blocks.IRON_DOOR));
 	public static final Block TALL_NETHERITE_DOOR = new TallNetheriteDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("supplementaries", "netherite_door"), Blocks.IRON_DOOR));
-	public static final Block SHORT_TOOTH_DOOR = new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("upgrade_aquatic", "tooth_door")));
-	public static final Block TALL_TOOTH_DOOR = new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("upgrade_aquatic", "tooth_door")));
 	
 	@SubscribeEvent
 	public static void register(RegisterEvent event) {
@@ -51,10 +49,6 @@ public class DDVanillaesquePackRegistry
 		    helper.register(DDNames.SHORT_CHERRY, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("environmental", "cherry_door"))));
 		    helper.register(DDNames.SHORT_WILLOW, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("environmental", "willow_door"))));
 		    helper.register(DDNames.SHORT_WISTERIA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("environmental", "wisteria_door"))));
-		    helper.register(DDNames.SHORT_DRIFTWOOD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("upgrade_aquatic", "driftwood_door"))));
-		    helper.register(DDNames.SHORT_RIVER, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("upgrade_aquatic", "river_door"))));
-		    helper.register(DDNames.SHORT_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("upgrade_aquatic", "glass_door"))));
-		    helper.register(DDNames.SHORT_TOOTH, SHORT_TOOTH_DOOR);
 		    
 		    helper.register(DDNames.TALL_ASPEN, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("atmospheric", "aspen_door"))));
 		    helper.register(DDNames.TALL_GRIMWOOD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("atmospheric", "grimwood_door"))));
@@ -69,10 +63,6 @@ public class DDVanillaesquePackRegistry
 		    helper.register(DDNames.TALL_CHERRY, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("environmental", "cherry_door"))));
 		    helper.register(DDNames.TALL_WILLOW, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("environmental", "willow_door"))));
 		    helper.register(DDNames.TALL_WISTERIA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("environmental", "wisteria_door"))));
-		    helper.register(DDNames.TALL_DRIFTWOOD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("upgrade_aquatic", "driftwood_door"))));
-		    helper.register(DDNames.TALL_RIVER, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("upgrade_aquatic", "river_door"))));
-		    helper.register(DDNames.TALL_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("upgrade_aquatic", "glass_door"))));
-		    helper.register(DDNames.TALL_TOOTH, TALL_TOOTH_DOOR);
 		    
 		    // Team Aurora Mods (3 mod compats)
 		    helper.register(DDNames.SHORT_JACARANDA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("horizons", "jacaranda_door"))));
@@ -168,11 +158,7 @@ public class DDVanillaesquePackRegistry
 		    helper.register(DDNames.SHORT_CHERRY, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_CHERRY)), DDItems.conditionalTabProperties("environmental")));
 		    helper.register(DDNames.SHORT_WILLOW, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WILLOW)), DDItems.conditionalTabProperties("environmental")));
 		    helper.register(DDNames.SHORT_WISTERIA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_WISTERIA)), DDItems.conditionalTabProperties("environmental")));
-		    helper.register(DDNames.SHORT_DRIFTWOOD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DRIFTWOOD)), DDItems.conditionalTabProperties("upgrade_aquatic")));
-		    helper.register(DDNames.SHORT_RIVER, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_RIVER)), DDItems.conditionalTabProperties("upgrade_aquatic")));
-		    helper.register(DDNames.SHORT_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_GLASS)), DDItems.conditionalTabProperties("upgrade_aquatic")));
-		    helper.register(DDNames.SHORT_TOOTH, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TOOTH)), DDItems.conditionalTabProperties("upgrade_aquatic")));
-		
+		    
 		    helper.register(DDNames.TALL_ASPEN, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ASPEN)), DDItems.conditionalTabProperties("atmospheric")));
 		    helper.register(DDNames.TALL_GRIMWOOD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GRIMWOOD)), DDItems.conditionalTabProperties("atmospheric")));
 		    helper.register(DDNames.TALL_KOUSA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_KOUSA)), DDItems.conditionalTabProperties("atmospheric")));
@@ -186,11 +172,7 @@ public class DDVanillaesquePackRegistry
 		    helper.register(DDNames.TALL_CHERRY, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_CHERRY)), DDItems.conditionalTabProperties("environmental")));
 		    helper.register(DDNames.TALL_WILLOW, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WILLOW)), DDItems.conditionalTabProperties("environmental")));
 		    helper.register(DDNames.TALL_WISTERIA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_WISTERIA)), DDItems.conditionalTabProperties("environmental")));
-		    helper.register(DDNames.TALL_DRIFTWOOD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DRIFTWOOD)), DDItems.conditionalTabProperties("upgrade_aquatic")));
-		    helper.register(DDNames.TALL_RIVER, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_RIVER)), DDItems.conditionalTabProperties("upgrade_aquatic")));
-		    helper.register(DDNames.TALL_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_GLASS)), DDItems.conditionalTabProperties("upgrade_aquatic")));
-		    helper.register(DDNames.TALL_TOOTH, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TOOTH)), DDItems.conditionalTabProperties("upgrade_aquatic")));
-		
+		    
 		    // Team Aurora Mods (3 mod compats)
 		    helper.register(DDNames.SHORT_JACARANDA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_JACARANDA)), DDItems.conditionalTabProperties("horizons")));
 		    helper.register(DDNames.SHORT_REDBUD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_REDBUD)), DDItems.conditionalTabProperties("horizons")));
