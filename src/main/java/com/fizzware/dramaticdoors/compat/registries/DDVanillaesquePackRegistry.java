@@ -96,21 +96,6 @@ public class DDVanillaesquePackRegistry
 		
 		    helper.register(DDNames.TALL_FAIRY_RING_MUSHROOM, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("habitat", "fairy_ring_mushroom_door"))));
 		    
-		    // Morecraft
-		    helper.register(DDNames.SHORT_MORECRAFT_NETHERBRICK, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherbrick_door")))); 
-			helper.register(DDNames.SHORT_MORECRAFT_NETHERWOOD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherwood_door"))));
-			helper.register(DDNames.SHORT_MORECRAFT_NETHERITE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherite_door"), Blocks.IRON_DOOR)));
-			helper.register(DDNames.SHORT_MORECRAFT_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "glass_door"))));
-			helper.register(DDNames.SHORT_MORECRAFT_SOUL_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "soul_glass_door"))));
-			helper.register(DDNames.SHORT_MORECRAFT_BONE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "bone_door"))));
-			
-		    helper.register(DDNames.TALL_MORECRAFT_NETHERBRICK, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherbrick_door")))); 
-			helper.register(DDNames.TALL_MORECRAFT_NETHERWOOD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherwood_door"))));
-			helper.register(DDNames.TALL_MORECRAFT_NETHERITE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "netherite_door"), Blocks.IRON_DOOR)));
-			helper.register(DDNames.TALL_MORECRAFT_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "glass_door"))));
-			helper.register(DDNames.TALL_MORECRAFT_SOUL_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "soul_glass_door"))));
-			helper.register(DDNames.TALL_MORECRAFT_BONE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("morecraft", "bone_door"))));
-			
 		    // New World
 		    helper.register(DDNames.SHORT_FIR, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("newworld", "fir_door"))));
 		
@@ -204,21 +189,6 @@ public class DDVanillaesquePackRegistry
 		    helper.register(DDNames.SHORT_FAIRY_RING_MUSHROOM, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FAIRY_RING_MUSHROOM)), DDItems.addIfItemIsAvailable(new ResourceLocation("habitat", "fairy_ring_mushroom_door"), DDItems.conditionalTabProperties("habitat"))));
 		    
 		    helper.register(DDNames.TALL_FAIRY_RING_MUSHROOM, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FAIRY_RING_MUSHROOM)), DDItems.addIfItemIsAvailable(new ResourceLocation("habitat", "fairy_ring_mushroom_door"), DDItems.conditionalTabProperties("habitat"))));
-		    
-		    // Morecraft
-		    helper.register(DDNames.SHORT_MORECRAFT_NETHERBRICK, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MORECRAFT_NETHERBRICK)), DDItems.conditionalTabProperties("morecraft")));
-		    helper.register(DDNames.SHORT_MORECRAFT_NETHERWOOD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MORECRAFT_NETHERWOOD)), DDItems.conditionalTabProperties("morecraft")));
-		    helper.register(DDNames.SHORT_MORECRAFT_NETHERITE, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MORECRAFT_NETHERITE)), DDItems.conditionalTabProperties("morecraft").fireResistant()));
-			helper.register(DDNames.SHORT_MORECRAFT_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MORECRAFT_GLASS)), DDItems.conditionalTabProperties("morecraft")));
-			helper.register(DDNames.SHORT_MORECRAFT_SOUL_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MORECRAFT_SOUL_GLASS)), DDItems.conditionalTabProperties("morecraft")));
-		    helper.register(DDNames.SHORT_MORECRAFT_BONE, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MORECRAFT_BONE)), DDItems.conditionalTabProperties("morecraft")));
-		    
-		    helper.register(DDNames.TALL_MORECRAFT_NETHERBRICK, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MORECRAFT_NETHERBRICK)), DDItems.conditionalTabProperties("morecraft")));
-		    helper.register(DDNames.TALL_MORECRAFT_NETHERWOOD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MORECRAFT_NETHERWOOD)), DDItems.conditionalTabProperties("morecraft")));
-		    helper.register(DDNames.TALL_MORECRAFT_NETHERITE, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MORECRAFT_NETHERITE)), DDItems.conditionalTabProperties("morecraft").fireResistant()));
-			helper.register(DDNames.TALL_MORECRAFT_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MORECRAFT_GLASS)), DDItems.conditionalTabProperties("morecraft")));
-			helper.register(DDNames.TALL_MORECRAFT_SOUL_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MORECRAFT_SOUL_GLASS)), DDItems.conditionalTabProperties("morecraft")));
-		    helper.register(DDNames.TALL_MORECRAFT_BONE, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MORECRAFT_BONE)), DDItems.conditionalTabProperties("morecraft")));
 		    
 		    // New World
 		    helper.register(DDNames.SHORT_FIR, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_FIR)), DDItems.conditionalTabProperties("newworld")));

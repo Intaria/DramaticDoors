@@ -1,8 +1,0 @@
-{
-  "parent": "dramaticdoors:block/door_middle_right_open",
-  "textures": {
-    "bottom": "minecraft:block/barrel_side",
-    "middle": "minecraft:block/barrel_side",
-    "top": "minecraft:block/barrel_side"
-  }
-}

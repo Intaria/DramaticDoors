@@ -13,12 +13,12 @@ import oshi.util.tuples.Pair;
 public class Compats
 {
     // Determining what Data Packs will be enabled, and additionally register extra blocks. Create lists and values.
-	public static final List<String> VANILLAESQUE_PACK_MODS = ImmutableList.of("blueprint", "horizons", "enhanced_mushrooms", "quark", "supplementaries", "goodending", "morecraft", "habitat", "abundant_atmosphere", "newworld", "windswept");
+	public static final List<String> VANILLAESQUE_PACK_MODS = ImmutableList.of("blueprint", "horizons", "enhanced_mushrooms", "quark", "supplementaries", "goodending",  "habitat", "abundant_atmosphere", "newworld", "windswept");
 	public static final List<String> BIOME_PACK_MODS = ImmutableList.of("biomesoplenty", "byg", "regions_unexplored", "biomemakeover", "darkerdepths", "ecologics", "phantasm", "endlessbiomes", "enlightened_end", "gardens_of_the_dead", "mysticsbiomes", "nethers_exoticism", "outer_end", "premium_wood");
 	public static final List<String> DIMENSIONAL_PACK_MODS = ImmutableList.of("ad_astra", "aether", "blue_skies", "ceilands", "deeperdarker", "prehistoricfauna", "twilightforest", "undergarden");
 	public static final List<String> TECH_PACK_MODS = ImmutableList.of("create", "dustrial_decor", "integrateddynamics", "tconstruct");
 	public static final List<String> MAGIC_PACK_MODS = ImmutableList.of("ars_nouveau", "forbidden_arcanus", "hexcasting", "hexerei", "malum", "pyromancer");
-	public static final List<String> MISC_PACK_MODS = ImmutableList.of("ms", "pokecube", "architects_palette", "bambooeverything", "biomancy", "blocksplus", "caupona", "cobblemon", "copperoverhaul", "everythingcopper", "extendedmushrooms", "fruittrees", "graveyard", "silentgear", "snowyspirit", "terraqueous", "twigs", "yippee");
+	public static final List<String> MISC_PACK_MODS = ImmutableList.of("ms",  "architects_palette", "bambooeverything", "biomancy", "blocksplus", "caupona", "cobblemon", "copperoverhaul", "everythingcopper", "extendedmushrooms", "fruittrees", "graveyard", "silentgear", "snowyspirit", "terraqueous", "twigs", "yippee");
 	
     public static final MutableBoolean VANILLAESQUE_PACK_ENABLED = new MutableBoolean(false);
     public static final MutableBoolean BIOME_PACK_ENABLED = new MutableBoolean(false);
@@ -34,8 +34,6 @@ public class Compats
 	public static final boolean CURIOS_INSTALLED;
     public static final boolean DOUBLE_DOORS_INSTALLED;
     public static final boolean CHIPPED_INSTALLED;
-    public static final boolean MACAWS_DOORS_INSTALLED;
-    public static final boolean MANYIDEAS_DOORS_INSTALLED;
     public static final boolean QUARK_INSTALLED;
     public static final boolean SUPPLEMENTARIES_INSTALLED;
     public static final boolean STATEMENT_INSTALLED;
@@ -45,8 +43,6 @@ public class Compats
     	CURIOS_INSTALLED = ModList.get().isLoaded("curios");
     	DOUBLE_DOORS_INSTALLED = ModList.get().isLoaded("doubledoors");
     	CHIPPED_INSTALLED = ModList.get().isLoaded("chipped") || isDev();
-    	MACAWS_DOORS_INSTALLED = ModList.get().isLoaded("mcwdoors") || isDev();
-    	MANYIDEAS_DOORS_INSTALLED = ModList.get().isLoaded("manyideas_doors") || isDev();
     	QUARK_INSTALLED = ModList.get().isLoaded("quark");
     	SUPPLEMENTARIES_INSTALLED = ModList.get().isLoaded("supplementaries");
     	STATEMENT_INSTALLED = ModList.get().isLoaded("statement");

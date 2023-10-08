@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_left",
-  "textures": {
-    "bottom": "dramaticdoors:block/macaw/tall_store_door_lower",
-    "middle": "dramaticdoors:block/macaw/tall_store_door_middle",
-    "top": "dramaticdoors:block/macaw/tall_store_door_upper"
-  }
-}

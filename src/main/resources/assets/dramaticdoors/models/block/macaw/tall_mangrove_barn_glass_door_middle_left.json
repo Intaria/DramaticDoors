@@ -1,8 +1,0 @@
-{
-  "parent": "dramaticdoors:block/door_middle_left",
-  "textures": {
-    "bottom": "dramaticdoors:block/macaw/tall_mangrove_barn_glass_door_middle",
-    "middle": "dramaticdoors:block/macaw/tall_mangrove_barn_glass_door_middle",
-    "top": "dramaticdoors:block/macaw/tall_mangrove_barn_glass_door_middle"
-  }
-}

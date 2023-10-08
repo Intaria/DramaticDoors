@@ -1,8 +1,0 @@
-{
-    "parent": "dramaticdoors:block/macaw/japanese_top_right",
-    "textures": {
-		"0": "dramaticdoors:block/macaw/tall_dark_oak_japanese_lower",
-		"1": "dramaticdoors:block/macaw/tall_dark_oak_japanese_upper",
-		"particle": "dramaticdoors:block/macaw/tall_dark_oak_japanese_lower"
-    }
-}

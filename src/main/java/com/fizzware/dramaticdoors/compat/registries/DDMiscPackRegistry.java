@@ -48,66 +48,7 @@ public class DDMiscPackRegistry
 	@SubscribeEvent
 	public static void register(RegisterEvent event) {
 		event.register(ForgeRegistries.Keys.BLOCKS, helper -> {
-			// Mo' Shiz
-			helper.register(DDNames.SHORT_MS_IRON_BAR, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/iron_bar"), Blocks.IRON_DOOR)));
-		    helper.register(DDNames.SHORT_MS_BAMBOO, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/bamboo"))));
-		    helper.register(DDNames.SHORT_MS_CHERRY, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/cherry"))));
-		    helper.register(DDNames.SHORT_MS_GLOWOOD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/glowood"))));
-		    helper.register(DDNames.SHORT_MS_HELLWOOD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/hellwood"))));
-		    helper.register(DDNames.SHORT_MS_MAPLE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/maple"))));
-		    helper.register(DDNames.SHORT_MS_SILVERBELL, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/silverbell"))));
-		    helper.register(DDNames.SHORT_MS_TIGERWOOD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/tigerwood"))));
-		    helper.register(DDNames.SHORT_MS_WILLOW, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/willow"))));
-		    helper.register(DDNames.SHORT_MS_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/glass"))));
-		    helper.register(DDNames.SHORT_MS_SOUL_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/soul_glass"))));
-		    helper.register(DDNames.SHORT_MS_TINTED_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/tinted_glass"))));
-		    helper.register(DDNames.SHORT_MS_BLACK_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/black_glass"))));
-		    helper.register(DDNames.SHORT_MS_GREY_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/grey_glass"))));
-		    helper.register(DDNames.SHORT_MS_LIGHT_GREY_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/light_grey_glass"))));
-		    helper.register(DDNames.SHORT_MS_WHITE_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/white_glass"))));
-		    helper.register(DDNames.SHORT_MS_RED_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/red_glass"))));
-		    helper.register(DDNames.SHORT_MS_ORANGE_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/orange_glass"))));
-		    helper.register(DDNames.SHORT_MS_YELLOW_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/yellow_glass"))));
-		    helper.register(DDNames.SHORT_MS_LIME_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/lime_glass"))));
-		    helper.register(DDNames.SHORT_MS_GREEN_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/green_glass"))));
-		    helper.register(DDNames.SHORT_MS_CYAN_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/cyan_glass"))));
-		    helper.register(DDNames.SHORT_MS_BLUE_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/blue_glass"))));
-		    helper.register(DDNames.SHORT_MS_PURPLE_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/purple_glass"))));
-		    helper.register(DDNames.SHORT_MS_MAGENTA_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/magenta_glass"))));
-		    helper.register(DDNames.SHORT_MS_PINK_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/pink_glassr"))));
-		    helper.register(DDNames.SHORT_MS_LIGHT_BLUE_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/light_blue_glass"))));
-		    helper.register(DDNames.SHORT_MS_BROWN_GLASS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/brown_glass"))));
-		    
-			helper.register(DDNames.TALL_MS_IRON_BAR, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/iron_bar"), Blocks.IRON_DOOR)));
-		    helper.register(DDNames.TALL_MS_BAMBOO, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/bamboo"))));
-		    helper.register(DDNames.TALL_MS_CHERRY, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/cherry"))));
-		    helper.register(DDNames.TALL_MS_GLOWOOD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/glowood"))));
-		    helper.register(DDNames.TALL_MS_HELLWOOD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/hellwood"))));
-		    helper.register(DDNames.TALL_MS_MAPLE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/maple"))));
-		    helper.register(DDNames.TALL_MS_SILVERBELL, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/silverbell"))));
-		    helper.register(DDNames.TALL_MS_TIGERWOOD, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/tigerwood"))));
-		    helper.register(DDNames.TALL_MS_WILLOW, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/willow"))));
-		    helper.register(DDNames.TALL_MS_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/glass"))));
-		    helper.register(DDNames.TALL_MS_SOUL_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/soul_glass"))));
-		    helper.register(DDNames.TALL_MS_TINTED_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/tinted_glass"))));
-		    helper.register(DDNames.TALL_MS_BLACK_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/black_glass"))));
-		    helper.register(DDNames.TALL_MS_GREY_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/grey_glass"))));
-		    helper.register(DDNames.TALL_MS_LIGHT_GREY_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/light_grey_glass"))));
-		    helper.register(DDNames.TALL_MS_WHITE_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/white_glass"))));
-		    helper.register(DDNames.TALL_MS_RED_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/red_glass"))));
-		    helper.register(DDNames.TALL_MS_ORANGE_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/orange_glass"))));
-		    helper.register(DDNames.TALL_MS_YELLOW_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/yellow_glass"))));
-		    helper.register(DDNames.TALL_MS_LIME_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/lime_glass"))));
-		    helper.register(DDNames.TALL_MS_GREEN_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/green_glass"))));
-		    helper.register(DDNames.TALL_MS_CYAN_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/cyan_glass"))));
-		    helper.register(DDNames.TALL_MS_BLUE_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/blue_glass"))));
-		    helper.register(DDNames.TALL_MS_PURPLE_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/purple_glass"))));
-		    helper.register(DDNames.TALL_MS_MAGENTA_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/magenta_glass"))));
-		    helper.register(DDNames.TALL_MS_PINK_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/pink_glassr"))));
-		    helper.register(DDNames.TALL_MS_LIGHT_BLUE_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/light_blue_glass"))));
-		    helper.register(DDNames.TALL_MS_BROWN_GLASS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ms", "door/brown_glass"))));
-
-		    // Architects Palette
+			// Architects Palette
 		    helper.register(DDNames.SHORT_TWISTED, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("architects_palette", "twisted_door"))));
 		
 		    helper.register(DDNames.TALL_TWISTED, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("architects_palette", "twisted_door"))));
@@ -227,35 +168,6 @@ public class DDMiscPackRegistry
 		
 		    helper.register(DDNames.TALL_DARK_IRON, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("graveyard", "dark_iron_door"), Blocks.IRON_DOOR)));
 		    
-		    // Pokecube
-		    helper.register(DDNames.SHORT_POKECUBE_ENIGMA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "enigma_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_LEPPA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "leppa_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_NANAB, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "nanab_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_ORAN, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "oran_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_PECHA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "pecha_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_SITRUS, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "sitrus_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_AGED, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "aged_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_CONCRETE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "concrete_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_CORRUPTED, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "corrupted_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_DISTORTIC, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "distortic_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_INVERTED, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "inverted_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_MIRAGE, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "mirage_door"))));
-		    helper.register(DDNames.SHORT_POKECUBE_TEMPORAL, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "temporal_door"))));
-		    
-		    helper.register(DDNames.TALL_POKECUBE_ENIGMA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "enigma_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_LEPPA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "leppa_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_NANAB, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "nanab_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_ORAN, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "oran_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_PECHA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "pecha_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_SITRUS, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "sitrus_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_AGED, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "aged_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_CONCRETE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "concrete_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_CORRUPTED, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "corrupted_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_DISTORTIC, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "distortic_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_INVERTED, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "inverted_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_MIRAGE, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "mirage_door"))));
-		    helper.register(DDNames.TALL_POKECUBE_TEMPORAL, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("pokecube", "temporal_door"))));
-
 		    // Silent Gear
 		    helper.register(DDNames.SHORT_NETHERWOOD, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("silentgear", "netherwood_door"))));
 		
@@ -309,66 +221,7 @@ public class DDMiscPackRegistry
 			
 		});
 		event.register(ForgeRegistries.Keys.ITEMS, helper -> {
-			// Mo' Shiz
-		    helper.register(DDNames.SHORT_MS_IRON_BAR, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_IRON_BAR)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_BAMBOO, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_BAMBOO)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_CHERRY, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_CHERRY)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_GLOWOOD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_GLOWOOD)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_HELLWOOD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_HELLWOOD)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_MAPLE, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_MAPLE)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_SILVERBELL, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_SILVERBELL)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_TIGERWOOD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_TIGERWOOD)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_WILLOW, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_WILLOW)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_SOUL_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_SOUL_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_TINTED_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_TINTED_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_BLACK_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_BLACK_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_GREY_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_GREY_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_LIGHT_GREY_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_LIGHT_GREY_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_WHITE_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_WHITE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_RED_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_RED_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_ORANGE_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_ORANGE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_YELLOW_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_YELLOW_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_LIME_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_LIME_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_GREEN_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_GREEN_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_CYAN_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_CYAN_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_BLUE_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_BLUE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_PURPLE_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_PURPLE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_MAGENTA_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_MAGENTA_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_PINK_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_PINK_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_LIGHT_BLUE_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_LIGHT_BLUE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.SHORT_MS_BROWN_GLASS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_MS_BROWN_GLASS)), DDItems.conditionalTabProperties("ms")));
-
-		    helper.register(DDNames.TALL_MS_IRON_BAR, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_IRON_BAR)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_BAMBOO, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_BAMBOO)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_CHERRY, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_CHERRY)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_GLOWOOD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_GLOWOOD)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_HELLWOOD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_HELLWOOD)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_MAPLE, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_MAPLE)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_SILVERBELL, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_SILVERBELL)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_TIGERWOOD, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_TIGERWOOD)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_WILLOW, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_WILLOW)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_SOUL_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_SOUL_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_TINTED_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_TINTED_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_BLACK_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_BLACK_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_GREY_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_GREY_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_LIGHT_GREY_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_LIGHT_GREY_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_WHITE_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_WHITE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_RED_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_RED_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_ORANGE_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_ORANGE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_YELLOW_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_YELLOW_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_LIME_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_LIME_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_GREEN_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_GREEN_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_CYAN_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_CYAN_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_BLUE_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_BLUE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_PURPLE_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_PURPLE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_MAGENTA_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_MAGENTA_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_PINK_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_PINK_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_LIGHT_BLUE_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_LIGHT_BLUE_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    helper.register(DDNames.TALL_MS_BROWN_GLASS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_MS_BROWN_GLASS)), DDItems.conditionalTabProperties("ms")));
-		    
-		    // Architects Palette
+			// Architects Palette
 		    helper.register(DDNames.SHORT_TWISTED, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_TWISTED)), DDItems.conditionalTabProperties("architects_palette")));
 		    
 		    helper.register(DDNames.TALL_TWISTED, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_TWISTED)), DDItems.conditionalTabProperties("architects_palette")));
@@ -487,35 +340,6 @@ public class DDMiscPackRegistry
 		    helper.register(DDNames.SHORT_DARK_IRON, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_DARK_IRON)), DDItems.conditionalTabProperties("graveyard")));
 		    
 		    helper.register(DDNames.TALL_DARK_IRON, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_DARK_IRON)), DDItems.conditionalTabProperties("graveyard")));
-		    
-		    // Pokecube
-		    helper.register(DDNames.SHORT_POKECUBE_ENIGMA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_ENIGMA)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_LEPPA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_LEPPA)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_NANAB, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_NANAB)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_ORAN, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_ORAN)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_PECHA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_PECHA)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_SITRUS, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_SITRUS)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_AGED, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_AGED)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_CONCRETE, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_CONCRETE)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_CORRUPTED, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_CORRUPTED)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_DISTORTIC, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_DISTORTIC)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_INVERTED, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_INVERTED)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_MIRAGE, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_MIRAGE)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.SHORT_POKECUBE_TEMPORAL, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_POKECUBE_TEMPORAL)), DDItems.conditionalTabProperties("pokecube")));
-		    
-		    helper.register(DDNames.TALL_POKECUBE_ENIGMA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_ENIGMA)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_LEPPA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_LEPPA)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_NANAB, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_NANAB)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_ORAN, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_ORAN)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_PECHA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_PECHA)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_SITRUS, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_SITRUS)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_AGED, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_AGED)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_CONCRETE, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_CONCRETE)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_CORRUPTED, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_CORRUPTED)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_DISTORTIC, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_DISTORTIC)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_INVERTED, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_INVERTED)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_MIRAGE, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_MIRAGE)), DDItems.conditionalTabProperties("pokecube")));
-		    helper.register(DDNames.TALL_POKECUBE_TEMPORAL, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_POKECUBE_TEMPORAL)), DDItems.conditionalTabProperties("pokecube")));
 		    
 		    // Silent Gear
 		    helper.register(DDNames.SHORT_NETHERWOOD, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_NETHERWOOD)), DDItems.conditionalTabProperties("silentgear")));

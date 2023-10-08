@@ -1,8 +1,0 @@
-{
-  "parent": "dramaticdoors:block/door_middle_right_open",
-  "textures": {
-    "bottom": "dramaticdoors:block/macaw/tall_bamboo_barn_door_middle",
-    "middle": "dramaticdoors:block/macaw/tall_bamboo_barn_door_middle",
-    "top": "dramaticdoors:block/macaw/tall_bamboo_barn_door_middle"
-  }
-}

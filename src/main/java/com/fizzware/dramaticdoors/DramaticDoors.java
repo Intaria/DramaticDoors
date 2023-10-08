@@ -16,9 +16,7 @@ import com.fizzware.dramaticdoors.compat.StatementCompat;
 import com.fizzware.dramaticdoors.compat.registries.DDBiomePackRegistry;
 import com.fizzware.dramaticdoors.compat.registries.DDChippedRegistry;
 import com.fizzware.dramaticdoors.compat.registries.DDDimensionalPackRegistry;
-import com.fizzware.dramaticdoors.compat.registries.DDMacawsDoorsRegistry;
 import com.fizzware.dramaticdoors.compat.registries.DDMagicPackRegistry;
-import com.fizzware.dramaticdoors.compat.registries.DDManyIdeasDoorsRegistry;
 import com.fizzware.dramaticdoors.compat.registries.DDMiscPackRegistry;
 import com.fizzware.dramaticdoors.compat.registries.DDTechPackRegistry;
 import com.fizzware.dramaticdoors.compat.registries.DDVanillaesquePackRegistry;
@@ -94,12 +92,6 @@ public class DramaticDoors
         if (Compats.CHIPPED_INSTALLED) {
         	bus.register(DDChippedRegistry.class);
         }
-        if (Compats.MACAWS_DOORS_INSTALLED) {
-        	bus.register(DDMacawsDoorsRegistry.class);
-        }
-        if (Compats.MANYIDEAS_DOORS_INSTALLED) {
-        	bus.register(DDManyIdeasDoorsRegistry.class);
-        }
     	/*if (Compats.STATEMENT_INSTALLED) { 
     		StatementCompat.implementWaterlogging(false);
     	}*/
@@ -132,17 +124,7 @@ public class DramaticDoors
 		@Override
 		public ItemStack makeIcon() { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(MOD_ID, DDNames.TALL_CHIPPED_BIRCH_GATED))); }
     } : null;
-    
-    public static final CreativeModeTab MACAW_TAB = Compats.MACAWS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_macaw") {
-		@Override
-		public ItemStack makeIcon() { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(MOD_ID, DDNames.TALL_MACAW_DARK_OAK_BARN))); }
-    } : null;
-    
-    public static final CreativeModeTab MANYIDEAS_TAB = Compats.MANYIDEAS_DOORS_INSTALLED ? new CreativeModeTab("dramaticdoors_manyideas") {
-		@Override
-		public ItemStack makeIcon() { return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(MOD_ID, DDNames.TALL_MANYIDEAS_CRIMSON_BLANK))); }
-    } : null;
-
+        
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {}
     
@@ -155,9 +137,7 @@ public class DramaticDoors
     	var packTech = new Quartet<>("tech", Compats.TECH_PACK_ENABLED.getValue(), "datapacks/dd_tech_compatpack", "DD - Tech Pack");
     	var packMisc = new Quartet<>("misc", Compats.MISC_PACK_ENABLED.getValue(), "datapacks/dd_misc_compatpack", "DD - Misc Pack");
     	var pack1 = new Quartet<>("chipped", Compats.CHIPPED_INSTALLED, "datapacks/dd_chipped_compat", "DD - Chipped Compat");
-    	var pack2 = new Quartet<>("macaw", Compats.MACAWS_DOORS_INSTALLED, "datapacks/dd_macaws_compat", "DD - Macaw's Doors Compat");
-    	var pack3 = new Quartet<>("manyideas", Compats.MANYIDEAS_DOORS_INSTALLED, "datapacks/dd_manyideas_compat", "DD - ManyIdeas Doors Compat");
-    	var packs = ImmutableList.of(packVanilla, packBiome, packDim, packMagic, packTech, packMisc, pack1, pack2, pack3);
+    	var packs = ImmutableList.of(packVanilla, packBiome, packDim, packMagic, packTech, packMisc, pack1);
     	// Iterate through the pack list and accordingly add packs.
 
     	if (event.getPackType() == PackType.SERVER_DATA) {

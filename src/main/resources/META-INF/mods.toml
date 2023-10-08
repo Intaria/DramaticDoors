@@ -44,13 +44,6 @@ logoFile="icon.png"
     side="BOTH"
 
 [[dependencies.dramaticdoors]]
-    modId="morecraft"
-    mandatory=false
-    versionRange="[1.19.2-4.7.5,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.dramaticdoors]]
     modId="atmospheric"
     mandatory=false
     versionRange="[3.0.0,)"

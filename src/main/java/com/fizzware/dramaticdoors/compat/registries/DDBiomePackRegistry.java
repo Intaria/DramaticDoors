@@ -162,13 +162,9 @@ public class DDBiomePackRegistry
 		    helper.register(DDNames.TALL_PETRIFIED, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("darkerdepths", "petrified_door"))));
 
 		    // Ecologics
-		    helper.register(DDNames.SHORT_ECO_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ecologics", "azalea_door"))));
-		    helper.register(DDNames.SHORT_ECO_FLOWERING_AZALEA, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ecologics", "flowering_azalea_door"))));
 		    helper.register(DDNames.SHORT_ECO_COCONUT, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ecologics", "coconut_door"))));
 		    helper.register(DDNames.SHORT_ECO_WALNUT, new ShortDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ecologics", "walnut_door"))));
 		    
-		    helper.register(DDNames.TALL_ECO_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ecologics", "azalea_door"))));
-		    helper.register(DDNames.TALL_ECO_FLOWERING_AZALEA, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ecologics", "flowering_azalea_door"))));
 		    helper.register(DDNames.TALL_ECO_COCONUT, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ecologics", "coconut_door"))));
 		    helper.register(DDNames.TALL_ECO_WALNUT, new TallDoorBlock(DDBlocks.getBlockByKey(new ResourceLocation("ecologics", "walnut_door"))));
 				    
@@ -379,13 +375,9 @@ public class DDBiomePackRegistry
 		    helper.register(DDNames.TALL_PETRIFIED, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_PETRIFIED)), DDItems.conditionalTabProperties("darkerdepths")));
 		    
 		    // Ecologics
-		    helper.register(DDNames.SHORT_ECO_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_AZALEA)), DDItems.conditionalTabProperties("ecologics")));
-		    helper.register(DDNames.SHORT_ECO_FLOWERING_AZALEA, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_FLOWERING_AZALEA)), DDItems.conditionalTabProperties("ecologics")));
 		    helper.register(DDNames.SHORT_ECO_COCONUT, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_COCONUT)), DDItems.conditionalTabProperties("ecologics")));
 		    helper.register(DDNames.SHORT_ECO_WALNUT, new ShortDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.SHORT_ECO_WALNUT)), DDItems.conditionalTabProperties("ecologics")));
 		    
-		    helper.register(DDNames.TALL_ECO_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_AZALEA)), DDItems.conditionalTabProperties("ecologics")));
-		    helper.register(DDNames.TALL_ECO_FLOWERING_AZALEA, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_FLOWERING_AZALEA)), DDItems.conditionalTabProperties("ecologics")));
 		    helper.register(DDNames.TALL_ECO_COCONUT, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_COCONUT)), DDItems.conditionalTabProperties("ecologics")));
 		    helper.register(DDNames.TALL_ECO_WALNUT, new TallDoorItem(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_ECO_WALNUT)), DDItems.conditionalTabProperties("ecologics")));
 		    
